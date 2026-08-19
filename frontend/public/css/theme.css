@@ -252,6 +252,22 @@ a { text-decoration: none; transition: color var(--sg-t-fast) var(--sg-ease); }
 @media (min-width: 576px) { .usecase-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (min-width: 992px) { .usecase-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 
+/* ---------- Free-trial product cards ---------- */
+.trial-card {
+  display: flex; flex-direction: column; height: 100%;
+  border: 1px solid var(--sg-border); border-radius: var(--sg-radius-lg);
+  padding: 1.5rem; background: #fff; color: var(--sg-text);
+  transition: border-color var(--sg-t-fast) var(--sg-ease), box-shadow var(--sg-t) var(--sg-ease), transform var(--sg-t) var(--sg-ease);
+}
+.trial-card:hover, .trial-card:focus-visible {
+  border-color: var(--sg-accent); box-shadow: var(--sg-shadow-md); transform: translateY(-3px); color: var(--sg-text);
+}
+.trial-card .trial-card-title { font-family: var(--sg-font-heading); font-weight: 700; color: var(--sg-heading); margin-bottom: .35rem; }
+.trial-card .trial-card-desc { font-size: var(--sg-small); color: var(--sg-muted); margin-bottom: 1.25rem; }
+.trial-card .trial-card-cta { margin-top: auto; font-family: var(--sg-font-heading); font-weight: 700; font-size: var(--sg-small); color: var(--sg-accent); }
+.trial-card:hover .trial-card-cta i { transform: translateX(3px); }
+.trial-card .trial-card-cta i { display: inline-block; transition: transform var(--sg-t-fast) var(--sg-ease); }
+
 /* ---------- Legal prose ---------- */
 .legal-prose { max-width: var(--sg-prose); margin: 0 auto; }
 .legal-prose h2 { font-size: 1.5rem; margin-top: 2.5rem; margin-bottom: .9rem; }

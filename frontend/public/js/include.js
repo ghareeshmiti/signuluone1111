@@ -60,28 +60,11 @@
     }));
   }
 
-  function bindTrialModal() {
-    document.addEventListener('click', function (e) {
-      var btn = e.target.closest('#trialContinue');
-      if (!btn) return;
-      var select = document.getElementById('trialProduct');
-      var error = document.querySelector('[data-trial-error]');
-      if (!select || !select.value) {
-        if (error) error.classList.remove('d-none');
-        if (select) select.focus();
-        return;
-      }
-      if (error) error.classList.add('d-none');
-      window.location.href = select.value;
-    });
-  }
-
   document.addEventListener('DOMContentLoaded', function () {
     hydrate().then(function () {
       document.querySelectorAll('[data-year]').forEach(function (el) {
         el.textContent = new Date().getFullYear();
       });
-      bindTrialModal();
       document.dispatchEvent(new CustomEvent('partials:ready'));
       reveal();
     });

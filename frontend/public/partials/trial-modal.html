@@ -1,5 +1,5 @@
 <div class="modal fade" id="trialModal" tabindex="-1" aria-labelledby="trialModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content" style="border-radius: var(--sg-radius-lg);">
       <div class="modal-header border-0 pb-0">
         <div>
@@ -9,19 +9,37 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-testid="trial-modal-close"></button>
       </div>
       <div class="modal-body pt-3">
-        <p class="text-muted">Select a solution and we will take you straight to its trial sign-up.</p>
-        <label class="form-label" for="trialProduct">Product</label>
-        <select class="form-select mb-2" id="trialProduct" data-testid="trial-product-select">
-          <option value="">Select a product…</option>
-          <option value="https://app.signulu.com/account/register">Signulu Signing Solutions (eSignature)</option>
-          <option value="https://www.signuluone.com/Dms.html">Signulu Document Management System</option>
-          <option value="https://bulksigner.signuluone.com/#download">DSC BulkSigner</option>
-        </select>
-        <p class="d-none text-danger small mb-0" data-trial-error data-testid="trial-error-message">Please select a product to continue.</p>
+        <p class="text-muted">Pick a solution to go straight to its trial sign-up.</p>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <a class="trial-card" href="https://app.signulu.com/account/register" data-testid="trial-card-esignature">
+              <span class="icon-badge"><i class="bi bi-vector-pen" aria-hidden="true"></i></span>
+              <span class="trial-card-title">Signing Solutions</span>
+              <span class="trial-card-desc">eSignature for contracts and approvals</span>
+              <span class="trial-card-cta">Start trial <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="trial-card" href="https://www.signuluone.com/Dms.html" data-testid="trial-card-dms">
+              <span class="icon-badge"><i class="bi bi-folder-symlink" aria-hidden="true"></i></span>
+              <span class="trial-card-title">Signulu DMS</span>
+              <span class="trial-card-desc">Document management with AI search</span>
+              <span class="trial-card-cta">Start trial <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="trial-card" href="https://bulksigner.signuluone.com/#download" data-testid="trial-card-bulksigner">
+              <span class="icon-badge"><i class="bi bi-stack" aria-hidden="true"></i></span>
+              <span class="trial-card-title">DSC BulkSigner</span>
+              <span class="trial-card-desc">Bulk signing with your DSC token</span>
+              <span class="trial-card-cta">Start trial <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
+            </a>
+          </div>
+        </div>
       </div>
       <div class="modal-footer border-0 pt-0">
         <a class="btn btn-outline-primary" href="/solutions.html" data-testid="trial-modal-compare-btn">Compare solutions</a>
-        <button class="btn btn-accent" type="button" id="trialContinue" data-testid="trial-continue-btn">Continue</button>
+        <a class="btn btn-navy" href="/contact.html#demo" data-testid="trial-modal-demo-btn">Book a demo instead</a>
       </div>
     </div>
   </div>
