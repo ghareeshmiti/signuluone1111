@@ -1,0 +1,32 @@
+{
+  "summary": "Iteration 8 CSS-only fix verified. On /solutions.html [data-testid='solutions-compare'], all three cards render VISIBLE product titles ('Signing Solutions', 'Signulu DMS', 'DSC BulkSigner') with computed color rgb(51,51,51) on white card background rgb(255,255,255), and descriptions at rgb(107,114,128). Verified at 1440, 768, 375. Audited all .section-dark bands (home-security, solutions-compare, and 7 industry <slug>-summary bands) - on-band text still legible (white rgba(255,255,255,0.78) on rgb(45,33,146)). Regression full-pass: nav 'Solutions' item present, mega-menu single 'Platform solutions' column with All solutions / Signing Solutions / Signulu DMS / DSC BulkSigner (no Explore column, no mega-pricing-link testid), footer bg rgb(45,33,146), free-trial modal shows 3 product cards with correct external hrefs (app.signulu.com/account/register, signuluone.com/Dms.html, bulksigner.signuluone.com/#download), pricing tabs (esignature/dms/bulksigner) render, billing toggle correctly swaps $9.99 per user per month <-> $59.88 per user per annum, BulkSigner estimator maps 3->Basic ₹6,600 / 7->Pro ₹12,600 / 25->Business ₹37,500 / 120->Enterprise ₹1,20,000, no horizontal overflow at 375/768/1440 on index/solutions/pricing/banking/healthcare.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "dark_band_audit": [
+    {"page": "/solutions.html", "band": "solutions-compare", "on_band_heading": "rgb(255,255,255) on rgb(45,33,146) — legible", "card_title": "rgb(51,51,51) on rgb(255,255,255) — legible (FIX CONFIRMED)", "card_body": "rgb(107,114,128) on rgb(255,255,255) — legible"},
+    {"page": "/index.html", "band": "home-security", "text": "rgb(255,255,255) heading + rgba(255,255,255,0.78) body on rgb(45,33,146) — legible"},
+    {"page": "/banking-and-financial-services.html", "band": "banking-...-summary", "text": "white on rgb(45,33,146) — legible"},
+    {"page": "/real-estate.html", "band": "real-estate-summary", "text": "white on rgb(45,33,146) — legible"},
+    {"page": "/professional-services.html", "band": "professional-services-summary", "text": "white on rgb(45,33,146) — legible"},
+    {"page": "/manufacturing.html", "band": "manufacturing-summary", "text": "white on rgb(45,33,146) — legible"},
+    {"page": "/healthcare.html", "band": "healthcare-summary", "text": "white on rgb(45,33,146) — legible"},
+    {"page": "/legal-services.html", "band": "legal-services-summary", "text": "white on rgb(45,33,146) — legible"},
+    {"page": "/information-technology.html", "band": "information-technology-summary", "text": "white on rgb(45,33,146) — legible"}
+  ],
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "CSS specificity for .section-dark .card overrides is correct and scoped; no leakage into on-band text observed.",
+    "Consider adding an automated visual regression / contrast lint to prevent recurrence of white-on-white regressions in future dark-band card additions."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (static site, backend skipped)", "frontend": "100%"},
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Static Bootstrap site served from /app/frontend/public. No backend. Use REACT_APP_BACKEND_URL. Iteration 8 fix (CSS-only .section-dark .card typography override in theme.css) validated. All 3 product card titles on solutions-compare and all 9 dark bands legible."
+}

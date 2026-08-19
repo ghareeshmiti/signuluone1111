@@ -37,6 +37,12 @@ a { text-decoration: none; transition: color var(--sg-t-fast) var(--sg-ease); }
 .section-dark { background: var(--sg-band-bg); color: var(--sg-on-dark); }
 .section-dark h1, .section-dark h2, .section-dark h3, .section-dark h4, .section-dark h5 { color: var(--sg-on-dark); }
 .section-dark p, .section-dark .lead { color: var(--sg-on-dark-muted); }
+/* Cards keep their light-surface typography even inside dark bands */
+.section-dark .card h1, .section-dark .card h2, .section-dark .card h3,
+.section-dark .card h4, .section-dark .card h5, .section-dark .card .card-title { color: var(--sg-heading); }
+.section-dark .card p, .section-dark .card .lead, .section-dark .card li { color: var(--sg-text); }
+.section-dark .card .text-muted, .section-dark .card .blog-meta { color: var(--sg-muted) !important; }
+.section-dark .card .check-list li i { color: var(--sg-success); }
 @media (max-width: 767.98px) {
   .section { padding-top: var(--sg-section-y-sm); padding-bottom: var(--sg-section-y-sm); }
 }
