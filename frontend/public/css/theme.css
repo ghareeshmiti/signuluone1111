@@ -196,8 +196,17 @@ a { text-decoration: none; transition: color var(--sg-t-fast) var(--sg-ease); }
 .accordion-button:focus { box-shadow: none; border-color: var(--sg-accent); }
 
 /* ---------- Logo strip ---------- */
-.logo-strip { display: flex; flex-wrap: wrap; gap: 2.5rem; align-items: center; }
+.logo-strip { display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center; }
 .logo-strip span { font-family: var(--sg-font-heading); font-weight: 600; font-size: 1.05rem; color: var(--sg-muted); letter-spacing: .02em; }
+.trust-chip {
+  display: inline-flex; align-items: center; gap: .6rem;
+  padding: .55rem 1.1rem; border: 1px solid var(--sg-border);
+  border-radius: var(--sg-radius-pill); background: #fff;
+  transition: border-color var(--sg-t-fast) var(--sg-ease), box-shadow var(--sg-t) var(--sg-ease), transform var(--sg-t) var(--sg-ease);
+}
+.trust-chip i { font-size: 1.15rem; color: var(--sg-accent); line-height: 1; }
+.trust-chip:hover { border-color: var(--sg-accent); box-shadow: var(--sg-shadow-sm); transform: translateY(-2px); }
+.trust-chip:hover span { color: var(--sg-heading); }
 
 /* ---------- CTA band ---------- */
 .cta-band { background: linear-gradient(120deg, var(--sg-accent) 0%, #2A1E5C 100%); color: #fff; border-radius: var(--sg-radius-xl); padding: 3.25rem; }
