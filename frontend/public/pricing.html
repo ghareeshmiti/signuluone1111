@@ -52,61 +52,158 @@
         </ul>
 
         <div class="tab-content">
-          <!-- eSignature -->
+          <!-- eSignature (Signulu) -->
           <div class="tab-pane fade show active" id="pane-esign" role="tabpanel" aria-labelledby="tab-esign" data-testid="pricing-pane-esignature">
+            <div class="d-flex align-items-center gap-3 mb-4" data-testid="esign-billing-toggle">
+              <span class="fw-semibold" data-billing-label="monthly">Monthly</span>
+              <div class="form-check form-switch m-0">
+                <input class="form-check-input" type="checkbox" role="switch" id="billingToggle" checked data-testid="esign-billing-switch" aria-label="Switch between monthly and yearly billing">
+              </div>
+              <span class="fw-semibold" data-billing-label="yearly">Yearly</span>
+            </div>
+
             <div class="row g-4" id="esignature-pricing">
-              <div class="col-lg-4">
+              <div class="col-md-6 col-lg-3">
                 <div class="card pricing-card"><div class="card-body">
-                  <h3 class="h5 card-title">Starter</h3>
-                  <p class="text-muted">For individuals and small teams getting off paper.</p>
-                  <div class="price mb-1">$12 <small>/ user / month</small></div>
-                  <p class="blog-meta mb-4">Billed annually</p>
-                  <a class="btn btn-accent w-100 mb-2" href="https://app.signulu.com/account/register" data-testid="pricing-esign-starter-trial-btn">Start free trial</a>
-                  <a class="btn btn-outline-primary w-100 mb-4" href="/contact.html?product=esignature#demo" data-testid="pricing-esign-starter-demo-btn">Book a demo</a>
-                  <ul class="check-list mb-0">
-                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Unlimited documents</li>
-                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> 5 templates</li>
-                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Audit trail &amp; certificate</li>
-                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Mobile apps</li>
+                  <h3 class="h5 card-title">Signulu Lite</h3>
+                  <p class="text-muted">For a basic eSignature experience.</p>
+                  <div class="price mb-1">Free</div>
+                  <p class="blog-meta mb-4">No card required</p>
+                  <a class="btn btn-accent w-100 mb-2" href="https://app.signulu.com/account/register" data-testid="pricing-esign-lite-cta-btn">Get started</a>
+                  <a class="btn btn-outline-primary w-100 mb-4" href="/contact.html?product=esignature#demo" data-testid="pricing-esign-lite-demo-btn">Book a demo</a>
+                  <ul class="plan-specs">
+                    <li><span>No. of Documents</span><strong>5 per month</strong></li>
+                    <li><span>No. of Users</span><strong>2</strong></li>
+                    <li><span>Recipients per Envelope</span><strong>2</strong></li>
+                    <li><span>Max envelope size</span><strong>5 MB</strong></li>
+                  </ul>
+                  <ul class="check-list check-list-sm mb-0">
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Send documents for eSignature</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Signing workflow</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Audit trail</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Basic document fields</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Notifications and reminders</li>
                   </ul>
                 </div></div>
               </div>
-              <div class="col-lg-4">
+
+              <div class="col-md-6 col-lg-3">
                 <div class="card pricing-card featured"><div class="card-body">
-                  <div class="d-flex justify-content-between align-items-start mb-2">
-                    <h3 class="h5 card-title mb-0">Business</h3>
-                    <span class="badge-accent">Most popular</span>
+                  <div class="d-flex justify-content-between align-items-start mb-1">
+                    <h3 class="h5 card-title mb-0">Individual User</h3>
+                    <span class="badge-accent">Popular</span>
                   </div>
-                  <p class="text-muted">For teams with approvals and integrations.</p>
-                  <div class="price mb-1">$29 <small>/ user / month</small></div>
-                  <p class="blog-meta mb-4">Billed annually</p>
-                  <a class="btn btn-accent w-100 mb-2" href="https://app.signulu.com/account/register" data-testid="pricing-esign-business-trial-btn">Start free trial</a>
-                  <a class="btn btn-outline-primary w-100 mb-4" href="/contact.html?product=esignature#demo" data-testid="pricing-esign-business-demo-btn">Book a demo</a>
-                  <ul class="check-list mb-0">
-                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Everything in Starter</li>
-                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Unlimited templates</li>
-                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Approval workflows &amp; bulk send</li>
-                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> REST API &amp; webhooks</li>
-                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Cloud storage sync</li>
+                  <p class="text-muted">For individual professionals to get documents signed efficiently.</p>
+                  <div class="price mb-1"><span data-price-amount>$59.88</span></div>
+                  <p class="blog-meta mb-4" data-price-period>per user per annum</p>
+                  <a class="btn btn-accent w-100 mb-2" href="https://app.signulu.com/account/register" data-testid="pricing-esign-individual-cta-btn">Get started</a>
+                  <a class="btn btn-outline-primary w-100 mb-4" href="/contact.html?product=esignature#demo" data-testid="pricing-esign-individual-demo-btn">Book a demo</a>
+                  <ul class="plan-specs">
+                    <li><span>No. of Documents</span><strong>10 per month</strong></li>
+                    <li><span>No. of Users</span><strong>Single user</strong></li>
+                    <li><span>Recipients per Envelope</span><strong>5</strong></li>
+                    <li><span>Max envelope size</span><strong>10 MB</strong></li>
+                  </ul>
+                  <p class="plan-plus">All Lite features plus:</p>
+                  <ul class="check-list check-list-sm mb-0">
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Templates</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Cloud storage</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Basic reports</li>
                   </ul>
                 </div></div>
               </div>
-              <div class="col-lg-4">
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card pricing-card"><div class="card-body">
+                  <h3 class="h5 card-title">SMB Plan</h3>
+                  <p class="text-muted">For small and medium businesses streamlining document signing at scale.</p>
+                  <div class="price mb-1">Let&rsquo;s talk</div>
+                  <p class="blog-meta mb-4">Tailored to your team</p>
+                  <a class="btn btn-navy w-100 mb-2" href="/contact.html?product=esignature" data-testid="pricing-esign-smb-cta-btn">Contact us</a>
+                  <a class="btn btn-outline-primary w-100 mb-4" href="/contact.html?product=esignature#demo" data-testid="pricing-esign-smb-demo-btn">Book a demo</a>
+                  <ul class="plan-specs">
+                    <li><span>No. of Documents</span><strong>20 per month per user</strong></li>
+                    <li><span>No. of Users</span><strong>Up to 5 users</strong></li>
+                    <li><span>Recipients per Envelope</span><strong>10</strong></li>
+                    <li><span>Max envelope size</span><strong>30 MB</strong></li>
+                  </ul>
+                  <p class="plan-plus">All Individual features plus:</p>
+                  <ul class="check-list check-list-sm mb-0">
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Multiple language sites</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Advanced document fields</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Advanced reports</li>
+                  </ul>
+                </div></div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
                 <div class="card pricing-card"><div class="card-body">
                   <h3 class="h5 card-title">Enterprise</h3>
-                  <p class="text-muted">For regulated organisations and high volume.</p>
+                  <p class="text-muted">For large enterprises processing documents at scale with integrations into other enterprise applications.</p>
                   <div class="price mb-1">Custom</div>
                   <p class="blog-meta mb-4">Volume &amp; annual agreements</p>
-                  <a class="btn btn-navy w-100 mb-2" href="/contact.html?product=esignature" data-testid="pricing-esign-enterprise-btn">Contact sales</a>
+                  <a class="btn btn-navy w-100 mb-2" href="/contact.html?product=esignature" data-testid="pricing-esign-enterprise-cta-btn">Contact us</a>
                   <a class="btn btn-outline-primary w-100 mb-4" href="/contact.html?product=esignature#demo" data-testid="pricing-esign-enterprise-demo-btn">Book a demo</a>
-                  <ul class="check-list mb-0">
-                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Everything in Business</li>
-                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> SSO &amp; advanced access controls</li>
-                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Retention &amp; data residency options</li>
-                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Dedicated success manager</li>
-                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Priority support SLA</li>
+                  <ul class="plan-specs">
+                    <li><span>No. of Documents</span><strong>100 per month per user</strong></li>
+                    <li><span>No. of Users</span><strong>Custom plan</strong></li>
+                    <li><span>Recipients per Envelope</span><strong>Customised</strong></li>
+                    <li><span>Max envelope size</span><strong>50 MB</strong></li>
                   </ul>
+                  <p class="plan-plus">All SMB features plus:</p>
+                  <ul class="check-list check-list-sm mb-4">
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> API integrations</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Custom branding</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Document authoring</li>
+                  </ul>
+                  <p class="mb-1"><strong>Call</strong> <a href="tel:+18777446858" data-testid="pricing-phone-us-link">1-877-744-6858</a></p>
+                  <p class="mb-0"><a href="tel:+919176446858" data-testid="pricing-phone-in-link">+91 9176 446858</a></p>
                 </div></div>
+              </div>
+            </div>
+
+            <div class="mt-5" id="compare-plans" data-testid="esign-compare-table">
+              <h3 class="h4 mb-4">Compare the plans</h3>
+              <div class="table-responsive">
+                <table class="table table-compare align-middle mb-0">
+                  <thead>
+                    <tr>
+                      <th scope="col">Feature</th>
+                      <th scope="col">Signulu Lite</th>
+                      <th scope="col">Individual</th>
+                      <th scope="col">SMB Plan</th>
+                      <th scope="col">Enterprise</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                <tr><th scope="row" class="fw-normal">Signing Workflow</th><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                <tr><th scope="row" class="fw-normal">No. of Recipients per Envelope</th><td>2</td><td>5</td><td>10</td><td>Custom</td></tr>
+                <tr><th scope="row" class="fw-normal">Max size of the envelope</th><td>5 MB</td><td>10 MB</td><td>30 MB</td><td>50 MB</td></tr>
+                <tr><th scope="row" class="fw-normal">Basic Document Fields</th><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                <tr><th scope="row" class="fw-normal">Advanced Documents Fields</th><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                <tr><th scope="row" class="fw-normal">Real Time Audit Trail</th><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                <tr><th scope="row" class="fw-normal">Multiple Languages</th><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                <tr><th scope="row" class="fw-normal">Notifications and Reminders</th><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                <tr><th scope="row" class="fw-normal">Mobile responsive</th><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                <tr><th scope="row" class="fw-normal">Basic Reports</th><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                <tr><th scope="row" class="fw-normal">Templates</th><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                <tr><th scope="row" class="fw-normal">Commenting</th><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                <tr><th scope="row" class="fw-normal">Scheduled Sending</th><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                <tr><th scope="row" class="fw-normal">In-Person Signing</th><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                <tr><th scope="row" class="fw-normal">Custom Branding</th><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                <tr><th scope="row" class="fw-normal">User Permissions</th><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                <tr><th scope="row" class="fw-normal">Advanced / Team Reports</th><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                <tr><th scope="row" class="fw-normal">Shared Templates</th><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                <tr><th scope="row" class="fw-normal">Document Folders</th><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                <tr><th scope="row" class="fw-normal">Delegated Signing</th><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                <tr><th scope="row" class="fw-normal">Bulk Send</th><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                <tr><th scope="row" class="fw-normal">Integrations</th><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                <tr><th scope="row" class="fw-normal">Cloud Storage</th><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                <tr><th scope="row" class="fw-normal">Notary (applicable to US customers)</th><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                <tr><th scope="row" class="fw-normal">Send for Review</th><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                <tr><th scope="row" class="fw-normal">Document Authoring</th><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-x-lg compare-no" aria-label="Not included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
@@ -385,6 +482,24 @@
         document.querySelector('[data-estimate-total]').textContent = fmt(n * band.rate);
       };
       input.addEventListener('input', update);
+      update();
+    })();
+  </script>
+  <script>
+    (function () {
+      var toggle = document.getElementById('billingToggle');
+      if (!toggle) return;
+      var amount = document.querySelector('[data-price-amount]');
+      var period = document.querySelector('[data-price-period]');
+      var update = function () {
+        var yearly = toggle.checked;
+        amount.textContent = yearly ? '$59.88' : '$9.99';
+        period.textContent = yearly ? 'per user per annum' : 'per user per month';
+        document.querySelectorAll('[data-billing-label]').forEach(function (el) {
+          el.classList.toggle('text-accent', el.getAttribute('data-billing-label') === (yearly ? 'yearly' : 'monthly'));
+        });
+      };
+      toggle.addEventListener('change', update);
       update();
     })();
   </script>
