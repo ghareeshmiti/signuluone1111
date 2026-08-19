@@ -47,6 +47,30 @@ the existing structure without touching the design system.
 5. kebab-case URLs, legacy names redirect.
 6. `data-testid` on interactive/critical elements.
 
+## Implemented — 2026-06 (iteration 2)
+- **SignuluOne theme adopted from signuluone.com**: violet `#5A30F1` primary/action, gold
+  `#FFD15D` hero highlight and on-dark accent, `#F9FBFD` light sections, `#2C2F36` dark
+  surface/footer, `#333` headings, Lato typography, 8px cards. All navy/blue removed.
+- **Brand**: official SignuluOne logo (`img/signuluone-logo.png`) in header, footer and favicon;
+  name changed to SignuluOne across titles and brand marks.
+- **Our Signulu Solutions**: new `solutions.html` plus nav mega-menu and home section for the
+  three products, each redirecting to its own URL (Signing Solutions →
+  signulu.com/index.php/about, Signulu DMS → signuluone.com/Dms.html, DSC BulkSigner →
+  bulksigner.signuluone.com). `products.html` is now a redirect stub.
+- **Per-product pricing**: `pricing.html` has product tabs with three distinct plan sets
+  (eSignature $12/$29/Custom, DMS $15/$35/Custom, BulkSigner $19/$49/Custom), each card
+  offering Start free trial and Book a demo.
+- **Free trial gate**: `partials/trial-modal.html` asks which product, then redirects based on
+  the selection (validation error if nothing is chosen).
+- **Book a demo with product selection**: contact form has a required product select that
+  pre-fills from `?product=` (and `?intent=trial` prefills the message).
+- **Log in removed** everywhere.
+- **Hosting**: `yarn start` now serves `frontend/public` with `python -m http.server` — the CRA
+  dev server was injecting a bundle/error overlay and caching a stale `index.html`.
+- Verified by testing agent (`test_reports/iteration_2.json`): 100% frontend pass — theme
+  identical on all 12 pages, trial redirects correct, pricing tabs distinct, contact prefill and
+  validation working, no login remnants, no overflow at 375/768/1440.
+
 ## Implemented — 2026-06 (iteration 1)
 - Phase 1: `css/tokens.css`, `css/theme.css` (Outfit/Manrope, navy + gold, 5rem rhythm).
 - Phase 2: three partials + `js/include.js` (active nav, reveal, cached fetch).

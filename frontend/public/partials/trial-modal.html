@@ -1,0 +1,28 @@
+<div class="modal fade" id="trialModal" tabindex="-1" aria-labelledby="trialModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="border-radius: var(--sg-radius-lg);">
+      <div class="modal-header border-0 pb-0">
+        <div>
+          <span class="eyebrow mb-1">Free trial</span>
+          <h3 class="modal-title h4" id="trialModalLabel">Which product do you want to try?</h3>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-testid="trial-modal-close"></button>
+      </div>
+      <div class="modal-body pt-3">
+        <p class="text-muted">Select a solution and we will take you straight to its trial sign-up.</p>
+        <label class="form-label" for="trialProduct">Product</label>
+        <select class="form-select mb-2" id="trialProduct" data-testid="trial-product-select">
+          <option value="">Select a product…</option>
+          <option value="https://app.signulu.com/account/register">Signulu Signing Solutions (eSignature)</option>
+          <option value="https://www.signuluone.com/Dms.html">Signulu Document Management System</option>
+          <option value="https://bulksigner.signuluone.com/">DSC BulkSigner</option>
+        </select>
+        <p class="d-none text-danger small mb-0" data-trial-error data-testid="trial-error-message">Please select a product to continue.</p>
+      </div>
+      <div class="modal-footer border-0 pt-0">
+        <a class="btn btn-outline-primary" href="/solutions.html" data-testid="trial-modal-compare-btn">Compare solutions</a>
+        <button class="btn btn-accent" type="button" id="trialContinue" data-testid="trial-continue-btn">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>

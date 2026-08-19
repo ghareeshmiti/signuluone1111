@@ -1,38 +1,42 @@
 /* Signulu design tokens — single source of truth. Extracted from index.html. */
 :root {
   /* Brand */
-  --sg-primary: #0A2540;
-  --sg-primary-600: #0d3055;
-  --sg-secondary: #1E3A8A;
-  --sg-gold: #FFD15D;
-  --sg-gold-600: #f5be36;
-  --sg-gold-soft: rgba(255, 209, 93, 0.14);
+  --sg-primary: #5A30F1;
+  --sg-primary-600: #4726C9;
+  --sg-secondary: #5A30F1;
+  --sg-accent: #5A30F1;
+  --sg-accent-600: #4726C9;
+  --sg-accent-light: #FFD15D;
+  --sg-accent-soft: rgba(90, 48, 241, 0.10);
+  --sg-accent-soft-dark: rgba(255, 209, 93, 0.16);
 
   /* Surfaces */
-  --sg-surface-dark: #061626;
-  --sg-surface-dark-2: #0b2135;
-  --sg-surface-light: #F8FAFC;
+  --sg-surface-dark: #2C2F36;
+  --sg-surface-dark-2: #23252B;
+  --sg-surface-light: #F9FBFD;
   --sg-surface: #FFFFFF;
-  --sg-hero-overlay: rgba(6, 22, 38, 0.86);
+  --sg-hero-overlay: rgba(29, 22, 58, 0.80);
+
+  --sg-heading: #333333;
 
   /* Text */
-  --sg-text: #1E293B;
-  --sg-muted: #64748B;
+  --sg-text: #555555;
+  --sg-muted: #6B7280;
   --sg-on-dark: #FFFFFF;
-  --sg-on-dark-muted: rgba(226, 232, 240, 0.72);
-  --sg-border: #E2E8F0;
+  --sg-on-dark-muted: rgba(255, 255, 255, 0.78);
+  --sg-border: #E5E7EB;
   --sg-border-dark: rgba(255, 255, 255, 0.12);
 
   /* Semantic */
   --sg-success: #10B981;
-  --sg-warning: #FFD15D;
+  --sg-warning: #F59E0B;
   --sg-info: #3B82F6;
   --sg-danger: #EF4444;
 
   /* Typography */
-  --sg-font-heading: 'Outfit', system-ui, sans-serif;
-  --sg-font-body: 'Manrope', system-ui, sans-serif;
-  --sg-h1: clamp(2.5rem, 5vw, 3.5rem);
+  --sg-font-heading: 'Lato', 'Segoe UI', system-ui, sans-serif;
+  --sg-font-body: 'Lato', 'Segoe UI', system-ui, sans-serif;
+  --sg-h1: clamp(2.5rem, 5vw, 4rem);
   --sg-h2: clamp(2rem, 4vw, 2.5rem);
   --sg-h3: clamp(1.5rem, 3vw, 2rem);
   --sg-h4: 1.25rem;
@@ -55,15 +59,15 @@
   /* Radii */
   --sg-radius-sm: 4px;
   --sg-radius-md: 8px;
-  --sg-radius-lg: 12px;
+  --sg-radius-lg: 8px;
   --sg-radius-xl: 20px;
   --sg-radius-pill: 50rem;
 
   /* Elevation */
-  --sg-shadow-sm: 0 1px 2px 0 rgba(10, 37, 64, 0.06);
-  --sg-shadow-md: 0 4px 6px -1px rgba(10, 37, 64, 0.1), 0 2px 4px -1px rgba(10, 37, 64, 0.06);
-  --sg-shadow-lg: 0 10px 15px -3px rgba(10, 37, 64, 0.1), 0 4px 6px -2px rgba(10, 37, 64, 0.05);
-  --sg-shadow-xl: 0 24px 48px -12px rgba(10, 37, 64, 0.24);
+  --sg-shadow-sm: 0 5px 15px rgba(0, 0, 0, 0.03);
+  --sg-shadow-md: 0 10px 25px rgba(0, 0, 0, 0.08);
+  --sg-shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.10);
+  --sg-shadow-xl: 0 20px 45px rgba(0, 0, 0, 0.18);
 
   /* Motion */
   --sg-ease: cubic-bezier(0.4, 0, 0.2, 1);
@@ -71,27 +75,27 @@
   --sg-t: 220ms;
 
   /* Bootstrap 5 variable overrides so native utilities inherit the brand */
-  --bs-primary: #0A2540;
-  --bs-primary-rgb: 10, 37, 64;
-  --bs-secondary: #1E3A8A;
-  --bs-secondary-rgb: 30, 58, 138;
-  --bs-warning: #FFD15D;
-  --bs-warning-rgb: 255, 209, 93;
+  --bs-primary: #5A30F1;
+  --bs-primary-rgb: 90, 48, 241;
+  --bs-secondary: #6B7280;
+  --bs-secondary-rgb: 107, 114, 128;
+  --bs-warning: #F59E0B;
+  --bs-warning-rgb: 245, 158, 11;
   --bs-success: #10B981;
   --bs-success-rgb: 16, 185, 129;
   --bs-info: #3B82F6;
   --bs-info-rgb: 59, 130, 246;
-  --bs-body-color: #1E293B;
-  --bs-body-color-rgb: 30, 41, 59;
+  --bs-body-color: #555555;
+  --bs-body-color-rgb: 85, 85, 85;
   --bs-body-bg: #FFFFFF;
   --bs-body-font-family: var(--sg-font-body);
   --bs-body-font-size: 1rem;
   --bs-body-line-height: 1.6;
-  --bs-border-color: #E2E8F0;
+  --bs-border-color: #E5E7EB;
   --bs-border-radius: 8px;
-  --bs-border-radius-lg: 12px;
-  --bs-link-color: #0A2540;
-  --bs-link-color-rgb: 10, 37, 64;
-  --bs-link-hover-color: #1E3A8A;
-  --bs-emphasis-color: #0A2540;
+  --bs-border-radius-lg: 8px;
+  --bs-link-color: #5A30F1;
+  --bs-link-color-rgb: 90, 48, 241;
+  --bs-link-hover-color: #4726C9;
+  --bs-emphasis-color: #333333;
 }

@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pricing — Plans for Every Team Size | Signulu</title>
-  <meta name="description" content="Simple Signulu pricing: Starter, Business and Enterprise plans with unlimited templates, audit trails, API access and volume-based options.">
+  <title>Pricing — Signing Solutions, DMS &amp; DSC BulkSigner | SignuluOne</title>
+  <meta name="description" content="SignuluOne pricing by product: plans for Signulu Signing Solutions, Signulu DMS and DSC BulkSigner, with free trials and demo booking.">
   <link rel="canonical" href="https://signulu.com/pricing.html">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" href="/img/signuluone-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link href="/css/tokens.css" rel="stylesheet">
@@ -22,91 +22,210 @@
     <section class="hero hero-compact" data-testid="pricing-hero">
       <div class="container">
         <span class="eyebrow">Pricing</span>
-        <h1 class="mb-3">Plans that scale with your paperwork</h1>
-        <p class="hero-sub mb-0">Every plan includes legally binding signatures, audit trails and mobile apps. No per-document surprises.</p>
+        <h1 class="mb-3">Pricing for every Signulu solution</h1>
+        <p class="hero-sub mb-4">Signing Solutions, Signulu DMS and DSC BulkSigner are priced independently. Start a free trial or book a demo of the product you need.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <button class="btn btn-accent btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#trialModal" data-testid="pricing-hero-trial-btn">Start free trial</button>
+          <a class="btn btn-outline-light btn-lg" href="/contact.html#demo" data-testid="pricing-hero-demo-btn">Book a demo</a>
+        </div>
       </div>
     </section>
 
     <section class="section" data-testid="pricing-plans">
       <div class="container">
-        <div class="row g-4">
-          <div class="col-lg-4 reveal">
-            <div class="card pricing-card"><div class="card-body">
-              <h2 class="h5 card-title">Starter</h2>
-              <p class="text-muted">For individuals and small teams getting off paper.</p>
-              <div class="price mb-1">$12 <small>/ user / month</small></div>
-              <p class="blog-meta mb-4">Billed annually</p>
-              <a class="btn btn-outline-primary w-100 mb-4" href="/contact.html" data-testid="pricing-starter-btn">Get started</a>
-              <ul class="check-list mb-0">
-                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Unlimited documents</li>
-                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> 5 templates</li>
-                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Audit trail &amp; certificate</li>
-                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Mobile apps</li>
-              </ul>
-            </div></div>
-          </div>
-
-          <div class="col-lg-4 reveal">
-            <div class="card pricing-card featured"><div class="card-body">
-              <div class="d-flex justify-content-between align-items-start mb-2">
-                <h2 class="h5 card-title mb-0">Business</h2>
-                <span class="badge-gold">Most popular</span>
-              </div>
-              <p class="text-muted">For teams with approvals and integrations.</p>
-              <div class="price mb-1">$29 <small>/ user / month</small></div>
-              <p class="blog-meta mb-4">Billed annually</p>
-              <a class="btn btn-gold w-100 mb-4" href="/contact.html#demo" data-testid="pricing-business-btn">Request a demo</a>
-              <ul class="check-list mb-0">
-                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Everything in Starter</li>
-                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Unlimited templates</li>
-                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Approval workflows &amp; bulk send</li>
-                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> REST API &amp; webhooks</li>
-                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Cloud storage sync</li>
-              </ul>
-            </div></div>
-          </div>
-
-          <div class="col-lg-4 reveal">
-            <div class="card pricing-card"><div class="card-body">
-              <h2 class="h5 card-title">Enterprise</h2>
-              <p class="text-muted">For regulated organisations and high volume.</p>
-              <div class="price mb-1">Custom</div>
-              <p class="blog-meta mb-4">Volume &amp; annual agreements</p>
-              <a class="btn btn-outline-primary w-100 mb-4" href="/contact.html" data-testid="pricing-enterprise-btn">Contact sales</a>
-              <ul class="check-list mb-0">
-                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Everything in Business</li>
-                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> SSO &amp; advanced access controls</li>
-                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Retention &amp; data residency options</li>
-                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Dedicated success manager</li>
-                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Priority support SLA</li>
-              </ul>
-            </div></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" data-testid="pricing-compare">
-      <div class="container">
         <div class="section-head">
-          <span class="eyebrow">Compare</span>
-          <h2 class="mb-0">Feature by feature</h2>
+          <span class="eyebrow">Choose your product</span>
+          <h2 class="mb-3">Pricing by solution</h2>
+          <p class="lead mb-0">Each SignuluOne solution is priced separately. Switch the tabs to see plans for Signing Solutions, DMS or DSC BulkSigner.</p>
         </div>
-        <div class="table-responsive">
-          <table class="table table-compare align-middle mb-0">
-            <thead>
-              <tr><th scope="col">Feature</th><th scope="col">Starter</th><th scope="col">Business</th><th scope="col">Enterprise</th></tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row" class="fw-normal">Documents per month</th><td>Unlimited</td><td>Unlimited</td><td>Unlimited</td></tr>
-              <tr><th scope="row" class="fw-normal">Templates</th><td>5</td><td>Unlimited</td><td>Unlimited</td></tr>
-              <tr><th scope="row" class="fw-normal">Approval workflows</th><td><i class="bi bi-dash text-muted" aria-label="Not included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
-              <tr><th scope="row" class="fw-normal">Bulk send</th><td><i class="bi bi-dash text-muted" aria-label="Not included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
-              <tr><th scope="row" class="fw-normal">REST API &amp; webhooks</th><td><i class="bi bi-dash text-muted" aria-label="Not included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
-              <tr><th scope="row" class="fw-normal">SSO</th><td><i class="bi bi-dash text-muted" aria-label="Not included"></i></td><td>Add-on</td><td><i class="bi bi-check-lg text-success" aria-label="Included"></i></td></tr>
-              <tr><th scope="row" class="fw-normal">Support</th><td>Email</td><td>Priority email</td><td>SLA + manager</td></tr>
-            </tbody>
-          </table>
+
+        <ul class="nav product-tabs mb-5" role="tablist" data-testid="pricing-product-tabs">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="tab-esign" data-bs-toggle="tab" data-bs-target="#pane-esign" type="button" role="tab" aria-selected="true" data-testid="pricing-tab-esignature">Signing Solutions</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab-dms" data-bs-toggle="tab" data-bs-target="#pane-dms" type="button" role="tab" aria-selected="false" data-testid="pricing-tab-dms">Signulu DMS</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab-bulk" data-bs-toggle="tab" data-bs-target="#pane-bulk" type="button" role="tab" aria-selected="false" data-testid="pricing-tab-bulksigner">DSC BulkSigner</button>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <!-- eSignature -->
+          <div class="tab-pane fade show active" id="pane-esign" role="tabpanel" aria-labelledby="tab-esign" data-testid="pricing-pane-esignature">
+            <div class="row g-4" id="esignature-pricing">
+              <div class="col-lg-4">
+                <div class="card pricing-card"><div class="card-body">
+                  <h3 class="h5 card-title">Starter</h3>
+                  <p class="text-muted">For individuals and small teams getting off paper.</p>
+                  <div class="price mb-1">$12 <small>/ user / month</small></div>
+                  <p class="blog-meta mb-4">Billed annually</p>
+                  <a class="btn btn-accent w-100 mb-2" href="https://app.signulu.com/account/register" data-testid="pricing-esign-starter-trial-btn">Start free trial</a>
+                  <a class="btn btn-outline-primary w-100 mb-4" href="/contact.html?product=esignature#demo" data-testid="pricing-esign-starter-demo-btn">Book a demo</a>
+                  <ul class="check-list mb-0">
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Unlimited documents</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> 5 templates</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Audit trail &amp; certificate</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Mobile apps</li>
+                  </ul>
+                </div></div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card pricing-card featured"><div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h3 class="h5 card-title mb-0">Business</h3>
+                    <span class="badge-accent">Most popular</span>
+                  </div>
+                  <p class="text-muted">For teams with approvals and integrations.</p>
+                  <div class="price mb-1">$29 <small>/ user / month</small></div>
+                  <p class="blog-meta mb-4">Billed annually</p>
+                  <a class="btn btn-accent w-100 mb-2" href="https://app.signulu.com/account/register" data-testid="pricing-esign-business-trial-btn">Start free trial</a>
+                  <a class="btn btn-outline-primary w-100 mb-4" href="/contact.html?product=esignature#demo" data-testid="pricing-esign-business-demo-btn">Book a demo</a>
+                  <ul class="check-list mb-0">
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Everything in Starter</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Unlimited templates</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Approval workflows &amp; bulk send</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> REST API &amp; webhooks</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Cloud storage sync</li>
+                  </ul>
+                </div></div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card pricing-card"><div class="card-body">
+                  <h3 class="h5 card-title">Enterprise</h3>
+                  <p class="text-muted">For regulated organisations and high volume.</p>
+                  <div class="price mb-1">Custom</div>
+                  <p class="blog-meta mb-4">Volume &amp; annual agreements</p>
+                  <a class="btn btn-navy w-100 mb-2" href="/contact.html?product=esignature" data-testid="pricing-esign-enterprise-btn">Contact sales</a>
+                  <a class="btn btn-outline-primary w-100 mb-4" href="/contact.html?product=esignature#demo" data-testid="pricing-esign-enterprise-demo-btn">Book a demo</a>
+                  <ul class="check-list mb-0">
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Everything in Business</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> SSO &amp; advanced access controls</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Retention &amp; data residency options</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Dedicated success manager</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Priority support SLA</li>
+                  </ul>
+                </div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DMS -->
+          <div class="tab-pane fade" id="pane-dms" role="tabpanel" aria-labelledby="tab-dms" data-testid="pricing-pane-dms">
+            <div class="row g-4" id="dms-pricing">
+              <div class="col-lg-4">
+                <div class="card pricing-card"><div class="card-body">
+                  <h3 class="h5 card-title">Essentials</h3>
+                  <p class="text-muted">Central, searchable storage for a single team.</p>
+                  <div class="price mb-1">$15 <small>/ user / month</small></div>
+                  <p class="blog-meta mb-4">100 GB included</p>
+                  <a class="btn btn-accent w-100 mb-2" href="/contact.html?product=dms&amp;intent=trial#demo" data-testid="pricing-dms-essentials-trial-btn">Start free trial</a>
+                  <a class="btn btn-outline-primary w-100 mb-4" href="/contact.html?product=dms#demo" data-testid="pricing-dms-essentials-demo-btn">Book a demo</a>
+                  <ul class="check-list mb-0">
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Centralized secure storage</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Metadata &amp; full-text search</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Folders, tags and versioning</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Audit trail</li>
+                  </ul>
+                </div></div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card pricing-card featured"><div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h3 class="h5 card-title mb-0">Professional</h3>
+                    <span class="badge-accent">Most popular</span>
+                  </div>
+                  <p class="text-muted">Automation, classification and access control.</p>
+                  <div class="price mb-1">$35 <small>/ user / month</small></div>
+                  <p class="blog-meta mb-4">1 TB included</p>
+                  <a class="btn btn-accent w-100 mb-2" href="/contact.html?product=dms&amp;intent=trial#demo" data-testid="pricing-dms-professional-trial-btn">Start free trial</a>
+                  <a class="btn btn-outline-primary w-100 mb-4" href="/contact.html?product=dms#demo" data-testid="pricing-dms-professional-demo-btn">Book a demo</a>
+                  <ul class="check-list mb-0">
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Everything in Essentials</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> AI classification &amp; pre-processing</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Workflow automation &amp; approvals</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Role-based access control &amp; MFA</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> CRM, ERP and eSign integrations</li>
+                  </ul>
+                </div></div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card pricing-card"><div class="card-body">
+                  <h3 class="h5 card-title">Enterprise</h3>
+                  <p class="text-muted">Large repositories with compliance mandates.</p>
+                  <div class="price mb-1">Custom</div>
+                  <p class="blog-meta mb-4">Unlimited storage tiers</p>
+                  <a class="btn btn-navy w-100 mb-2" href="/contact.html?product=dms" data-testid="pricing-dms-enterprise-btn">Contact sales</a>
+                  <a class="btn btn-outline-primary w-100 mb-4" href="/contact.html?product=dms#demo" data-testid="pricing-dms-enterprise-demo-btn">Book a demo</a>
+                  <ul class="check-list mb-0">
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Everything in Professional</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Zero-trust access &amp; session monitoring</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> DPDP, IT Act, GDPR, HIPAA reporting</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> On-premise or private cloud options</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Migration &amp; onboarding support</li>
+                  </ul>
+                </div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BulkSigner -->
+          <div class="tab-pane fade" id="pane-bulk" role="tabpanel" aria-labelledby="tab-bulk" data-testid="pricing-pane-bulksigner">
+            <div class="row g-4" id="bulksigner-pricing">
+              <div class="col-lg-4">
+                <div class="card pricing-card"><div class="card-body">
+                  <h3 class="h5 card-title">Individual</h3>
+                  <p class="text-muted">One DSC token, one signer.</p>
+                  <div class="price mb-1">$19 <small>/ month</small></div>
+                  <p class="blog-meta mb-4">Single workstation licence</p>
+                  <a class="btn btn-accent w-100 mb-2" href="https://bulksigner.signuluone.com/" data-testid="pricing-bulk-individual-trial-btn">Start free trial</a>
+                  <a class="btn btn-outline-primary w-100 mb-4" href="/contact.html?product=bulksigner#demo" data-testid="pricing-bulk-individual-demo-btn">Book a demo</a>
+                  <ul class="check-list mb-0">
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Bulk sign with your DSC token</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Folder-level signing runs</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Signature position &amp; reason presets</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Run logs per batch</li>
+                  </ul>
+                </div></div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card pricing-card featured"><div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h3 class="h5 card-title mb-0">Team</h3>
+                    <span class="badge-accent">Most popular</span>
+                  </div>
+                  <p class="text-muted">Shared use across a back-office team.</p>
+                  <div class="price mb-1">$49 <small>/ month</small></div>
+                  <p class="blog-meta mb-4">Up to 5 workstations</p>
+                  <a class="btn btn-accent w-100 mb-2" href="https://bulksigner.signuluone.com/" data-testid="pricing-bulk-team-trial-btn">Start free trial</a>
+                  <a class="btn btn-outline-primary w-100 mb-4" href="/contact.html?product=bulksigner#demo" data-testid="pricing-bulk-team-demo-btn">Book a demo</a>
+                  <ul class="check-list mb-0">
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Everything in Individual</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Multiple tokens and signers</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Scheduled and watched-folder runs</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Priority email support</li>
+                  </ul>
+                </div></div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card pricing-card"><div class="card-body">
+                  <h3 class="h5 card-title">Enterprise</h3>
+                  <p class="text-muted">High-volume, unattended signing.</p>
+                  <div class="price mb-1">Custom</div>
+                  <p class="blog-meta mb-4">Server &amp; HSM deployments</p>
+                  <a class="btn btn-navy w-100 mb-2" href="/contact.html?product=bulksigner" data-testid="pricing-bulk-enterprise-btn">Contact sales</a>
+                  <a class="btn btn-outline-primary w-100 mb-4" href="/contact.html?product=bulksigner#demo" data-testid="pricing-bulk-enterprise-demo-btn">Book a demo</a>
+                  <ul class="check-list mb-0">
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Everything in Team</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Unlimited workstations</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> HSM and server-side signing</li>
+                    <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Custom integration &amp; SLA</li>
+                  </ul>
+                </div></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -141,6 +260,7 @@
 
   <footer class="site-footer" data-include="/partials/footer.html"></footer>
   <div data-modal="/partials/product-modal.html"></div>
+  <div data-modal="/partials/trial-modal.html"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="/js/include.js"></script>

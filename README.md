@@ -8,29 +8,57 @@ Bootstrap 5 + Bootstrap Icons + vanilla CSS/JS. **No build step, no framework.**
 ```
 frontend/public/
 ├── index.html                              # visual source of truth (home)
-├── products.html
+├── solutions.html                          # Our Signulu Solutions (3 products)
 ├── industries.html
 ├── banking-and-financial-services.html
 ├── real-estate.html
 ├── professional-services.html
-├── pricing.html
+├── pricing.html                            # tabbed pricing per product
 ├── blog.html
-├── contact.html
+├── contact.html                            # book a demo, with product selection
 ├── privacy-policy.html
 ├── terms-of-service.html
 ├── 404.html
+├── img/signuluone-logo.png                 # official SignuluOne logo (brand + favicon)
 ├── css/
 │   ├── tokens.css                          # design tokens (CSS variables) + Bootstrap var overrides
 │   └── theme.css                           # component styles built on the tokens
 ├── js/
-│   └── include.js                           # fetches partials, sets active nav, reveal animation
+│   └── include.js                           # fetches partials, active nav, reveal, trial-modal redirect
 ├── partials/
-│   ├── header.html                          # nav + mega-menus (one source of truth)
+│   ├── header.html                          # nav + mega-menus (one source of truth, no login)
 │   ├── footer.html
-│   └── product-modal.html
-├── favicon.svg
+│   ├── product-modal.html                   # solution picker (demo / visit product site)
+│   └── trial-modal.html                     # free-trial product gate
+├── products.html                            # redirect stub -> solutions.html
 └── "Old Spaced Name.html"                   # redirect stubs -> kebab-case URLs
 ```
+
+## Brand & theme (from signuluone.com)
+
+| Token | Value |
+| --- | --- |
+| Primary / action | `#5A30F1` (violet) |
+| Hero highlight & on-dark accent | `#FFD15D` (gold) |
+| Light section surface | `#F9FBFD` |
+| Dark surface / footer | `#2C2F36` |
+| Headings | `#333333` |
+| Body text / muted | `#555555` / `#6B7280` |
+| Font | Lato (fallback Segoe UI) |
+| Card radius / shadow | 8px, `0 5px 15px rgba(0,0,0,.03)` |
+
+## Solutions and where they point
+
+| Solution | Destination |
+| --- | --- |
+| Signulu Signing Solutions | https://signulu.com/index.php/about |
+| Signulu Document Management System | https://www.signuluone.com/Dms.html |
+| DSC BulkSigner | https://bulksigner.signuluone.com/ |
+
+"Start free trial" opens `#trialModal`, asks which product, then redirects to that
+product's trial destination (eSignature goes to https://app.signulu.com/account/register).
+"Book a demo" goes to `/contact.html#demo`, which accepts `?product=esignature|dms|bulksigner`
+(and `&intent=trial`) to pre-select the product on the form.
 
 ## How the design system works
 
@@ -76,6 +104,9 @@ Any static server works, e.g. from `frontend/public`:
 ```bash
 python3 -m http.server 3000
 ```
+
+In this workspace `yarn start` (in `frontend/`) does exactly that — it serves
+`frontend/public` on `$PORT`. There is no React runtime and no build step.
 
 Then open http://localhost:3000. `fetch()` needs HTTP — opening the files with `file://`
 will not load the partials.

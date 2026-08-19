@@ -61,7 +61,8 @@
     "zod": "3.24.4"
   },
   "scripts": {
-    "start": "craco start",
+    "start": "python3 -m http.server ${PORT:-3000} --bind 0.0.0.0 --directory public",
+    "start:cra": "craco start",
     "build": "craco build",
     "test": "craco test"
   },

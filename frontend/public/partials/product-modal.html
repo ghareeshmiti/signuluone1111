@@ -3,33 +3,46 @@
     <div class="modal-content" style="border-radius: var(--sg-radius-lg);">
       <div class="modal-header border-0 pb-0">
         <div>
-          <span class="eyebrow mb-1">Signulu platform</span>
-          <h3 class="modal-title" id="productModalLabel">See Signulu in action</h3>
+          <span class="eyebrow mb-1">Our Signulu Solutions</span>
+          <h3 class="modal-title" id="productModalLabel">Which product would you like to see?</h3>
         </div>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-testid="product-modal-close"></button>
       </div>
       <div class="modal-body pt-3">
-        <p class="text-muted">A 20-minute walkthrough of sending, signing and tracking documents — mapped to your own workflow.</p>
+        <p class="text-muted">Pick a product and we will tailor the 20-minute demo to it — or open the product site directly.</p>
         <div class="row g-3">
-          <div class="col-md-6">
-            <ul class="check-list mb-0">
-              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Send your first document live</li>
-              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Templates and reusable fields</li>
-              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Multi-party approval routing</li>
-            </ul>
+          <div class="col-md-4">
+            <div class="card h-100"><div class="card-body p-4">
+              <span class="icon-badge"><i class="bi bi-vector-pen" aria-hidden="true"></i></span>
+              <h4 class="card-title h6">Signing Solutions</h4>
+              <p class="text-muted small">eSignature for contracts and approvals.</p>
+              <a class="btn btn-accent btn-sm w-100 mb-2" href="/contact.html?product=esignature#demo" data-testid="modal-demo-esignature-btn">Book demo</a>
+              <a class="btn btn-outline-primary btn-sm w-100" href="https://signulu.com/index.php/about" data-testid="modal-visit-esignature-btn">Visit site <i class="bi bi-box-arrow-up-right ext-icon" aria-hidden="true"></i></a>
+            </div></div>
           </div>
-          <div class="col-md-6">
-            <ul class="check-list mb-0">
-              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Audit trail and certificates</li>
-              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> API, webhooks and storage sync</li>
-              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Pricing for your team size</li>
-            </ul>
+          <div class="col-md-4">
+            <div class="card h-100"><div class="card-body p-4">
+              <span class="icon-badge"><i class="bi bi-folder-symlink" aria-hidden="true"></i></span>
+              <h4 class="card-title h6">Signulu DMS</h4>
+              <p class="text-muted small">Document management with AI search.</p>
+              <a class="btn btn-accent btn-sm w-100 mb-2" href="/contact.html?product=dms#demo" data-testid="modal-demo-dms-btn">Book demo</a>
+              <a class="btn btn-outline-primary btn-sm w-100" href="https://www.signuluone.com/Dms.html" data-testid="modal-visit-dms-btn">Visit site <i class="bi bi-box-arrow-up-right ext-icon" aria-hidden="true"></i></a>
+            </div></div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100"><div class="card-body p-4">
+              <span class="icon-badge"><i class="bi bi-stack" aria-hidden="true"></i></span>
+              <h4 class="card-title h6">DSC BulkSigner</h4>
+              <p class="text-muted small">Bulk signing with your DSC token.</p>
+              <a class="btn btn-accent btn-sm w-100 mb-2" href="/contact.html?product=bulksigner#demo" data-testid="modal-demo-bulksigner-btn">Book demo</a>
+              <a class="btn btn-outline-primary btn-sm w-100" href="https://bulksigner.signuluone.com/" data-testid="modal-visit-bulksigner-btn">Visit site <i class="bi bi-box-arrow-up-right ext-icon" aria-hidden="true"></i></a>
+            </div></div>
           </div>
         </div>
       </div>
       <div class="modal-footer border-0 pt-0">
-        <a class="btn btn-outline-primary" href="/products.html" data-testid="product-modal-products-btn">Explore products</a>
-        <a class="btn btn-gold" href="/contact.html#demo" data-testid="product-modal-demo-btn">Book my demo</a>
+        <a class="btn btn-outline-primary" href="/solutions.html" data-testid="product-modal-solutions-btn">Compare all solutions</a>
+        <button class="btn btn-navy" type="button" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#trialModal" data-testid="product-modal-trial-btn">Start free trial</button>
       </div>
     </div>
   </div>

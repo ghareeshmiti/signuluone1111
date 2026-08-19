@@ -1,0 +1,59 @@
+{
+  "summary": "Iteration 2 frontend regression for the SignuluOne static site. Tested all 12 pages for theme consistency (violet #5A30F1 primary, Lato, no navy/blue remnants, no Log in), the trial-modal product gate (3 redirects), pricing tabs with 3 distinct plan sets per product, /products.html -> /solutions.html stub redirect, contact page product prefill via ?product= and ?intent=trial, form validation + success alert, solutions page sections/anchors, external product links, responsive at 375/768/1440, and the mobile hamburger + modal usability. All acceptance criteria pass.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": ["/app/test_reports/iteration_2.json"],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "include.js occasionally logs a transient 'TypeError: Failed to fetch' when the browser aborts the initial partial fetch during rapid navigation. Non-blocking (cache retry on next call works) but consider swallowing/re-trying once in load() to keep the console clean.",
+    "products.html uses meta-refresh + location.replace which is fine, but adding a 301 redirect at the hosting layer would be cleaner for SEO.",
+    "Contact form is client-side only (spec says mocked). No CSRF/rate-limit concerns today, but note when a backend is added."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (skipped per request)", "frontend": "100%"},
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Static site is served by python -m http.server on port 3000 (see /app/frontend/package.json). No React/CRA, no backend. Base URL = REACT_APP_BACKEND_URL. Key data-testids verified: nav-free-trial-btn, hero-trial-btn, solutions-trial-btn, pricing-hero-trial-btn, footer-trial-link, product-modal-trial-btn, trial-product-select, trial-continue-btn, trial-error-message, nav-solutions-link, mega-*-link, pricing-tab-*, pricing-pane-*, solutions-esignature/dms/bulksigner, contact-product-select, contact-success-alert. Note urllib-based link scans hit 403 because http.server rejects the default UA; use curl or a real browser for HTTP status checks.",
+  "per_page_theme_table": {
+    "font_family_all_pages": "Lato, \"Segoe UI\", system-ui, sans-serif",
+    "h1_size_all_pages": "64px",
+    "primary_btn_bg_all_pages": "rgb(90, 48, 241)",
+    "footer_bg_all_pages": "rgb(44, 47, 54)",
+    "nav_height_all_pages": "76px",
+    "section_padding_all_pages": "80px / 80px (404.html has no .section, expected)",
+    "brand_image_all_pages": "/img/signuluone-logo.png",
+    "favicon_all_pages": "/img/signuluone-logo.png",
+    "navy_or_blue_remnants": "none detected on any of the 12 pages",
+    "login_remnants": "none (no nav-login-btn, no account/login hrefs, no Log in text)"
+  },
+  "trial_gate_verification": {
+    "empty_submit_shows_error_and_no_nav": true,
+    "esignature_redirect": "https://app.signulu.com/account/register",
+    "dms_redirect": "https://www.signuluone.com/Dms.html",
+    "bulksigner_redirect": "https://bulksigner.signuluone.com/"
+  },
+  "pricing_verification": {
+    "esignature_starter_price": "$12 / user / month",
+    "dms_essentials_price": "$15 / user / month",
+    "bulksigner_individual_price": "$19 / month",
+    "plans_differ_between_products": true,
+    "each_pane_has_3_cards": true
+  },
+  "contact_prefill_verification": {
+    "?product=dms#demo": "select value = 'dms'",
+    "?product=bulksigner#demo": "select value = 'bulksigner'",
+    "?product=dms&intent=trial": "message prefilled with 'I would like to start a free trial.'",
+    "empty_submit_blocks": true,
+    "valid_submit_shows_success_alert": true
+  },
+  "responsive_verification": {
+    "375x844": "no horizontal overflow on /index, /solutions, /pricing, /contact; hamburger opens; trial modal usable",
+    "768x1024": "no horizontal overflow on all 4 pages",
+    "1440x900": "no horizontal overflow on all 4 pages"
+  }
+}
