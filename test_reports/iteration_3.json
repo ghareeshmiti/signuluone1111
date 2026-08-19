@@ -1,0 +1,48 @@
+{
+  "summary": "Iteration 3 frontend regression of SignuluOne static site focused on the 4 new industry pages (manufacturing, healthcare, legal-services, information-technology) plus the 3 existing (banking-and-financial-services, real-estate, professional-services). Verified section testids, trial/demo buttons and their hrefs, theme tokens (nav 76px, Lato, section 80/80, footer bg rgb(44,47,54), .btn-accent bg rgb(90,48,241)), industries mega-menu, home industry tiles, /industries.html grid, footer industries column, responsive at 375/768/1440, and regressions on pricing (tabs + Monthly/Yearly toggle $9.99<->$59.88 + BulkSigner licence estimator). All acceptance criteria pass; no bugs found.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {"ui_bugs": [], "integration_issues": [], "design_issues": []},
+  "test_report_links": ["/app/test_reports/iteration_3.json"],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Every industry page duplicates ~200 lines of near-identical scaffolding. Consider extracting the hero/intro/benefits/usecases/summary/cta into a partial + JSON data file to keep the seven pages truly identical structurally and reduce maintenance cost.",
+    "pricing.html billing toggle target is the inner checkbox #billingToggle; the data-testid 'esign-billing-toggle' is on a wrapper div, so automated tests that click the wrapper won't fire the change event. Consider moving data-testid onto the <input> or adding a redundant one for clarity.",
+    "Trial/demo buttons on industry pages hard-code product=esignature. If a page ever needs to funnel to DMS or BulkSigner, that will require per-page overrides."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (skipped per request)", "frontend": "100%"},
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "All 7 industry pages share the same structural testids: <slug>-hero,-intro,-benefits,-usecases,-summary,-cta,-trial-btn,-demo-btn,-cta-trial-btn,-cta-demo-btn,-breadcrumb-link. Mega-menu, home tiles, footer, /industries.html all cross-linked correctly. Pricing tests: use '#billingToggle' (checkbox) not the wrapper div; estimator input is [data-testid=bulk-licence-input], results at [data-testid=bulk-estimate-plan/total/rate]. Base URL from REACT_APP_BACKEND_URL.",
+  "per_page_theme_table": {
+    "columns": ["nav_h", "body_font", "h1_font", "h1_size", "footer_bg", "section_padding", "trial_href", "demo_href", "missing_sections", "overflow_375", "overflow_768", "overflow_1440"],
+    "banking-and-financial-services": [76, "Lato", "Lato", "64px", "rgb(44,47,54)", "80/80", "https://app.signulu.com/account/register", "/contact.html?product=esignature#demo", [], false, false, false],
+    "real-estate":                    [76, "Lato", "Lato", "64px", "rgb(44,47,54)", "80/80", "https://app.signulu.com/account/register", "/contact.html?product=esignature#demo", [], false, false, false],
+    "professional-services":          [76, "Lato", "Lato", "64px", "rgb(44,47,54)", "80/80", "https://app.signulu.com/account/register", "/contact.html?product=esignature#demo", [], false, false, false],
+    "manufacturing":                  [76, "Lato", "Lato", "64px", "rgb(44,47,54)", "80/80", "https://app.signulu.com/account/register", "/contact.html?product=esignature#demo", [], false, false, false],
+    "healthcare":                     [76, "Lato", "Lato", "64px", "rgb(44,47,54)", "80/80", "https://app.signulu.com/account/register", "/contact.html?product=esignature#demo", [], false, false, false],
+    "legal-services":                 [76, "Lato", "Lato", "64px", "rgb(44,47,54)", "80/80", "https://app.signulu.com/account/register", "/contact.html?product=esignature#demo", [], false, false, false],
+    "information-technology":         [76, "Lato", "Lato", "64px", "rgb(44,47,54)", "80/80", "https://app.signulu.com/account/register", "/contact.html?product=esignature#demo", [], false, false, false],
+    "btn_accent_bg_all_industry_pages": "rgb(90, 48, 241)"
+  },
+  "navigation_verification": {
+    "mega_menu_links": "All 8 testids present with correct hrefs (mega-banking-and-financial-services-link, mega-real-estate-link, mega-professional-services-link, mega-manufacturing-link, mega-healthcare-link, mega-legal-services-link, mega-information-technology-link, mega-all-industries-link)",
+    "home_industry_tiles": "All 8 testids present with correct hrefs (home-industry-<slug>-link x7 + home-all-industries-link)",
+    "footer_industries_column": "All 8 testids present with correct hrefs (footer-banking-link, footer-real-estate-link, footer-professional-link, footer-manufacturing-link, footer-healthcare-link, footer-legal-link, footer-it-link, footer-industries-link)",
+    "industries_grid": "All 7 industries-<slug>-link testids present and route to matching page"
+  },
+  "pricing_regression": {
+    "tabs_present": ["esignature", "dms", "bulksigner"],
+    "esign_toggle_default": "$59.88 per user per annum (Yearly checked by default)",
+    "esign_toggle_monthly": "$9.99 per user per month",
+    "esign_toggle_yearly": "$59.88 per user per annum",
+    "estimator_mapping": {
+      "3": "Basic - Total ₹6,600 @ ₹2,200",
+      "7": "Pro - Total ₹12,600 @ ₹1,800",
+      "25": "Business - Total ₹37,500 @ ₹1,500",
+      "120": "Enterprise - Total ₹1,20,000 @ ₹1,000"
+    }
+  },
+  "broken_link_scan": "Collected internal links from /index, /industries, /manufacturing, /pricing, /contact -> 15 unique internal targets, all corresponding files exist under /app/frontend/public and return HTTP 200 (verified via curl -I on all 7 industry pages + /industries.html)."
+}

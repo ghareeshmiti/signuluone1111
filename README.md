@@ -13,6 +13,10 @@ frontend/public/
 ├── banking-and-financial-services.html
 ├── real-estate.html
 ├── professional-services.html
+├── manufacturing.html
+├── healthcare.html
+├── legal-services.html
+├── information-technology.html
 ├── pricing.html                            # tabbed pricing per product
 ├── blog.html
 ├── contact.html                            # book a demo, with product selection
