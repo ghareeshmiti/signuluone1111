@@ -90,7 +90,7 @@ a { text-decoration: none; transition: color var(--sg-t-fast) var(--sg-ease); }
 }
 .navbar-signulu .nav-link:hover { color: var(--sg-secondary); }
 .navbar-signulu .nav-link.active { color: var(--sg-accent); }
-.navbar-signulu .nav-link.active::after {
+.navbar-signulu .nav-link.active::before {
   content: ""; position: absolute; left: .9rem; right: .9rem; bottom: -.15rem;
   height: 3px; border-radius: 2px; background: var(--sg-accent);
 }
@@ -248,9 +248,9 @@ a { text-decoration: none; transition: color var(--sg-t-fast) var(--sg-ease); }
 .form-switch .form-check-input { width: 2.6rem; height: 1.35rem; cursor: pointer; }
 .form-switch .form-check-input:checked { background-color: var(--sg-accent); border-color: var(--sg-accent); }
 
-.usecase-grid { columns: 2; column-gap: 2.5rem; }
-@media (min-width: 992px) { .usecase-grid { columns: 3; } }
-.usecase-grid li { break-inside: avoid; }
+.usecase-grid { display: grid; grid-template-columns: 1fr; gap: 0 2.5rem; }
+@media (min-width: 576px) { .usecase-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 992px) { .usecase-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 
 /* ---------- Legal prose ---------- */
 .legal-prose { max-width: var(--sg-prose); margin: 0 auto; }
