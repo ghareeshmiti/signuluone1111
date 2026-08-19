@@ -1,0 +1,1312 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CGHL3V39G4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+
+  gtag("config", "G-CGHL3V39G4", {
+    linker: {
+      domains: ["signulu.com", "app.signulu.com", "bulksigner.signuluone.com"]
+    }
+  });
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Connect with our sales team to learn more about our plans, pricing, and solutions. We'll respond within one business day.">
+    <meta name="keywords" content="contact sales, enterprise solutions, product inquiry, sales form, DocuSign, pricing">
+    <meta name="author" content="Your Company Name">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Connect with Our Sales Team">
+    <meta property="og:description"
+        content="Complete the form and our sales team will reach out within one business day.">
+    <meta property="og:image" content="https://yourdomain.com/assets/preview-image.jpg">
+    <meta property="og:url" content="https://yourdomain.com/contact-sales">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Connect with Our Sales Team">
+    <meta name="twitter:description" content="Fill out the sales form to get in touch.">
+    <meta name="twitter:image" content="https://yourdomain.com/assets/preview-image.jpg">
+
+    <title>Signulu Products</title>
+    <!-- Google Fonts: Lato -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        /* droupdownmenu css*/
+        .dropdown-mega {
+            position: static !important;
+        }
+
+        /* Smooth transition for hover */
+        .dropdown-mega-menu .list-unstyled li {
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+        }
+
+        /* Hover effect */
+        .dropdown-mega-menu .list-unstyled li:hover strong {
+            color: #5A30F1;
+        }
+
+        .dropdown-mega-menu .list-unstyled li:hover {
+            padding-left: 5px;
+        }
+
+
+        .dropdown-mega-menu {
+            width: 100%;
+            padding: 20px;
+            left: 0 !important;
+            right: 0 !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .mega-menu-section {
+            padding: 15px;
+        }
+
+        .mega-menu-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #5A30F1;
+        }
+
+        .mega-menu-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mega-menu-list li {
+            margin-bottom: 8px;
+        }
+
+        .mega-menu-list a {
+            color: #555;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .mega-menu-list a:hover {
+            color: #5A30F1;
+            padding-left: 5px;
+        }
+
+        .nav-link {
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background-color: #5A30F1;
+            border-color: #5A30F1;
+        }
+
+        /* droupdownmenu css end */
+
+        /* common css for old page  */
+        
+        /* Light blue background */
+        .bg-light-blue {
+            background: linear-gradient(to right, #f7faff, #f0f4ff);
+        }
+
+        /* Card */
+        .verification-card {
+            background-color: #ffffff;
+            width: 320px;
+            border-radius: 1rem;
+        }
+
+        /* Icon Circle */
+        .icon-circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Floating Check Icon */
+        .check-icon {
+            top: -10px;
+            right: -10px;
+        }
+
+        /* Buttons */
+        .btn-outline-primary {
+            border: 2px solid #0d6efd;
+        }
+
+        /* Icon Box Styling */
+        .icon-box {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background-color: #f5f6ff;
+        }
+
+        /* Custom Color Utilities */
+        .bg-blue {
+            background-color: #e8edff;
+        }
+
+        .bg-green {
+            background-color: #e8f9f1;
+        }
+
+        .bg-purple {
+            background-color: #f3ebff;
+        }
+
+        .text-purple {
+            color: #9747ff;
+        }
+
+        /* Card hover (optional) */
+        .feature-card:hover {
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            transition: box-shadow 0.3s ease;
+        }
+
+        /* Circle icons */
+        .step-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+        }
+
+        /* Custom background colors */
+        .bg-blue {
+            background-color: #2f80ed;
+        }
+
+        .bg-purple {
+            background-color: #a259ff;
+        }
+
+        .bg-indigo {
+            background-color: #6c63ff;
+        }
+
+        /* Optional: Padding and layout for card */
+        .step-card {
+            padding: 10px;
+        }
+
+        /* Icon Box */
+        .icon-wrapper {
+            background-color: #f0f4ff;
+            border-radius: 12px;
+            padding: 12px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Card Styling */
+        .feature-hover-card {
+            border: 1px solid #e6ecff;
+            transition: all 0.3s ease;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        /* Hover Effects */
+        .feature-hover-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+            background-color: #f9fbff;
+            border-color: #dbe4ff;
+        }
+
+        /* Optional Icon Hover Color */
+        .feature-hover-card:hover .icon-wrapper {
+            background-color: #e0eaff;
+        }
+
+        .api-section {
+            background: #f9fbff;
+            padding: 4rem 1.5rem;
+        }
+
+        .api-container {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+
+        @media (min-width: 768px) {
+            .api-container {
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+            }
+        }
+
+        .api-code {
+            background-color: #0f172a;
+            color: #a0aec0;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            font-family: monospace;
+            font-size: 0.85rem;
+            overflow-x: auto;
+        }
+
+        .code-label {
+            color: #94a3b8;
+            font-size: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .api-content h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #1e293b;
+        }
+
+        .api-content p {
+            color: #475569;
+            margin-bottom: 1.5rem;
+            max-width: 500px;
+        }
+
+        .api-badges {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.75rem;
+            padding: 0.5rem 0.75rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+        }
+
+        .status {
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.2rem 0.5rem;
+            border-radius: 9999px;
+        }
+
+        .status.active {
+            background-color: #d1fae5;
+            color: #059669;
+        }
+
+        .status.beta {
+            background-color: #fef9c3;
+            color: #ca8a04;
+        }
+
+        .api-features {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0 2rem;
+            color: #334155;
+            font-size: 0.9rem;
+        }
+
+        .api-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .dot {
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 9999px;
+            display: inline-block;
+        }
+
+        .green {
+            background-color: #22c55e;
+        }
+
+        .blue {
+            background-color: #3b82f6;
+        }
+
+        .purple {
+            background-color: #8b5cf6;
+        }
+
+        .api-button {
+            background-color: #2563eb;
+            color: white;
+            padding: 0.6rem 1.25rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .api-button:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* Simple Pay-as-You-Go Pricing */
+        section {
+            padding: 0px 0px -2px;
+            text-align: center;
+        }
+
+        /* Header Section */
+        .header-section h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .header-section h1 span {
+            color: #2563eb;
+        }
+
+        .header-section p {
+            color: #6b7280;
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+
+        /* Subheading Section */
+        .subheading-section h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        /* Pricing Section */
+        .pricing-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            width: 250px;
+            padding: 24px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .price {
+            color: #2563eb;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .description {
+            font-size: 14px;
+            color: #6b7280;
+        }
+
+        /* Volume Plans */
+
+        .pricing-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .pricing-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .plans {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .plan-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            position: relative;
+            text-align: left;
+        }
+
+        .plan-card h3 {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: #6b7280;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .price span {
+            font-size: 16px;
+            color: #6b7280;
+        }
+
+        .price.custom {
+            font-size: 30px;
+        }
+
+        .features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        .features li {
+            margin: 10px 0;
+            color: #10b981;
+            font-weight: 500;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #111827;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn.primary {
+            background-color: #2563eb;
+        }
+
+        .popular {
+            border: 2px solid #2563eb;
+            box-shadow: 0 6px 16px rgba(37, 99, 235, 0.2);
+        }
+
+        .badge {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2563eb;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* Enterprise Discount */
+        .discount-banner {
+            display: flex;
+            justify-content: center;
+            padding: 0px 20px;
+            background-color: #f9fafb;
+        }
+
+        .discount-content {
+            background-color: #e7efff;
+            padding: 30px 40px;
+            border-radius: 16px;
+            text-align: center;
+            max-width: 600px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .discount-content h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .discount-content p {
+            font-size: 16px;
+            color: #374151;
+            margin-bottom: 20px;
+        }
+
+        .btn-outline {
+            padding: 10px 20px;
+            font-weight: 600;
+            color: #2563eb;
+            background-color: transparent;
+            border: 1.5px solid #2563eb;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline:hover {
+            background-color: #2563eb;
+            color: white;
+        }
+
+        /* api section  */
+        .api-section {
+            padding: 60px 20px;
+            background: #f9fafb;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .api-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .api-request {
+            background: #0f172a;
+            color: #a7f3d0;
+            border-radius: 20px;
+            padding: 30px;
+            width: 500px;
+            position: relative;
+            height: 427px;
+        }
+
+        .api-header {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        .code-block {
+            white-space: pre-wrap;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            color: #a7f3d0;
+        }
+
+        .api-info {
+            max-width: 500px;
+        }
+
+        .api-info h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .api-tags {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .tag {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            border-radius: 10px;
+            padding: 12px 16px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+            font-weight: 500;
+        }
+
+        .status {
+            padding: 2px 8px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .status.active {
+            background-color: #dcfce7;
+            color: #22c55e;
+        }
+
+        .status.beta {
+            background-color: #fef3c7;
+            color: #d97706;
+        }
+
+        .features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+
+        .features li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .dot.green {
+            background: #22c55e;
+        }
+
+        .dot.blue {
+            background: #3b82f6;
+        }
+
+        .dot.purple {
+            background: #a855f7;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: white;
+            padding: 12px 24px;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: #1e40af;
+        }
+
+        /* Used by Every Industry, Built for Scale */
+        .border:hover {
+            box-shadow: 0 0 0 0.1rem rgba(13, 110, 253, 0.25);
+            transition: box-shadow 0.3s ease;
+        }
+
+    </style>
+    <style>
+      /* SignuluOne standard navbar overrides */
+      .sg-topnav { background: #fff !important; box-shadow: 0 2px 12px rgba(0,0,0,.08); font-family: 'Lato', sans-serif !important; }
+      .sg-topnav .navbar-brand img { height: 40px; }
+      .sg-topnav .nav-link { font-weight: 700 !important; color: #333 !important; padding: 8px 14px !important; font-family: 'Lato', sans-serif !important; font-size: 15px !important; }
+      .sg-topnav .nav-link:hover { color: #5A30F1 !important; }
+      .sg-topnav .dropdown-mega { position: static !important; }
+      .sg-topnav .dropdown-mega-menu { width: 100% !important; left: 0 !important; right: 0 !important; padding: 24px !important; border: none !important; box-shadow: 0 8px 32px rgba(0,0,0,0.12) !important; border-top: 3px solid #5A30F1 !important; font-family: 'Lato', sans-serif !important; }
+      .sg-topnav .sg-mm-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #5A30F1; border-bottom: 2px solid #5A30F1; padding-bottom: 8px; margin-bottom: 12px; font-family: 'Lato', sans-serif; }
+      .sg-topnav .sg-mm-item { display: flex !important; align-items: flex-start; padding: 8px 10px; border-radius: 8px; text-decoration: none !important; color: #333 !important; transition: background 0.2s; font-family: 'Lato', sans-serif; }
+      .sg-topnav .sg-mm-item:hover { background: #f0ebff; color: #5A30F1 !important; }
+      .sg-topnav .sg-mm-icon { width: 36px; height: 36px; border-radius: 8px; background: #f0ebff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-right: 10px; }
+      .sg-topnav .sg-mm-icon i { color: #5A30F1; font-size: 16px; }
+      .sg-topnav .sg-mm-item-title { font-weight: 700; font-size: 13px; margin-bottom: 2px; }
+      .sg-topnav .sg-mm-item-desc { font-size: 11px; color: #777; }
+      .sg-prod-card { border: 2px solid #e9ecef; border-radius: 12px; padding: 20px; text-align: center; text-decoration: none; color: #333; transition: border-color 0.2s, transform 0.2s; display: block; }
+      .sg-prod-card:hover { border-color: #5A30F1; transform: translateY(-2px); color: #333; }
+      .sg-prod-icon { width: 56px; height: 56px; border-radius: 50%; background: #f0ebff; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; }
+      .sg-prod-icon i { font-size: 24px; color: #5A30F1; }
+    </style>
+</head>
+
+<body>
+    
+<!-- SignuluOne Standard Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top sg-topnav" style="padding:12px 0;">
+  <div class="container">
+    <a class="navbar-brand" href="./index.html"><img src="./img/new-signulu-logo.png" alt="SignuluOne" style="height:40px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sgMainNav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="sgMainNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item dropdown dropdown-mega">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+          <div class="dropdown-menu dropdown-mega-menu">
+            <div class="row">
+              <div class="col-md-4"><div class="sg-mm-title">E-Signature</div><a class="sg-mm-item" href="https://signulu.com/index.php/about" target="_blank"><div class="sg-mm-icon"><i class="bi bi-pen"></i></div><div><div class="sg-mm-item-title">Signulu e-Sign</div><div class="sg-mm-item-desc">Sign contracts digitally</div></div></a></div>
+              <div class="col-md-4"><div class="sg-mm-title">Document Management</div><a class="sg-mm-item" href="./Dms.html"><div class="sg-mm-icon"><i class="bi bi-folder2-open"></i></div><div><div class="sg-mm-item-title">DMS</div><div class="sg-mm-item-desc">Centralized document storage</div></div></a></div>
+              <div class="col-md-4"><div class="sg-mm-title">Bulk Signing</div><a class="sg-mm-item" href="https://bulksigner.signuluone.com" target="_blank"><div class="sg-mm-icon"><i class="bi bi-file-earmark-check"></i></div><div><div class="sg-mm-item-title">BulkSigner</div><div class="sg-mm-item-desc">DSC-based bulk signing</div></div></a></div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown dropdown-mega">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Why Signulu</a>
+          <div class="dropdown-menu dropdown-mega-menu">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="sg-mm-title">Security</div>
+                <a class="sg-mm-item" href="./why-signulu.html#esignatures"><div class="sg-mm-icon"><i class="bi bi-shield-lock"></i></div><div><div class="sg-mm-item-title">Secure e-Signatures</div><div class="sg-mm-item-desc">AES-256 encryption &amp; TLS 1.3</div></div></a>
+                <a class="sg-mm-item" href="./why-signulu.html#audit"><div class="sg-mm-icon"><i class="bi bi-journal-check"></i></div><div><div class="sg-mm-item-title">Audit Trail</div><div class="sg-mm-item-desc">Full tamper-proof activity log</div></div></a>
+              </div>
+              <div class="col-md-3">
+                <div class="sg-mm-title">Automation</div>
+                <a class="sg-mm-item" href="./why-signulu.html#workflows"><div class="sg-mm-icon"><i class="bi bi-diagram-3"></i></div><div><div class="sg-mm-item-title">Workflow Automation</div><div class="sg-mm-item-desc">Multi-level approval sequences</div></div></a>
+                <a class="sg-mm-item" href="./why-signulu.html#templates"><div class="sg-mm-icon"><i class="bi bi-file-earmark-text"></i></div><div><div class="sg-mm-item-title">Templates</div><div class="sg-mm-item-desc">Reusable document templates</div></div></a>
+              </div>
+              <div class="col-md-3">
+                <div class="sg-mm-title">Access &amp; Storage</div>
+                <a class="sg-mm-item" href="./why-signulu.html#multidevice"><div class="sg-mm-icon"><i class="bi bi-devices"></i></div><div><div class="sg-mm-item-title">Multi-Device Access</div><div class="sg-mm-item-desc">Web, iOS &amp; Android</div></div></a>
+                <a class="sg-mm-item" href="./why-signulu.html#cloud"><div class="sg-mm-icon"><i class="bi bi-cloud"></i></div><div><div class="sg-mm-item-title">Cloud Storage</div><div class="sg-mm-item-desc">Integrated with major cloud providers</div></div></a>
+              </div>
+              <div class="col-md-3">
+                <div class="sg-mm-title">Compliance</div>
+                <a class="sg-mm-item" href="./why-signulu.html#rbac"><div class="sg-mm-icon"><i class="bi bi-person-lock"></i></div><div><div class="sg-mm-item-title">RBAC</div><div class="sg-mm-item-desc">Role-based access control</div></div></a>
+                <a class="sg-mm-item" href="./why-signulu.html#otp"><div class="sg-mm-icon"><i class="bi bi-phone"></i></div><div><div class="sg-mm-item-title">OTP Verification</div><div class="sg-mm-item-desc">SMS/Email signer authentication</div></div></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="./Blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+      </ul>
+      <div class="d-flex gap-2">
+        <a href="./contact.html" class="btn btn-outline-secondary" style="font-size:14px;">Contact Sales</a>
+        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productSelectModal" style="background:#5A30F1;border-color:#5A30F1;font-size:14px;">Try for Free</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <nav class="navbar navbar-expand-lg bg-white ">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="./img/bgv logo.png" alt="Logo" style="width: 114px;">
+            </a>
+
+            <!-- Toggler Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center text-center text-lg-start">
+                    <!-- <li class="nav-item">
+          <a class="nav-link" href="#About">Home</a>
+        </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#How-It-Works">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#APIs">APIs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Pricing">Pricing</a>
+                    </li>
+                    <!-- <li class="nav-item">
+          <a class="nav-link" href="#Resources">Resources</a>
+        </li> -->
+                    <!-- Buttons -->
+                    <li class="nav-item d-flex gap-2 mt-3 mt-lg-0 ms-lg-3">
+                        <a href="https://bgv.signulu.com" class="btn btn-primary">Login</a>
+                        <a href="https://app.signulu.com/account/register" class="btn btn-outline-primary px-4">Start
+                            Trial</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Background Verification Hero Section -->
+    <section class="bg-light-blue py-1">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Right Card Section -->
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div class="verification-card rounded-4 ">
+                        <a href=""> <img src="./img/BG Check generat.png" alt="no image" style="width: 378px;"></a>
+                    </div>
+                </div>
+                <!-- Left Text Section -->
+                <div class="col-md-6 mb-5 mb-md-0">
+                    <h1 class="display-5 fw-bold">
+                        Smart, Secure, and <br>
+                        <span class="text-primary">Scalable Background Verification</span><br>
+                        for <span class="text-dark">Modern Workplaces</span>
+                    </h1>
+                    <p class="text-muted mt-3">
+                        Verify employees, partners, and vendors seamlessly with automated KYC, criminal checks,
+                        employment history,
+                        and more.
+                    </p>
+                    <div class="mt-4 d-flex gap-3">
+                        <!-- <a href="#" class="btn btn-primary px-4">Start Verifying Now</a> -->
+                        <a href="https://calendly.com/signup-xtod/signulu-demo-1?month=2025-07"
+                            class="btn btn-outline-primary px-4" style="margin-left: 192px;">Book a Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-2">Why Choose Our BGV Platform?</h2>
+            <p class="text-muted mb-5">
+                Built for enterprise needs with cutting-edge technology and uncompromising security
+            </p>
+
+            <div class="row justify-content-center g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="feature-card p-4 rounded-4 shadow-sm h-100">
+                        <div class="icon-box mb-3 text-primary">
+                            <i class="bi bi-search fs-4"></i>
+                        </div>
+                        <h5 class="fw-bold">Accurate</h5>
+                        <p class="text-muted mb-0">Real-time access to verified government databases</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="feature-card p-4 rounded-4 shadow-sm h-100">
+                        <div class="icon-box mb-3 bg-green text-success">
+                            <i class="bi bi-gear-wide-connected fs-4"></i>
+                        </div>
+                        <h5 class="fw-bold">Automated</h5>
+                        <p class="text-muted mb-0">End-to-end onboarding via smart workflows</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="feature-card p-4 rounded-4 shadow-sm h-100">
+                        <div class="icon-box mb-3 text-purple">
+                            <i class="bi bi-lock-fill fs-4"></i>
+                        </div>
+                        <h5 class="fw-bold">Secure</h5>
+                        <p class="text-muted mb-0">DPDP & GDPR compliant infrastructure</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 " style="background-color: #8fabdd3d;" id="How-It-Works">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-2">How Background Verification Works</h2>
+            <p class="text-muted mb-5">Simple 4-step process that delivers results in minutes, not days</p>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Step 1 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="step-card">
+                        <div class="step-icon bg-blue text-white mb-3">
+                            <i class="bi bi-upload fs-4"></i>
+                        </div>
+                        <h6 class="fw-bold">Upload Applicant Details</h6>
+                        <p class="text-muted small">Submit candidate information and required documents</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="step-card">
+                        <div class="step-icon bg-success text-white mb-3">
+                            <i class="bi bi-check-circle fs-4"></i>
+                        </div>
+                        <h6 class="fw-bold">Choose Verification Checks</h6>
+                        <p class="text-muted small">Select from comprehensive verification options</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="step-card">
+                        <div class="step-icon bg-purple text-white mb-3">
+                            <i class="bi bi-cpu fs-4"></i>
+                        </div>
+                        <h6 class="fw-bold">Real-Time API Processing</h6>
+                        <p class="text-muted small">Our AI processes data through secure government APIs</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="step-card">
+                        <div class="step-icon bg-indigo text-white mb-3">
+                            <i class="bi bi-download fs-4"></i>
+                        </div>
+                        <h6 class="fw-bold">Download Verified Report</h6>
+                        <p class="text-muted small">Receive comprehensive reports with trust scores</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-white" id="Features">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-2">Features that Power Trust</h2>
+            <p class="text-muted mb-5">
+                Comprehensive verification tools designed for modern businesses
+            </p>
+
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="feature-hover-card p-4 rounded-4 shadow-sm h-100">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-credit-card-2-front-fill fs-4 text-primary"></i>
+                        </div>
+                        <h6 class="fw-bold">Aadhaar & PAN eKYC</h6>
+                        <p class="text-muted mb-0">Instant government database verification for identity confirmation
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="feature-hover-card p-4 rounded-4 shadow-sm h-100">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-file-earmark-text fs-4 text-primary"></i>
+                        </div>
+                        <h6 class="fw-bold">Employment & Education Check</h6>
+                        <p class="text-muted mb-0">Verify previous employment history and educational credentials</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="feature-hover-card p-4 rounded-4 shadow-sm h-100">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-shield-lock fs-4 text-primary"></i>
+                        </div>
+                        <h6 class="fw-bold">Criminal & Court Records</h6>
+                        <p class="text-muted mb-0">Comprehensive background screening across multiple databases</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-4">
+                    <div class="feature-hover-card p-4 rounded-4 shadow-sm h-100">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-upload fs-4 text-primary"></i>
+                        </div>
+                        <h6 class="fw-bold">ID Verification</h6>
+                        <p class="text-muted mb-0">Validate the person who they claim to be, using official documents
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-4">
+                    <div class="feature-hover-card p-4 rounded-4 shadow-sm h-100">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-bell fs-4 text-primary"></i>
+                        </div>
+                        <h6 class="fw-bold">Passport Verification</h6>
+                        <p class="text-muted mb-0">Validate the identity details of an individual's passport to ensure
+                            it is genuine, unaltered, and belongs to the person presenting it.</p>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-md-4">
+                    <div class="feature-hover-card p-4 rounded-4 shadow-sm h-100">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-bar-chart-line fs-4 text-primary"></i>
+                        </div>
+                        <h6 class="fw-bold">DIN Verification</h6>
+                        <p class="text-muted mb-0">Validate the 8-digit number assigned to individuals who are appointed
+                            as directors of companies.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <!-- api section  -->
+        <section class="api-section" style="background-color: #8fabdd3d;" id="APIs">
+            <section class="bg-gray-50 py-16 px-4 md:px-8">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 fw-bold">
+                        Powerful API-First Architecture
+                    </h2>
+                    <p class="text-gray-600 text-lg md:text-xl">
+                        Integrate BGV directly into your hiring, onboarding, or vendor management workflows<br />
+                        with our comprehensive REST APIs.
+                    </p>
+                </div>
+            </section>
+            <div class="api-container">
+                <div class="api-request">
+                    <div class="api-header">API Request</div>
+                    <pre class="code-block">
+{
+  "service": "aadhaar_verification",
+  "aadhaar_number": "****-****-1234",
+  "consent": true,
+  "callback_url": "https://yourapi.com/webhook"
+}
+
+// Response
+{
+  "verification_id": "BGV_12345",
+  "status": "verified",
+  "trust_score": 98,
+  "details": {
+    "name_match": true,
+    "address_verified": true,
+    "photo_verified": true
+  }
+}
+      </pre>
+                </div>
+
+                <div class="api-info">
+                    <h2>Available Verification APIs</h2>
+                    <div class="api-tags">
+                        <div class="tag">Aadhaar <span class="status active">active</span></div>
+                        <div class="tag">PAN <span class="status active">active</span></div>
+                        <div class="tag">UAN <span class="status active">active</span></div>
+                        <div class="tag">EPFO <span class="status active">active</span></div>
+                        <div class="tag">Passport <span class="status active">active</span></div>
+                        <div class="tag">GST <span class="status active">active</span></div>
+                        <div class="tag">Education <span class="status beta">beta</span></div>
+                        <div class="tag">Criminal DB <span class="status active">active</span></div>
+                    </div>
+
+                    <ul class="features">
+                        <li><span class="dot green"></span> 99.9% API uptime guarantee</li>
+                        <li><span class="dot blue"></span> Sub-second response times</li>
+                        <li><span class="dot purple"></span> Comprehensive webhook support</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Used by Every Industry, Built for Scale -->
+        <section class="py-5 bg-white">
+            <div class="container text-center">
+                <h2 class="fw-bold mb-3">Used by Every Industry, Built for Scale</h2>
+                <p class="text-secondary mb-5">
+                    From startups to Fortune 500 companies, our BGV platform adapts to your industry needs
+                </p>
+                <div class="row g-4">
+                    <!-- IT/ITES -->
+                    <div class="col-md-4">
+                        <div class="p-4 border rounded-4 h-100">
+                            <div class="mb-3">
+                                <div class="bg-light rounded-3 d-inline-block p-2">
+                                    <i class="bi bi-building fs-4 text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="fw-bold">IT/ITES</h5>
+                            <p class="text-secondary mb-0">TechCorp reduced onboarding time by 48%</p>
+                        </div>
+                    </div>
+
+                    <!-- BFSI -->
+                    <div class="col-md-4">
+                        <div class="p-4 border rounded-4 h-100">
+                            <div class="mb-3">
+                                <div class="bg-light rounded-3 d-inline-block p-2">
+                                    <i class="bi bi-cash-stack fs-4 text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="fw-bold">BFSI</h5>
+                            <p class="text-secondary mb-0">Enhanced compliance for financial institutions</p>
+                        </div>
+                    </div>
+
+                    <!-- Logistics -->
+                    <div class="col-md-4">
+                        <div class="p-4 border rounded-4 h-100">
+                            <div class="mb-3">
+                                <div class="bg-light rounded-3 d-inline-block p-2">
+                                    <i class="bi bi-truck fs-4 text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="fw-bold">Logistics & Delivery</h5>
+                            <p class="text-secondary mb-0">Driver verification in under 5 minutes</p>
+                        </div>
+                    </div>
+
+                    <!-- Healthcare -->
+                    <div class="col-md-4">
+                        <div class="p-4 border rounded-4 h-100">
+                            <div class="mb-3">
+                                <div class="bg-light rounded-3 d-inline-block p-2">
+                                    <i class="bi bi-heart fs-4 text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="fw-bold">Healthcare</h5>
+                            <p class="text-secondary mb-0">Medical license verification automation</p>
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="col-md-4">
+                        <div class="p-4 border rounded-4 h-100">
+                            <div class="mb-3">
+                                <div class="bg-light rounded-3 d-inline-block p-2">
+                                    <i class="bi bi-mortarboard fs-4 text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="fw-bold">Education</h5>
+                            <p class="text-secondary mb-0">Faculty background checks streamlined</p>
+                        </div>
+                    </div>
+
+                    <!-- Government -->
+                    <div class="col-md-4">
+                        <div class="p-4 border rounded-4 h-100">
+                            <div class="mb-3">
+                                <div class="bg-light rounded-3 d-inline-block p-2">
+                                    <i class="bi bi-shield-check fs-4 text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="fw-bold">Government</h5>
+                            <p class="text-secondary mb-0">Contractor verification for security clearance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+    <section class="pricing-section" id="Pricing">
+        <h2 class="pricing-title fw-bold">Volume Plans</h2>
+        <div class="plans">
+
+            <div class="plan-card">
+                <h3>Starter</h3>
+                <p class="subtitle">Perfect for small teams</p>
+                <p class="price">₹1,500<span>/month</span></p>
+                <ul class="features">
+                    <li>✓ Up to 100 verifications/month</li>
+                    <li>✓ Basic API access</li>
+                    <li>✓ Email support</li>
+                    <li>✓ Standard reporting</li>
+                </ul>
+                <ul></ul>
+                <ul></ul>
+                <a href="https://signulu.com/index.php/contact" class="btn btn-black" style="margin-top: 58px;">Talk to Sales</a>
+            </div>
+
+            <div class="plan-card popular">
+                <div class="badge">Most Popular</div>
+                <h3>Growth</h3>
+                <p class="subtitle">Ideal for growing businesses</p>
+                <p class="price">₹5,000<span>/month</span></p>
+                <ul class="features">
+                    <li>✓ Up to 500 verifications/month</li>
+                    <li>✓ Full API suite</li>
+                    <li>✓ Priority support</li>
+                    <!-- <li>✓ Advanced analytics</li>
+                    <li>✓ Custom webhooks</li> -->
+                </ul>
+                <a href="https://app.signulu.com/account/register" class="btn primary"  style="margin-top: 64px;">Get started</a>
+            </div>
+
+            <div class="plan-card">
+                <h3>Enterprise</h3>
+                <p class="subtitle">For large organizations</p>
+                <p class="price custom">Custom</p>
+                <ul class="features">
+                    <li>✓ Unlimited verifications</li>
+                    <li>✓ Dedicated API endpoints</li>
+                    <li>✓ 24/7 phone support</li>
+                    <li>✓ Custom integrations</li>
+                    <li>✓ SLA guarantees</li>
+                </ul>
+                <a href="https://signulu.com/index.php/contact" class="btn btn-black" style="margin-top: 13px;">Talk to Sales</a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container container-lg container-xl container-xxl">
+
+            <!-- <p class="text-center pt-5 copyrt">Copyright 2020 Signulu. All Rights Reserved</p> -->
+            <p class="text-center pt-5 copyrt">Copyright &copy;
+                <script>document.write(new Date().getFullYear())</script> Signulu. All Rights Reserved
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+<!-- SignuluOne Product Modal -->
+<div class="modal fade" id="productSelectModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold">Which product would you like to try?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body pt-3 pb-4">
+        <div class="row g-3">
+          <div class="col-md-4"><a href="https://app.signulu.com/account/register" class="sg-prod-card"><div class="sg-prod-icon"><i class="bi bi-pen"></i></div><div class="fw-bold mb-1">Signulu e-Sign</div><div style="font-size:12px;color:#888;">Sign contracts digitally. Legally binding &amp; secure.</div></a></div>
+          <div class="col-md-4"><a href="https://dms.signulu.com/auth" class="sg-prod-card"><div class="sg-prod-icon"><i class="bi bi-folder2-open"></i></div><div class="fw-bold mb-1">DMS</div><div style="font-size:12px;color:#888;">Document Management System. Digitize &amp; organize.</div></a></div>
+          <div class="col-md-4"><a href="https://bulksigner.signuluone.com" target="_blank" class="sg-prod-card"><div class="sg-prod-icon"><i class="bi bi-file-earmark-check"></i></div><div class="fw-bold mb-1">BulkSigner</div><div style="font-size:12px;color:#888;">DSC Bulk Signing Tool. Sign PDFs with Class 3 DSC.</div></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

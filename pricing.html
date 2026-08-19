@@ -1,0 +1,610 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CGHL3V39G4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-CGHL3V39G4", {
+    linker: { domains: ["signulu.com", "app.signulu.com", "bulksigner.signuluone.com"] }
+  });
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="img/NewPenIcon.png" type="image/x-icon">
+<link rel="icon" href="img/NewPenIcon.png" type="image/x-icon">
+<meta name="description" content="SignuluOne Pricing — Transparent pricing for Signulu e-Sign, DMS, and BulkSigner. Start free, scale as you grow.">
+<meta name="keywords" content="pricing, signulu pricing, dms pricing, bulksigner pricing, esign plans">
+<title>Pricing | SignuluOne</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<style>
+      .sg-topnav .nav-link { font-weight: 700 !important; color: #333 !important; font-family: Lato, sans-serif !important; font-size: 15px !important; padding: 8px 14px !important; }
+      .sg-topnav .nav-link:hover { color: #5A30F1 !important; }
+    body { font-family: 'Lato', sans-serif; }
+    a { color: inherit; }
+    /* Mega menu */
+    .dropdown-mega { position: static !important; }
+    .dropdown-mega-menu { width: 100%; padding: 24px; left: 0 !important; right: 0 !important; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: none !important; border-top: 3px solid #5A30F1 !important; }
+    .mega-menu-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #5A30F1; border-bottom: 2px solid #5A30F1; padding-bottom: 8px; margin-bottom: 12px; }
+    .mega-menu-item { display: flex; align-items: flex-start; padding: 8px 10px; border-radius: 8px; text-decoration: none !important; color: #333 !important; transition: background 0.2s; }
+    .mega-menu-item:hover { background: #f0ebff; color: #5A30F1 !important; }
+    .mega-menu-icon { width: 36px; height: 36px; border-radius: 8px; background: #f0ebff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-right: 10px; }
+    .mega-menu-icon i { color: #5A30F1; font-size: 16px; }
+    .mega-menu-item-title { font-weight: 700; font-size: 13px; margin-bottom: 2px; }
+    .mega-menu-item-desc { font-size: 11px; color: #777; }
+    .navbar-nav > li > .nav-link { font-weight: 700 !important; font-family: Lato, sans-serif !important; font-size: 15px !important; color: #333 !important; }
+    .btn-primary { background-color: #5A30F1; border-color: #5A30F1; }
+    .btn-primary:hover { background-color: #4824d6; border-color: #4824d6; }
+    .text-primary { color: #5A30F1 !important; }
+    .bg-primary { background-color: #5A30F1 !important; }
+    /* Hero */
+    .pricing-hero { background: linear-gradient(135deg, #5A30F1 0%, #1a1a2e 100%); padding: 70px 0; }
+    /* Product tab pills */
+    .product-tab-nav { border: none; gap: 12px; }
+    .product-tab-nav .nav-link {
+        border: 2px solid #dee2e6; border-radius: 12px; padding: 16px 24px;
+        color: #555; font-weight: 600; background: #fff; transition: all 0.25s;
+        min-width: 180px; text-align: center;
+    }
+    .product-tab-nav .nav-link:hover { border-color: #5A30F1; color: #5A30F1; }
+    .product-tab-nav .nav-link.active {
+        border-color: #5A30F1; background: #5A30F1; color: #fff;
+        box-shadow: 0 4px 15px rgba(90,48,241,0.3);
+    }
+    .product-tab-nav .nav-link i { font-size: 1.5rem; display: block; margin-bottom: 6px; }
+    /* Pricing card */
+    .pricing-card {
+        border: 2px solid #e5e7eb; border-radius: 16px; padding: 32px 28px;
+        height: 100%; position: relative; transition: all 0.3s ease;
+        background: #fff;
+    }
+    .pricing-card:hover { border-color: #5A30F1; box-shadow: 0 8px 30px rgba(90,48,241,0.12); transform: translateY(-4px); }
+    .pricing-card.featured { border-color: #5A30F1; box-shadow: 0 8px 30px rgba(90,48,241,0.15); }
+    .featured-badge {
+        position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+        background: #5A30F1; color: #fff; font-size: 12px; font-weight: 700;
+        padding: 4px 16px; border-radius: 20px; white-space: nowrap;
+    }
+    .price-amount { font-size: 2.5rem; font-weight: 700; color: #1a1a2e; line-height: 1; }
+    .price-period { font-size: 14px; color: #6b7280; }
+    .feature-list { list-style: none; padding: 0; margin: 0; }
+    .feature-list li { padding: 8px 0; border-bottom: 1px solid #f3f4f6; font-size: 14px; display: flex; align-items: center; }
+    .feature-list li:last-child { border-bottom: none; }
+    .feature-list li i { color: #5A30F1; margin-right: 10px; flex-shrink: 0; }
+    /* DMS CTA card */
+    .dms-cta-card { background: linear-gradient(135deg, #f0ebff 0%, #e8f5e9 100%); border: none; border-radius: 20px; padding: 60px 40px; }
+    .dms-feature-pill { display: inline-flex; align-items: center; gap: 8px; background: #fff; border-radius: 30px; padding: 10px 20px; margin: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); font-size: 14px; font-weight: 600; }
+    /* Feature table */
+    .compare-table th { background: #5A30F1; color: #fff; }
+    .compare-yes { color: #28a745; font-size: 1.1rem; }
+    .compare-no { color: #aaa; font-size: 1.1rem; }
+    /* Product modal */
+    .product-modal-card { cursor: pointer; transition: all 0.2s ease; border-color: #dee2e6 !important; }
+    .product-modal-card:hover { border-color: #5A30F1 !important; box-shadow: 0 4px 15px rgba(90,48,241,0.15); transform: translateY(-3px); }
+    /* FAQ */
+    .accordion-button:not(.collapsed) { background-color: #f0ebff; color: #5A30F1; }
+    .accordion-button:focus { box-shadow: 0 0 0 0.2rem rgba(90,48,241,0.25); }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top sg-topnav">
+    <div class="container">
+        <a class="navbar-brand" href="./index.html">
+            <img src="./img/new-signulu-logo.png" alt="SignuluOne" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+        <li class="nav-item dropdown dropdown-mega">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+          <div class="dropdown-menu dropdown-mega-menu">
+            <div class="row">
+              <div class="col-md-4"><div class="mega-menu-title">E-Signature</div><a class="mega-menu-item" href="https://signulu.com/index.php/about" target="_blank"><div class="mega-menu-icon"><i class="bi bi-pen"></i></div><div><div class="mega-menu-item-title">Signulu e-Sign</div><div class="mega-menu-item-desc">Sign contracts digitally with AI verification</div></div></a></div>
+              <div class="col-md-4"><div class="mega-menu-title">Document Management</div><a class="mega-menu-item" href="./Dms.html"><div class="mega-menu-icon"><i class="bi bi-folder2-open"></i></div><div><div class="mega-menu-item-title">DMS</div><div class="mega-menu-item-desc">Centralized document storage &amp; workflows</div></div></a></div>
+              <div class="col-md-4"><div class="mega-menu-title">Bulk Signing</div><a class="mega-menu-item" href="https://bulksigner.signuluone.com" target="_blank"><div class="mega-menu-icon"><i class="bi bi-file-earmark-check"></i></div><div><div class="mega-menu-item-title">BulkSigner</div><div class="mega-menu-item-desc">DSC-based bulk document signing tool</div></div></a></div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown dropdown-mega">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Why Signulu</a>
+          <div class="dropdown-menu dropdown-mega-menu">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="mega-menu-title">Security</div>
+                <a class="mega-menu-item" href="./why-signulu.html#esignatures"><div class="mega-menu-icon"><i class="bi bi-shield-lock"></i></div><div><div class="mega-menu-item-title">Secure e-Signatures</div><div class="mega-menu-item-desc">AES-256 encryption &amp; TLS 1.3</div></div></a>
+                <a class="mega-menu-item" href="./why-signulu.html#audit"><div class="mega-menu-icon"><i class="bi bi-journal-check"></i></div><div><div class="mega-menu-item-title">Audit Trail</div><div class="mega-menu-item-desc">Full tamper-proof activity log</div></div></a>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-title">Automation</div>
+                <a class="mega-menu-item" href="./why-signulu.html#workflows"><div class="mega-menu-icon"><i class="bi bi-diagram-3"></i></div><div><div class="mega-menu-item-title">Workflow Automation</div><div class="mega-menu-item-desc">Multi-level approval sequences</div></div></a>
+                <a class="mega-menu-item" href="./why-signulu.html#templates"><div class="mega-menu-icon"><i class="bi bi-file-earmark-text"></i></div><div><div class="mega-menu-item-title">Templates</div><div class="mega-menu-item-desc">Reusable document templates</div></div></a>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-title">Access &amp; Storage</div>
+                <a class="mega-menu-item" href="./why-signulu.html#multidevice"><div class="mega-menu-icon"><i class="bi bi-devices"></i></div><div><div class="mega-menu-item-title">Multi-Device Access</div><div class="mega-menu-item-desc">Web, iOS &amp; Android</div></div></a>
+                <a class="mega-menu-item" href="./why-signulu.html#cloud"><div class="mega-menu-icon"><i class="bi bi-cloud"></i></div><div><div class="mega-menu-item-title">Cloud Storage</div><div class="mega-menu-item-desc">Integrated with major cloud providers</div></div></a>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-title">Compliance</div>
+                <a class="mega-menu-item" href="./why-signulu.html#rbac"><div class="mega-menu-icon"><i class="bi bi-person-lock"></i></div><div><div class="mega-menu-item-title">RBAC</div><div class="mega-menu-item-desc">Role-based access control</div></div></a>
+                <a class="mega-menu-item" href="./why-signulu.html#otp"><div class="mega-menu-icon"><i class="bi bi-phone"></i></div><div><div class="mega-menu-item-title">OTP Verification</div><div class="mega-menu-item-desc">SMS/Email signer authentication</div></div></a>
+              </div>
+            </div>
+          </div>
+        </li>
+                <li class="nav-item"><a class="nav-link" href="./Blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link active" href="./pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+            </ul>
+            <div class="d-flex">
+                <a href="./contact.html" class="btn btn-outline-secondary me-2">Contact Sales</a>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productSelectModal">Try for Free</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="pricing-hero">
+    <div class="container text-center">
+        <h1 class="fw-bold display-5 text-white mb-3">Simple, Transparent Pricing</h1>
+        <p class="text-white-50 fs-5 mb-0">Choose the product and plan that fits your needs. Start free, scale as you grow.</p>
+    </div>
+</section>
+
+<!-- Product Tabs -->
+<section class="py-5 bg-light" id="pricing-tabs">
+    <div class="container">
+        <!-- Tab Navigation -->
+        <div class="d-flex justify-content-center mb-5">
+            <ul class="nav product-tab-nav flex-wrap justify-content-center" id="productPricingTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="esign-tab" data-bs-toggle="tab" data-bs-target="#esign-pricing"
+                        type="button" role="tab" aria-controls="esign-pricing" aria-selected="true">
+                        <i class="bi bi-pen"></i>Signulu e-Sign
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="dms-tab" data-bs-toggle="tab" data-bs-target="#dms-pricing"
+                        type="button" role="tab" aria-controls="dms-pricing" aria-selected="false">
+                        <i class="bi bi-folder2-open"></i>DMS
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="bulk-tab" data-bs-toggle="tab" data-bs-target="#bulk-pricing"
+                        type="button" role="tab" aria-controls="bulk-pricing" aria-selected="false">
+                        <i class="bi bi-file-earmark-check"></i>BulkSigner
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="productPricingContent">
+
+            <!-- ===== TAB 1: e-Sign ===== -->
+            <div class="tab-pane fade show active" id="esign-pricing" role="tabpanel" aria-labelledby="esign-tab">
+                <div class="text-center mb-4">
+                    <h3 class="fw-bold">Signulu e-Signature Plans</h3>
+                    <p class="text-muted">Legally binding digital signatures for individuals and enterprises. 5 free documents every month — no credit card needed.</p>
+                </div>
+                <div class="row g-4">
+                    <!-- Lite -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pricing-card">
+                            <h5 class="fw-bold mb-1">Lite</h5>
+                            <p class="text-muted small mb-3">Perfect for personal use</p>
+                            <div class="mb-3">
+                                <span class="price-amount">Free</span>
+                                <div class="price-period">forever</div>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary w-100 mb-4" data-bs-toggle="modal" data-bs-target="#productSelectModal">Get Started Free</a>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>5 documents/month</li>
+                                <li><i class="bi bi-check-circle-fill"></i>1 user</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Email notifications</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Basic audit trail</li>
+                                <li><i class="bi bi-check-circle-fill"></i>PDF signing</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Mobile-friendly</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Individual -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pricing-card">
+                            <h5 class="fw-bold mb-1">Individual</h5>
+                            <p class="text-muted small mb-3">For freelancers &amp; professionals</p>
+                            <div class="mb-3">
+                                <span class="price-amount">&#8377;824</span>
+                                <div class="price-period">per month</div>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary w-100 mb-4" data-bs-toggle="modal" data-bs-target="#productSelectModal">Start Free Trial</a>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>10 documents/month</li>
+                                <li><i class="bi bi-check-circle-fill"></i>1 user</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Email &amp; SMS notifications</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Full audit trail</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Document templates</li>
+                                <li><i class="bi bi-check-circle-fill"></i>OTP verification</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- SMB (Featured) -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pricing-card featured">
+                            <span class="featured-badge">Most Popular</span>
+                            <h5 class="fw-bold mb-1">SMB</h5>
+                            <p class="text-muted small mb-3">For growing teams</p>
+                            <div class="mb-3">
+                                <span class="price-amount">&#8377;2,474</span>
+                                <div class="price-period">per month</div>
+                            </div>
+                            <a href="#" class="btn btn-primary w-100 mb-4" data-bs-toggle="modal" data-bs-target="#productSelectModal">Start Free Trial</a>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>Unlimited documents</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Up to 5 users</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Priority email support</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Advanced workflows</li>
+                                <li><i class="bi bi-check-circle-fill"></i>WhatsApp delivery</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Cloud integrations</li>
+                                <li><i class="bi bi-check-circle-fill"></i>AI identity verification</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Enterprise -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pricing-card">
+                            <h5 class="fw-bold mb-1">Enterprise</h5>
+                            <p class="text-muted small mb-3">For large organizations</p>
+                            <div class="mb-3">
+                                <span class="price-amount" style="font-size:2rem;">Custom</span>
+                                <div class="price-period">contact us</div>
+                            </div>
+                            <a href="./contact.html" class="btn btn-outline-secondary w-100 mb-4">Contact Sales</a>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>Unlimited documents</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Unlimited users</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Dedicated account manager</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Custom integrations (API)</li>
+                                <li><i class="bi bi-check-circle-fill"></i>SSO &amp; LDAP</li>
+                                <li><i class="bi bi-check-circle-fill"></i>SLA &amp; 24/7 support</li>
+                                <li><i class="bi bi-check-circle-fill"></i>On-premise option</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature Comparison Table -->
+                <div class="mt-5">
+                    <h4 class="fw-bold text-center mb-4">Feature Comparison</h4>
+                    <div class="table-responsive">
+                        <table class="table table-bordered bg-white rounded-3">
+                            <thead>
+                                <tr class="compare-table">
+                                    <th style="background:#5A30F1; color:#fff; width:40%;">Feature</th>
+                                    <th style="background:#5A30F1; color:#fff; text-align:center;">Lite</th>
+                                    <th style="background:#5A30F1; color:#fff; text-align:center;">Individual</th>
+                                    <th style="background:#5A30F1; color:#fff; text-align:center;">SMB</th>
+                                    <th style="background:#5A30F1; color:#fff; text-align:center;">Enterprise</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Documents/month</td><td class="text-center">5</td><td class="text-center">10</td><td class="text-center">Unlimited</td><td class="text-center">Unlimited</td></tr>
+                                <tr><td>Users</td><td class="text-center">1</td><td class="text-center">1</td><td class="text-center">Up to 5</td><td class="text-center">Unlimited</td></tr>
+                                <tr><td>Document Templates</td><td class="text-center"><i class="bi bi-x compare-no"></i></td><td class="text-center"><i class="bi bi-check-lg compare-yes"></i></td><td class="text-center"><i class="bi bi-check-lg compare-yes"></i></td><td class="text-center"><i class="bi bi-check-lg compare-yes"></i></td></tr>
+                                <tr><td>OTP Verification</td><td class="text-center"><i class="bi bi-x compare-no"></i></td><td class="text-center"><i class="bi bi-check-lg compare-yes"></i></td><td class="text-center"><i class="bi bi-check-lg compare-yes"></i></td><td class="text-center"><i class="bi bi-check-lg compare-yes"></i></td></tr>
+                                <tr><td>WhatsApp Delivery</td><td class="text-center"><i class="bi bi-x compare-no"></i></td><td class="text-center"><i class="bi bi-x compare-no"></i></td><td class="text-center"><i class="bi bi-check-lg compare-yes"></i></td><td class="text-center"><i class="bi bi-check-lg compare-yes"></i></td></tr>
+                                <tr><td>AI Identity Verification</td><td class="text-center"><i class="bi bi-x compare-no"></i></td><td class="text-center"><i class="bi bi-x compare-no"></i></td><td class="text-center"><i class="bi bi-check-lg compare-yes"></i></td><td class="text-center"><i class="bi bi-check-lg compare-yes"></i></td></tr>
+                                <tr><td>API Access</td><td class="text-center"><i class="bi bi-x compare-no"></i></td><td class="text-center"><i class="bi bi-x compare-no"></i></td><td class="text-center"><i class="bi bi-x compare-no"></i></td><td class="text-center"><i class="bi bi-check-lg compare-yes"></i></td></tr>
+                                <tr><td>Dedicated Support</td><td class="text-center"><i class="bi bi-x compare-no"></i></td><td class="text-center"><i class="bi bi-x compare-no"></i></td><td class="text-center"><i class="bi bi-x compare-no"></i></td><td class="text-center"><i class="bi bi-check-lg compare-yes"></i></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== TAB 2: DMS ===== -->
+            <div class="tab-pane fade" id="dms-pricing" role="tabpanel" aria-labelledby="dms-tab">
+                <div class="dms-cta-card text-center mx-auto" style="max-width:900px;">
+                    <div class="mb-4">
+                        <i class="bi bi-folder2-open" style="font-size:64px; color:#5A30F1;"></i>
+                    </div>
+                    <h3 class="fw-bold mb-2">Signulu Document Management System</h3>
+                    <p class="text-muted fs-5 mb-4 mx-auto" style="max-width:600px;">DMS pricing is tailored to your organization's size, storage requirements, and compliance needs. Contact our team for a personalized quote.</p>
+                    <div class="mb-4">
+                        <div class="dms-feature-pill"><i class="bi bi-hdd-stack text-primary"></i>Centralized Secure Storage</div>
+                        <div class="dms-feature-pill"><i class="bi bi-search text-info"></i>Advanced Full-text Search</div>
+                        <div class="dms-feature-pill"><i class="bi bi-person-lock text-danger"></i>Role-Based Access Control</div>
+                        <div class="dms-feature-pill"><i class="bi bi-list-check text-warning"></i>Complete Audit Trail</div>
+                        <div class="dms-feature-pill"><i class="bi bi-diagram-3 text-success"></i>Workflow Automation</div>
+                        <div class="dms-feature-pill"><i class="bi bi-shield-lock text-primary"></i>AES-256 Encryption</div>
+                        <div class="dms-feature-pill"><i class="bi bi-plug text-info"></i>CRM / ERP Integration</div>
+                        <div class="dms-feature-pill"><i class="bi bi-graph-up text-warning"></i>Analytics Dashboard</div>
+                    </div>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="./contact.html" class="btn btn-primary btn-lg px-5">Contact Sales for Pricing</a>
+                        <a href="./Dms.html" class="btn btn-outline-secondary btn-lg px-5">Learn More about DMS</a>
+                    </div>
+                    <p class="text-muted small mt-3">Our team typically responds within one business day.</p>
+                </div>
+            </div>
+
+            <!-- ===== TAB 3: BulkSigner ===== -->
+            <div class="tab-pane fade" id="bulk-pricing" role="tabpanel" aria-labelledby="bulk-tab">
+                <div class="text-center mb-4">
+                    <h3 class="fw-bold">DSC BulkSigner — License Pricing</h3>
+                    <p class="text-muted">Sign PDFs locally using your Class 3 DSC mToken. One-time purchase per license. Windows desktop application.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <!-- Basic -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pricing-card">
+                            <h5 class="fw-bold mb-1">Basic</h5>
+                            <p class="text-muted small mb-3">For individual users</p>
+                            <div class="mb-3">
+                                <span class="price-amount">&#8377;2,200</span>
+                                <div class="price-period">per license</div>
+                            </div>
+                            <a href="./BulkSigner.html" class="btn btn-outline-primary w-100 mb-4">Get Started</a>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>Single PDF signing</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Folder batch signing</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Class 3 DSC support</li>
+                                <li><i class="bi bi-check-circle-fill"></i>mToken USB integration</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Windows compatible</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Pro (Featured) -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pricing-card featured">
+                            <span class="featured-badge">Best Value</span>
+                            <h5 class="fw-bold mb-1">Pro</h5>
+                            <p class="text-muted small mb-3">For power users</p>
+                            <div class="mb-3">
+                                <span class="price-amount">&#8377;1,800</span>
+                                <div class="price-period">per license</div>
+                            </div>
+                            <a href="./BulkSigner.html" class="btn btn-primary w-100 mb-4">Get Started</a>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>Everything in Basic</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Priority support</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Bulk signing up to 1,000 files</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Custom signature placement</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Auto-naming output files</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Business -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pricing-card">
+                            <h5 class="fw-bold mb-1">Business</h5>
+                            <p class="text-muted small mb-3">For teams (5+ licenses)</p>
+                            <div class="mb-3">
+                                <span class="price-amount">&#8377;1,500</span>
+                                <div class="price-period">per license</div>
+                            </div>
+                            <a href="./BulkSigner.html" class="btn btn-outline-primary w-100 mb-4">Get Started</a>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>Everything in Pro</li>
+                                <li><i class="bi bi-check-circle-fill"></i>5+ license discount</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Central license management</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Phone support</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Volume processing</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Enterprise -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pricing-card">
+                            <h5 class="fw-bold mb-1">Enterprise</h5>
+                            <p class="text-muted small mb-3">For large deployments</p>
+                            <div class="mb-3">
+                                <span class="price-amount">&#8377;1,000</span>
+                                <div class="price-period">per license</div>
+                            </div>
+                            <a href="./contact.html" class="btn btn-outline-secondary w-100 mb-4">Contact Sales</a>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>Everything in Business</li>
+                                <li><i class="bi bi-check-circle-fill"></i>20+ license pricing</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Dedicated support</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Custom deployment</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Training &amp; onboarding</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="./BulkSigner.html" class="btn btn-outline-primary me-2">Learn More About BulkSigner</a>
+                    <a href="./contact.html" class="btn btn-primary">Contact Sales</a>
+                </div>
+            </div>
+
+        </div><!-- /.tab-content -->
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-5">
+    <div class="container">
+        <h3 class="fw-bold text-center mb-5">Frequently Asked Questions</h3>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="accordion" id="pricingFaq">
+                    <div class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                Do I need a credit card to start the free plan?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#pricingFaq">
+                            <div class="accordion-body text-muted">No credit card is required. The Lite plan is completely free — just create an account and start signing. You can upgrade at any time.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                Can I switch plans at any time?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+                            <div class="accordion-body text-muted">Yes. You can upgrade, downgrade, or cancel your Signulu e-Sign plan at any time. Changes take effect at the start of the next billing cycle.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                Is BulkSigner a one-time purchase or subscription?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+                            <div class="accordion-body text-muted">BulkSigner is sold as a per-license purchase. It is not a subscription — you pay once per license and own it. Pricing varies by volume (Basic &#8377;2,200 to Enterprise &#8377;1,000 per license).</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                How is DMS pricing determined?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+                            <div class="accordion-body text-muted">DMS pricing is customized based on the number of users, storage requirements, integrations needed, and compliance specifications. Contact our sales team for a tailored quote — we typically respond within one business day.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 shadow-sm rounded-3 overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                Are e-signatures from Signulu legally binding?
+                            </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+                            <div class="accordion-body text-muted">Yes. All signatures made through Signulu are legally binding under the IT Act 2000 (India), eIDAS (EU), ESIGN Act (USA), and equivalent laws in 50+ countries. Every signed document includes a tamper-evident audit certificate.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="py-5" style="background: linear-gradient(135deg, #5A30F1 0%, #3b1fc8 100%);">
+    <div class="container text-center">
+        <h2 class="fw-bold text-white mb-3">Still Have Questions?</h2>
+        <p class="text-white-50 fs-5 mb-4">Our team is ready to help you find the right plan for your business.</p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="#" class="btn btn-light btn-lg fw-semibold px-5" data-bs-toggle="modal" data-bs-target="#productSelectModal">Start Free Trial</a>
+            <a href="./contact.html" class="btn btn-outline-light btn-lg px-5">Talk to Sales</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer style="background-color:#1a1a2e; color:#ccc; padding:60px 0 30px;">
+    <div class="container">
+        <div class="row gy-4 mb-5">
+            <div class="col-lg-3 col-md-6">
+                <img src="./img/new-signulu-logo.png" alt="Signulu Logo" height="36" class="mb-3" style="filter:brightness(0) invert(1);">
+                <p style="font-size:14px; color:#aaa;">SignuluOne is your all-in-one digital transformation platform for eSignature, document management and bulk signing.</p>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+                <h6 style="color:#fff; font-weight:600; margin-bottom:16px;">Products</h6>
+                <ul style="list-style:none; padding:0; margin:0; font-size:14px;">
+                    <li class="mb-2"><a href="./signing-solutions.html" style="color:#aaa; text-decoration:none;">Signing Solutions</a></li>
+                    <li class="mb-2"><a href="./Dms.html" style="color:#aaa; text-decoration:none;">Document Management</a></li>
+                    <li class="mb-2"><a href="./BulkSigner.html" style="color:#aaa; text-decoration:none;">DSC BulkSigner</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+                <h6 style="color:#fff; font-weight:600; margin-bottom:16px;">Company</h6>
+                <ul style="list-style:none; padding:0; margin:0; font-size:14px;">
+                    <li class="mb-2"><a href="./about.html" style="color:#aaa; text-decoration:none;">About Us</a></li>
+                    <li class="mb-2"><a href="./Blog.html" style="color:#aaa; text-decoration:none;">Blog</a></li>
+                    <li class="mb-2"><a href="./contact.html" style="color:#aaa; text-decoration:none;">Contact</a></li>
+                    <li class="mb-2"><a href="./pricing.html" style="color:#aaa; text-decoration:none;">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+                <h6 style="color:#fff; font-weight:600; margin-bottom:16px;">Legal</h6>
+                <ul style="list-style:none; padding:0; margin:0; font-size:14px;">
+                    <li class="mb-2"><a href="./Privacy Policy.html" style="color:#aaa; text-decoration:none;">Privacy Policy</a></li>
+                    <li class="mb-2"><a href="./Terms of Services.html" style="color:#aaa; text-decoration:none;">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+                <h6 style="color:#fff; font-weight:600; margin-bottom:16px;">Get Started</h6>
+                <a href="#" class="btn btn-primary btn-sm mb-2 d-block" data-bs-toggle="modal" data-bs-target="#productSelectModal">Try for Free</a>
+                <a href="./contact.html" class="btn btn-outline-light btn-sm d-block">Contact Sales</a>
+            </div>
+        </div>
+        <hr style="border-color:#333;">
+        <p class="text-center mb-0" style="font-size:13px; color:#666;">
+            Copyright &copy; <script>document.write(new Date().getFullYear())</script> Signulu. All Rights Reserved.
+        </p>
+    </div>
+</footer>
+
+<!-- Product Selection Modal -->
+<div class="modal fade" id="productSelectModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-0 pb-0">
+                <h5 class="modal-title fw-bold fs-4">Which product would you like to try?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body py-4">
+                <p class="text-muted mb-4">Select a product to begin your free trial or registration.</p>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <a href="https://app.signulu.com/account/register" class="text-decoration-none">
+                            <div class="card border-2 text-center p-3 h-100 product-modal-card">
+                                <div class="card-body">
+                                    <i class="bi bi-pen fs-1 text-primary mb-3 d-block"></i>
+                                    <h6 class="fw-bold mb-2">Signulu e-Sign</h6>
+                                    <p class="text-muted small mb-0">Sign contracts digitally. Legally binding &amp; secure.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://dms.signulu.com/auth" class="text-decoration-none">
+                            <div class="card border-2 text-center p-3 h-100 product-modal-card">
+                                <div class="card-body">
+                                    <i class="bi bi-folder2-open fs-1 text-success mb-3 d-block"></i>
+                                    <h6 class="fw-bold mb-2">DMS</h6>
+                                    <p class="text-muted small mb-0">Document Management System. Digitize &amp; organize.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="./BulkSigner.html" class="text-decoration-none">
+                            <div class="card border-2 text-center p-3 h-100 product-modal-card">
+                                <div class="card-body">
+                                    <i class="bi bi-file-earmark-check fs-1 text-warning mb-3 d-block"></i>
+                                    <h6 class="fw-bold mb-2">BulkSigner</h6>
+                                    <p class="text-muted small mb-0">DSC Bulk Signing Tool. Sign PDFs with Class 3 DSC.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+</html>

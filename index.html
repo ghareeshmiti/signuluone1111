@@ -1,0 +1,984 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CGHL3V39G4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+
+  gtag("config", "G-CGHL3V39G4", {
+    linker: {
+      domains: ["signulu.com", "app.signulu.com", "bulksigner.signuluone.com"]
+    }
+  });
+</script>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/NewPenIcon.png" type="image/x-icon">
+  <link rel="icon" href="img/NewPenIcon.png" type="image/x-icon">
+    <meta name="description"
+        content="Connect with our sales team to learn more about our plans, pricing, and solutions. We'll respond within one business day.">
+    <meta name="keywords" content="contact sales, enterprise solutions, product inquiry, sales form, DocuSign, pricing">
+    <meta name="author" content="Your Company Name">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SignuluOne | Digital Transformation Platform for Signing & Document Automation.">
+    <meta property="og:description"
+        content="SignuluOne is a unified digital transformation platform offering eSignature, DSC bulk signing, and document management for modern enterprises.">
+    <meta property="og:image" content="https://yourdomain.com/assets/preview-image.jpg">
+    <meta property="og:url" content="https://yourdomain.com/contact-sales">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SignuluOne | Digital Transformation Platform for Signing & Document Automation.">
+    <meta name="twitter:description" content="Fill out the sales form to get in touch.">
+    <meta name="twitter:image" content="https://yourdomain.com/assets/preview-image.jpg">
+
+    <title>SignuluOne | Digital Transformation Platform for Signing & Document Automation.</title>
+    <!-- Google Fonts: Lato -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <style>
+      /* SignuluOne standard navbar overrides */
+      .sg-topnav { background: #fff !important; box-shadow: 0 2px 12px rgba(0,0,0,.08); font-family: 'Lato', sans-serif !important; }
+      .sg-topnav .nav-link { font-weight: 700 !important; color: #333 !important; padding: 8px 14px !important; font-family: 'Lato', sans-serif !important; font-size: 15px !important; }
+      .sg-topnav .nav-link:hover { color: #5A30F1 !important; }
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        /* droupdownmenu css*/
+        .dropdown-mega {
+            position: static !important;
+        }
+
+        .dropdown-mega-menu {
+            width: 100%;
+            padding: 20px;
+            left: 0 !important;
+            right: 0 !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Smooth transition for hover */
+        .dropdown-mega-menu .list-unstyled li {
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+        }
+
+        /* Hover effect */
+        .dropdown-mega-menu .list-unstyled li:hover strong {
+            color: #5A30F1;
+        }
+
+        .dropdown-mega-menu .list-unstyled li:hover {
+            padding-left: 5px;
+        }
+
+        .mega-menu-section {
+            padding: 15px;
+        }
+
+        .mega-menu-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #5A30F1; border-bottom: 2px solid #5A30F1; padding-bottom: 8px; margin-bottom: 12px; }
+        .mega-menu-item { display: flex; align-items: flex-start; padding: 8px 10px; border-radius: 8px; text-decoration: none !important; color: #333 !important; transition: background 0.2s; }
+        .mega-menu-item:hover { background: #f0ebff; color: #5A30F1 !important; }
+        .mega-menu-icon { width: 36px; height: 36px; border-radius: 8px; background: #f0ebff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-right: 10px; }
+        .mega-menu-icon i { color: #5A30F1; font-size: 16px; }
+        .mega-menu-item-title { font-weight: 700; font-size: 13px; margin-bottom: 2px; }
+        .mega-menu-item-desc { font-size: 11px; color: #777; }
+
+        .mega-menu-list li {
+            margin-bottom: 8px;
+        }
+
+        .mega-menu-list a {
+            color: #555;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .mega-menu-list a:hover {
+            color: #5A30F1;
+            padding-left: 5px;
+        }
+
+        .nav-link {
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background-color: #5A30F1;
+            border-color: #5A30F1;
+        }
+
+        /* droupdownmenu css end */
+
+        /* hero section start  */
+
+        .hero-section {
+            padding: 19px 0 20px;
+            background: linear-gradient(to bottom, #f9fbfd, white);
+        }
+
+        .hero-heading {
+            font-size: 5.0rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .hero-subheading {
+            font-size: 17px;
+            color: #ffffff;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .app-name {
+            text-decoration: none;
+        }
+
+        .feature-card {
+            border: none;
+            border-radius: 8px;
+            padding: 25px;
+            height: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+            background-color: var(--feature-clour);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .feature-icon.crm {
+            color: var(--white-clour);
+        }
+
+        .feature-icon.mail {
+            color: var(--white-clour);
+        }
+
+        .feature-icon.creator {
+            color: var(--white-clour);
+        }
+
+        .feature-icon.books {
+            color: var(--white-clour);
+        }
+
+        .feature-icon.people {
+            color: var(--white-clour);
+        }
+
+        .feature-title {
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .illustration-section {
+            padding: 30px 0;
+            background-color: #f9fbfd;
+        }
+
+        .section-title {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--dark-gray);
+            font-size: 36px;
+        }
+
+        .section-subtitle {
+            color: #666;
+            margin-bottom: 40px;
+            max-width: 600px;
+            font-size: 18px;
+        }
+
+        .sidebar-card {
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 20px;
+            width: 100%;
+            max-width: 376px;
+            font-family: 'Segoe UI', sans-serif;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+
+        .sidebar-card-header {
+            font-size: 14px;
+            font-weight: 600;
+            color: #6b7280;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+        }
+
+        .featured-apps {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .featured-app {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .featured-app:last-child {
+            border-bottom: none;
+        }
+
+        .app-icon {
+            font-size: 22px;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .app-content .app-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .app-content .app-description {
+            font-size: 13px;
+            color: #6b7280;
+            margin-top: 2px;
+        }
+
+        .explore-all-btn {
+            margin-top: 20px;
+            background: none;
+            border: none;
+            color: #2563eb;
+            font-weight: 600;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 0;
+            gap: 6px;
+        }
+
+        .explore-all-btn:hover {
+            text-decoration: underline;
+        }
+
+        .sidebar-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .sidebar-card-header {
+            padding: 18px 24px;
+            border-bottom: 1px solid #eee;
+            font-weight: 600;
+            font-size: 18px;
+            color: var(--dark-gray);
+            background-color: #f9fbfd;
+        }
+
+        .featured-apps {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .featured-app {
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            transition: all 0.2s ease;
+            border-bottom: 1px solid #f5f5f5;
+        }
+
+        .featured-app:last-child {
+            border-bottom: none;
+        }
+
+        .featured-app:hover {
+            background-color: var(--hover-gray);
+            cursor: pointer;
+        }
+
+        .app-icon {
+            width: 28px;
+            height: 28px;
+            margin-right: 16px;
+            flex-shrink: 0;
+            font-size: 24px;
+        }
+
+        .app-content {
+            flex-grow: 1;
+            min-width: 0;
+        }
+
+        .app-name {
+            font-weight: 600;
+            margin-bottom: 4px;
+            color: var(--dark-gray);
+            font-size: 15px;
+        }
+
+        a {
+            color: rgb(245 253 13);
+            text-decoration: underline;
+        }
+
+        .app-description {
+            font-size: 13px;
+            color: #666;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .app-arrow {
+            color: #999;
+            margin-left: 12px;
+            flex-shrink: 0;
+            font-size: 14px;
+        }
+
+        .explore-all-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px;
+            width: 100%;
+            background: none;
+            border: none;
+            border-top: 1px solid #eee;
+            font-weight: 500;
+            color: var(--primary-blue);
+            transition: all 0.2s ease;
+            font-size: 14px;
+        }
+
+        .explore-all-btn:hover {
+            background-color: var(--hover-gray);
+        }
+
+        .explore-all-btn i {
+            margin-left: 6px;
+            transition: transform 0.2s ease;
+        }
+
+        .explore-all-btn:hover i {
+            transform: translateX(3px);
+        }
+
+        .testimonial-section {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .testimonial-card {
+            border: none;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            height: 100%;
+        }
+
+        .testimonial-text {
+            font-size: 16px;
+            font-style: italic;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .client-name {
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .client-title {
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* footer {
+            background-color: var(--dark-gray);
+            color: white;
+            padding: 80px 0 30px;
+        }
+
+        .footer-links h5 {
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        } */
+
+        .social-icons a {
+            color: white;
+            font-size: 20px;
+            margin-right: 15px;
+            transition: opacity 0.2s ease;
+        }
+
+        .social-icons a:hover {
+            opacity: 0.8;
+        }
+
+
+        @media (max-width: 992px) {
+            .hero-heading {
+                font-size: 42px;
+            }
+
+            .hero-subheading {
+                font-size: 18px;
+            }
+
+            .section-title {
+                font-size: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-heading {
+                font-size: 57px;
+            }
+
+            .sidebar-card {
+                margin-top: 40px;
+            }
+
+            .feature-card {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* number sctions */
+        .statistics .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .statistics .stat-label {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+
+        /* sidebar animation  */
+        .featured-app:hover .arrow {
+            transform: translateX(5px);
+            color: black;
+        }
+
+        .arrow {
+            transition: transform 0.3s ease, color 0.3s ease;
+            font-size: 1.2rem;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation with Mega Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top sg-topnav">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="img/new-signulu-logo.png" alt="Signulu Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+
+        <li class="nav-item dropdown dropdown-mega">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+          <div class="dropdown-menu dropdown-mega-menu">
+            <div class="row">
+              <div class="col-md-4"><div class="mega-menu-title">E-Signature</div><a class="mega-menu-item" href="https://signulu.com/index.php/about" target="_blank"><div class="mega-menu-icon"><i class="bi bi-pen"></i></div><div><div class="mega-menu-item-title">Signulu e-Sign</div><div class="mega-menu-item-desc">Sign contracts digitally with AI verification</div></div></a></div>
+              <div class="col-md-4"><div class="mega-menu-title">Document Management</div><a class="mega-menu-item" href="./Dms.html"><div class="mega-menu-icon"><i class="bi bi-folder2-open"></i></div><div><div class="mega-menu-item-title">DMS</div><div class="mega-menu-item-desc">Centralized document storage &amp; workflows</div></div></a></div>
+              <div class="col-md-4"><div class="mega-menu-title">Bulk Signing</div><a class="mega-menu-item" href="https://bulksigner.signuluone.com" target="_blank"><div class="mega-menu-icon"><i class="bi bi-file-earmark-check"></i></div><div><div class="mega-menu-item-title">BulkSigner</div><div class="mega-menu-item-desc">DSC-based bulk document signing tool</div></div></a></div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown dropdown-mega">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Why Signulu</a>
+          <div class="dropdown-menu dropdown-mega-menu">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="mega-menu-title">Security</div>
+                <a class="mega-menu-item" href="./why-signulu.html#esignatures"><div class="mega-menu-icon"><i class="bi bi-shield-lock"></i></div><div><div class="mega-menu-item-title">Secure e-Signatures</div><div class="mega-menu-item-desc">AES-256 encryption &amp; TLS 1.3</div></div></a>
+                <a class="mega-menu-item" href="./why-signulu.html#audit"><div class="mega-menu-icon"><i class="bi bi-journal-check"></i></div><div><div class="mega-menu-item-title">Audit Trail</div><div class="mega-menu-item-desc">Full tamper-proof activity log</div></div></a>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-title">Automation</div>
+                <a class="mega-menu-item" href="./why-signulu.html#workflows"><div class="mega-menu-icon"><i class="bi bi-diagram-3"></i></div><div><div class="mega-menu-item-title">Workflow Automation</div><div class="mega-menu-item-desc">Multi-level approval sequences</div></div></a>
+                <a class="mega-menu-item" href="./why-signulu.html#templates"><div class="mega-menu-icon"><i class="bi bi-file-earmark-text"></i></div><div><div class="mega-menu-item-title">Templates</div><div class="mega-menu-item-desc">Reusable document templates</div></div></a>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-title">Access &amp; Storage</div>
+                <a class="mega-menu-item" href="./why-signulu.html#multidevice"><div class="mega-menu-icon"><i class="bi bi-devices"></i></div><div><div class="mega-menu-item-title">Multi-Device Access</div><div class="mega-menu-item-desc">Web, iOS &amp; Android</div></div></a>
+                <a class="mega-menu-item" href="./why-signulu.html#cloud"><div class="mega-menu-icon"><i class="bi bi-cloud"></i></div><div><div class="mega-menu-item-title">Cloud Storage</div><div class="mega-menu-item-desc">Integrated with major cloud providers</div></div></a>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-title">Compliance</div>
+                <a class="mega-menu-item" href="./why-signulu.html#rbac"><div class="mega-menu-icon"><i class="bi bi-person-lock"></i></div><div><div class="mega-menu-item-title">RBAC</div><div class="mega-menu-item-desc">Role-based access control</div></div></a>
+                <a class="mega-menu-item" href="./why-signulu.html#otp"><div class="mega-menu-icon"><i class="bi bi-phone"></i></div><div><div class="mega-menu-item-title">OTP Verification</div><div class="mega-menu-item-desc">SMS/Email signer authentication</div></div></a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./Blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+
+                </ul>
+                <div class="d-flex">
+                    <a href="./contact.html" class="btn btn-outline-secondary me-2">Contact
+                        Sales</a>
+                    <a href="https://app.signulu.com/account/register" class="btn btn-primary">Try for Free</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background-image: url(./img/crm-banner-bg1.jpg); width: 100% ;height: 100%;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="hero-heading" style="color: #ffffffd7 ;">Transform Your <br> Business with
+                        <br><span style="color: rgb(255, 209, 93);">SignuluOne.</span>
+                    </h1>
+                    <p class="hero-subheading" style="text-align: justify;"> <span
+                            style="color: rgb(255, 209, 93);">SignuluOne</span> is an all‑in‑one platform that
+                        seamlessly integrates your core business tools—eSigning,
+                        Document Management system and more—into a unified system. Designed to help you work smarter and
+                        scale faster, <span style="color: rgb(255, 209, 93);">SignuluOne</span> empowers teams across
+                        industries to collaborate securely, efficiently,
+                        and intelligently.</p>
+                    <div class="d-flex gap-3 mb-4">
+                    </div>
+                    <div class="d-flex align-items-center">
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="sidebar-card">
+                        <div class="sidebar-card-header">
+                            <i class="bi bi-stars me-2"></i> Featured Solutions
+                        </div>
+                        <ul class="featured-apps">
+
+                            <li class="featured-app">
+                                <div class="app-icon esign">
+                                    <img src="./img/Signing Solutions.png" alt="no image" width="35" height="35">
+                                </div>
+                                <div class="app-content">
+                                    <a class="app-name" href="https://signulu.com/index.php/about"
+                                        rel="noopener noreferrer" target="_blank">Signing
+                                        Solutions</a>
+                                    <div class="app-description">
+                                        Easy and Efficient Way to Sign Contracts and Documents
+                                    </div>
+                                </div>
+                                <a href="https://signulu.com/index.php/about" rel="noopener noreferrer" target="_blank">
+                                    <i class="bi bi-chevron-right arrow"></i>
+                                </a>
+                            </li>
+
+                        <!--
+                            <li class="featured-app">
+                                <div class="app-icon esign">
+                                    <img src="img/bgv logo icon.png" alt="no image" style="width: 41px; ">
+                                </div>
+                                <div class="app-content">
+                                    <a class="app-name" href="./BGV.html" rel="noopener noreferrer">Digital
+                                        Onboarding</a>
+                                    <div class="app-description">
+                                        Build Trust Before You Hire
+                                    </div>
+                                </div>
+                                <a href="./BGV.html" rel="noopener noreferrer">
+                                    <i class="bi bi-chevron-right arrow"></i>
+                                </a>
+                            </li>
+                        -->
+
+                            <li class="featured-app">
+                                <div class="app-icon esign">
+                                    <img src="img/DMS logo.png" alt="no img Dms" width="35" height="35">
+                                </div>
+                                <div class="app-content">
+                                    <a class="app-name" href="./Dms.html" rel="noopener noreferrer"> Signulu Document
+                                        Management
+                                        System</a>
+                                    <div class="app-description">
+                                        Digitize. Organize. Discover. Secure — All in One Platform
+                                    </div>
+                                </div>
+                                <a href="./Dms.html" rel="noopener noreferrer">
+                                    <i class="bi bi-chevron-right arrow"></i>
+                                </a>
+                            </li>
+                            <!-- <li class="featured-app">
+        <div class="app-icon esign">
+          <img src="img/power pack icon.png" alt="no img Dms" width="35" height="35">
+        </div>
+        <div class="app-content">
+          <a class="app-name" href="./Powerpack.html" rel="noopener noreferrer">Powerpack</a>
+          <div class="app-description ">
+            Only Pay for What You Use....
+          </div>
+        </div>
+        <a href="./Powerpack.html" rel="noopener noreferrer">
+          <i class="bi bi-chevron-right arrow"></i>
+        </a>
+      </li> -->
+                        <!-- <li class="featured-app">
+                                <div class="app-icon esign">
+                                    <img src="img/AI Tender.png" alt="no img Dms" width="35" height="35">
+                                </div>
+                                <div class="app-content">
+                                    <a class="app-name" href="./Tender.html" rel="noopener noreferrer"> AI Tender </a>
+                                    <div class="app-description">
+                                        Summarize Tender Documents
+                                        Instantly with AI
+                                    </div>
+                                </div>
+                                <a href="./Tender.html" rel="noopener noreferrer">
+                                    <i class="bi bi-chevron-right arrow"></i>
+                                </a>
+                            </li>
+                        -->
+                            <li class="featured-app">
+                                <div class="app-icon esign">
+                                    <img src="img/dsc icon.png" alt="no image" style="width: 41px; ">
+                                </div>
+                                <div class="app-content">
+                                    <a class="app-name" href="https://bulksigner.signuluone.com/" rel="noopener noreferrer" target="_blank"> DSC
+                                        BulkSigner</a>
+                                    <div class="app-description">
+                                        Bulk Sign Documents
+                                        with Your DSC Token
+                                        — Instantly.
+                                    </div>
+                                </div>
+                                <a href="https://bulksigner.signuluone.com/" rel="noopener noreferrer" target="_blank">
+                                    <i class="bi bi-chevron-right arrow"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light" id="why-signulu">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold display-6">Why Choose <span class="text-primary">SignuluOne?</span></h2>
+                <p class="text-muted">Your unified hub for smarter, secure, and seamless business operations.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Feature 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-diagram-3 fs-1 text-primary mb-3"></i>
+                            <h5 class="card-title fw-semibold">Fully Integrated Suite</h5>
+                            <p class="text-muted">Break down silos and unify workflows across your entire organization.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-shield-lock fs-1 text-success mb-3"></i>
+                            <h5 class="card-title fw-semibold">Enterprise-Grade Security</h5>
+                            <p class="text-muted">Bank-level encryption and full compliance ensure your data stays
+                                protected.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-bar-chart-line fs-1 text-info mb-3"></i>
+                            <h5 class="card-title fw-semibold">Insight-Rich Analytics</h5>
+                            <p class="text-muted">Real-time dashboards deliver actionable metrics for smarter decisions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-plug fs-1 text-warning mb-3"></i>
+                            <h5 class="card-title fw-semibold">Connect with Ease</h5>
+                            <p class="text-muted">Ready-made integrations let you work smoothly with your current tools.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center mt-5">
+                <p class="lead fw-semibold">Empower your organization to operate with agility, security, and insight.
+                </p>
+                <!-- <a href="#demo" class="btn btn-primary px-4 py-2">Get SignuluOne</a> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="illustration-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="img/zooo1.jpg" alt="Business Suite Dashboard Interface" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h2 class="section-title">Unified platform for all your business needs</h2>
+                    <p class="section-subtitle">Break down silos and connect your teams with our fully integrated
+                        business management platform.</p>
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-4">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-shield-check fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-2">Enterprise Security</h5>
+                                    <p class="text-muted">Bank-grade encryption and compliance with global standards.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-graph-up fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-2">Real-time Analytics</h5>
+                                    <p class="text-muted">Get actionable insights with customizable dashboards.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-phone fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-2">Mobile Ready</h5>
+                                    <p class="text-muted">Full functionality on iOS and Android devices.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-puzzle fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-2">500+ Integrations</h5>
+                                    <p class="text-muted">Connect with your favorite business tools and services.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer style="background-color: #1a1a2e; color: #ccc; padding: 60px 0 30px;">
+        <div class="container">
+            <div class="row gy-4 mb-5">
+                <!-- Brand -->
+                <div class="col-lg-3 col-md-6">
+                    <img src="img/new-signulu-logo.png" alt="Signulu Logo" height="36" class="mb-3"
+                        style="filter: brightness(0) invert(1);">
+                    <p style="font-size: 14px; color: #aaa;">
+                        SignuluOne is your all-in-one digital transformation platform for eSignature, document
+                        management and bulk signing.
+                    </p>
+                </div>
+                <!-- Products -->
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 style="color: #fff; font-weight: 600; margin-bottom: 16px;">Products</h6>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 14px;">
+                        <li class="mb-2"><a href="./signing-solutions.html"
+                                style="color: #aaa; text-decoration: none;">Signing Solutions</a></li>
+                        <li class="mb-2"><a href="./Dms.html"
+                                style="color: #aaa; text-decoration: none;">Document Management</a></li>
+                        <li class="mb-2"><a href="./BulkSigner.html"
+                                style="color: #aaa; text-decoration: none;">DSC BulkSigner</a></li>
+                    </ul>
+                </div>
+                <!-- Company -->
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 style="color: #fff; font-weight: 600; margin-bottom: 16px;">Company</h6>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 14px;">
+                        <li class="mb-2"><a href="./about.html"
+                                style="color: #aaa; text-decoration: none;">About Us</a></li>
+                        <li class="mb-2"><a href="./Blog.html"
+                                style="color: #aaa; text-decoration: none;">Blog</a></li>
+                        <li class="mb-2"><a href="./contact.html"
+                                style="color: #aaa; text-decoration: none;">Contact</a></li>
+                        <li class="mb-2"><a href="./pricing.html"
+                                style="color: #aaa; text-decoration: none;">Pricing</a></li>
+                    </ul>
+                </div>
+                <!-- Legal -->
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 style="color: #fff; font-weight: 600; margin-bottom: 16px;">Legal</h6>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 14px;">
+                        <li class="mb-2"><a href="./Privacy Policy.html"
+                                style="color: #aaa; text-decoration: none;">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="./Terms of Services.html"
+                                style="color: #aaa; text-decoration: none;">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <!-- Get Started -->
+                <div class="col-lg-3 col-md-3 col-6">
+                    <h6 style="color: #fff; font-weight: 600; margin-bottom: 16px;">Get Started</h6>
+                    <a href="https://app.signulu.com/account/register"
+                        class="btn btn-primary btn-sm mb-2 d-block">Try for Free</a>
+                    <a href="./contact.html"
+                        class="btn btn-outline-light btn-sm d-block">Contact Sales</a>
+                </div>
+            </div>
+            <hr style="border-color: #333;">
+            <p class="text-center mb-0" style="font-size: 13px; color: #666;">
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear())</script> Signulu. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+<!-- Product Selection Modal -->
+<div class="modal fade" id="productSelectModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0" style="border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,0.15);">
+      <div class="modal-header border-0 pb-0 px-4 pt-4">
+        <div>
+          <h5 class="modal-title fw-bold" style="font-size:1.4rem;">Which product would you like to try?</h5>
+          <p class="text-muted mb-0" style="font-size:14px;">Select a product to begin your free trial or registration.</p>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body px-4 py-4">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <a href="https://app.signulu.com/account/register" target="_blank" class="sg-prod-card d-block text-center text-decoration-none p-4" style="border:2px solid #e9ecef;border-radius:12px;color:#333;transition:border-color 0.2s,transform 0.2s;">
+              <div style="width:60px;height:60px;border-radius:50%;background:#f0ebff;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">
+                <i class="bi bi-pen" style="font-size:26px;color:#5A30F1;"></i>
+              </div>
+              <div class="fw-bold mb-1" style="font-size:15px;">Signulu e-Sign</div>
+              <div style="font-size:12px;color:#888;">Sign contracts digitally. Legally binding &amp; secure.</div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://dms.signulu.com/auth" target="_blank" class="sg-prod-card d-block text-center text-decoration-none p-4" style="border:2px solid #e9ecef;border-radius:12px;color:#333;transition:border-color 0.2s,transform 0.2s;">
+              <div style="width:60px;height:60px;border-radius:50%;background:#e8f5e9;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">
+                <i class="bi bi-folder2-open" style="font-size:26px;color:#2E7D32;"></i>
+              </div>
+              <div class="fw-bold mb-1" style="font-size:15px;">DMS</div>
+              <div style="font-size:12px;color:#888;">Document Management System. Digitize &amp; organize.</div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://bulksigner.signuluone.com" target="_blank" class="sg-prod-card d-block text-center text-decoration-none p-4" style="border:2px solid #e9ecef;border-radius:12px;color:#333;transition:border-color 0.2s,transform 0.2s;">
+              <div style="width:60px;height:60px;border-radius:50%;background:#fff8e1;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">
+                <i class="bi bi-file-earmark-check" style="font-size:26px;color:#F9A825;"></i>
+              </div>
+              <div class="fw-bold mb-1" style="font-size:15px;">BulkSigner</div>
+              <div style="font-size:12px;color:#888;">DSC Bulk Signing Tool. Sign PDFs with Class 3 DSC.</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.querySelectorAll('.sg-prod-card').forEach(function(el){
+  el.addEventListener('mouseenter',function(){ this.style.borderColor='#5A30F1'; this.style.transform='translateY(-2px)'; });
+  el.addEventListener('mouseleave',function(){ this.style.borderColor='#e9ecef'; this.style.transform=''; });
+});
+</script>
+</body>
+
+</html>
