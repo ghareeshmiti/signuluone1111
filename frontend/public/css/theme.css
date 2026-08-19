@@ -34,7 +34,7 @@ a { text-decoration: none; transition: color var(--sg-t-fast) var(--sg-ease); }
 .section { padding-top: var(--sg-section-y); padding-bottom: var(--sg-section-y); }
 .section-sm { padding-top: var(--sg-section-y-sm); padding-bottom: var(--sg-section-y-sm); }
 .section-alt { background: var(--sg-surface-light); }
-.section-dark { background: var(--sg-surface-dark); color: var(--sg-on-dark); }
+.section-dark { background: linear-gradient(160deg, var(--sg-surface-dark) 0%, var(--sg-surface-dark-2) 100%); color: var(--sg-on-dark); }
 .section-dark h1, .section-dark h2, .section-dark h3, .section-dark h4, .section-dark h5 { color: var(--sg-on-dark); }
 .section-dark p, .section-dark .lead { color: var(--sg-on-dark-muted); }
 @media (max-width: 767.98px) {
@@ -65,7 +65,7 @@ a { text-decoration: none; transition: color var(--sg-t-fast) var(--sg-ease); }
   box-shadow: var(--sg-shadow-md);
 }
 .btn-outline-primary { border: 1px solid var(--sg-accent); color: var(--sg-accent); background: transparent; }
-.btn-outline-primary:hover, .btn-outline-primary:focus { background: var(--sg-accent); border-color: var(--sg-accent); color: #fff; }
+.btn-outline-primary:hover, .btn-outline-primary:focus { background: var(--sg-secondary-soft); border-color: var(--sg-accent); color: var(--sg-secondary-ink); box-shadow: var(--sg-shadow-sm); }
 .btn-navy { background: var(--sg-secondary-soft); border: 1px solid var(--sg-secondary-border); color: var(--sg-secondary-ink); }
 .btn-navy:hover, .btn-navy:focus { background: var(--sg-secondary-soft-hover); border-color: var(--sg-accent); color: var(--sg-secondary-ink); box-shadow: var(--sg-shadow-md); }
 .btn-outline-light { border-color: var(--sg-border-dark); color: #fff; }
@@ -214,7 +214,7 @@ a { text-decoration: none; transition: color var(--sg-t-fast) var(--sg-ease); }
 .cta-band p { color: var(--sg-on-dark-muted); }
 
 /* ---------- Footer ---------- */
-.site-footer { background: var(--sg-surface-dark); color: var(--sg-on-dark-muted); padding: 4rem 0 1.5rem; }
+.site-footer { background: linear-gradient(160deg, var(--sg-surface-dark) 0%, var(--sg-surface-dark-2) 100%); color: var(--sg-on-dark-muted); padding: 4rem 0 1.5rem; }
 .site-footer .footer-brand { display: inline-flex; align-items: center; gap: .6rem; font-family: var(--sg-font-heading); font-weight: 700; font-size: 1.25rem; color: #fff; }
 .site-footer h5 { font-size: var(--sg-small); font-weight: 600; letter-spacing: var(--sg-ls-wide); text-transform: uppercase; color: #fff; margin-bottom: 1.1rem; }
 .site-footer a { color: var(--sg-on-dark-muted); font-size: .95rem; }

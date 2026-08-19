@@ -1,0 +1,44 @@
+{
+  "summary": "Iteration 7 CSS-only fixes verified. All 11 pricing 'Book a demo' outline buttons hover to bg rgb(237,240,255), border rgb(90,48,241), text rgb(59,35,168). Every .section-dark band and every .site-footer across index, solutions, products, pricing, contact, blog, and all 7 industry pages now renders 'linear-gradient(160deg, rgb(34,28,82) 0%, rgb(25,20,65) 100%)' — the old flat rgb(44,47,54) is gone. All other btn-outline-primary instances (home 'Learn more' x3, 'See all industries', modal 'Visit site' x3, 'Compare all solutions', 'Compare solutions') use the same light periwinkle hover consistently. Monthly/Yearly toggle switches $9.99/month <-> $59.88/annum. BulkSigner estimator maps 3->Basic, 7->Pro, 25->Business, 120->Enterprise. Free-trial modal opens showing 3 product cards. Nav 'Book a demo' default = rgb(237,240,255)/rgb(59,35,168) ✓. No horizontal overflow at 375/768/1440 on index or pricing. Industry pages render all use-case ticks (7-13 per page).",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "computed_values": {
+    "pricing_demo_btn_hover": {"background": "rgb(237, 240, 255)", "border-color": "rgb(90, 48, 241)", "color": "rgb(59, 35, 168)"},
+    "section_dark_background_image": "linear-gradient(160deg, rgb(34, 28, 82) 0%, rgb(25, 20, 65) 100%)",
+    "site_footer_background_image": "linear-gradient(160deg, rgb(34, 28, 82) 0%, rgb(25, 20, 65) 100%)",
+    "nav_book_a_demo_default": {"background": "rgb(237, 240, 255)", "color": "rgb(59, 35, 168)", "border-color": "rgb(196, 205, 255)"}
+  },
+  "pages_verified_darks_gradient": [
+    "/index.html (home-security)",
+    "/solutions.html (solutions-compare)",
+    "/products.html",
+    "/pricing.html (hero)",
+    "/contact.html",
+    "/blog.html",
+    "/banking-and-financial-services.html",
+    "/real-estate.html",
+    "/professional-services.html",
+    "/manufacturing.html",
+    "/healthcare.html",
+    "/legal-services.html",
+    "/information-technology.html"
+  ],
+  "contrast_notes": "On the new deep-violet ink background: white H1/H2 headings, gold 'PRICING' eyebrow, and light-periwinkle 'Book a demo' outline button are all clearly legible. Muted body text remains readable. Gold check icons stand out. No low-contrast issues observed.",
+  "hover_on_dark_bg_check": "btn-outline-primary appears on the pricing.html hero (dark violet). On hover it fills to rgb(237,240,255) with rgb(59,35,168) text — text stays readable against the light fill (fill is opaque, so the dark background behind is fully covered). No invisible-button case found.",
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "During transition (mid-fade), backgroundColor briefly reads as rgba(237,240,255,0.984) — this is expected CSS transition behaviour, not a bug.",
+    "Industry pages use dashes but no /industries/ subfolder (e.g. /banking-and-financial-services.html) — ensure any internal links use these exact paths (they do in current nav)."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A", "frontend": "100%"},
+  "seed_data_creation": "none",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Iteration 7 is a CSS-only tokens+theme change. All pricing demo hover buttons and every .section-dark/.site-footer occurrence verified via computed styles in headless browser. Path note: industry pages live at /public root (e.g. /banking-and-financial-services.html, /legal-services.html), NOT under /industries/. Static site served by python http.server — 403 on urllib scans is expected."
+}
