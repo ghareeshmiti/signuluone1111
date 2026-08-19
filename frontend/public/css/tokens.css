@@ -8,6 +8,10 @@
   --sg-accent-600: #4726C9;
   --sg-accent-light: #FFD15D;
   --sg-accent-soft: rgba(90, 48, 241, 0.10);
+  --sg-secondary-soft: #EDF0FF;
+  --sg-secondary-soft-hover: #DCE2FF;
+  --sg-secondary-border: #C4CDFF;
+  --sg-secondary-ink: #3B23A8;
   --sg-accent-soft-dark: rgba(255, 209, 93, 0.16);
 
   /* Surfaces */

@@ -1,0 +1,51 @@
+{
+  "summary": "Iteration 6 (frontend-only) verified. The .btn-navy secondary style was recolored to light periwinkle-blue via new tokens and applied uniformly to every 'Book a demo' / secondary button across all 16 pages. Computed styles, dark-hero legibility, navigation targets, and regression items (free-trial modal, pricing tabs, Monthly/Yearly toggle, BulkSigner estimator, responsive layout) all pass.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "detailed_verifications": {
+    "nav_demo_btn_all_pages": "16/16 pages -> computed bg=rgb(237,240,255), border-color=rgb(196,205,255), color=rgb(59,35,168). Exact match with spec.",
+    "btn_navy_consistency_per_page": {
+      "/index.html": "4 btn-navy, 0 deviations",
+      "/solutions.html": "4 btn-navy, 0 deviations",
+      "/industries.html": "3 btn-navy, 0 deviations",
+      "/pricing.html": "9 btn-navy, 0 deviations",
+      "/blog.html": "3 btn-navy, 0 deviations",
+      "/contact.html": "3 btn-navy, 0 deviations",
+      "/privacy-policy.html": "3 btn-navy, 0 deviations",
+      "/terms-of-service.html": "3 btn-navy, 0 deviations",
+      "/banking-and-financial-services.html": "5 btn-navy, 0 deviations",
+      "/real-estate.html": "5 btn-navy, 0 deviations",
+      "/professional-services.html": "5 btn-navy, 0 deviations",
+      "/manufacturing.html": "5 btn-navy, 0 deviations",
+      "/healthcare.html": "5 btn-navy, 0 deviations",
+      "/legal-services.html": "5 btn-navy, 0 deviations",
+      "/information-technology.html": "5 btn-navy, 0 deviations",
+      "/404.html": "2 btn-navy, 0 deviations"
+    },
+    "dark_grey_secondary_buttons_remaining": "None found on any of the 16 pages (no element with computed background rgb(44,47,54)).",
+    "dark_background_legibility": "Verified via screenshots on index hero, pricing hero and industry hero/CTA. The light periwinkle background (#EDF0FF) combined with violet ink (#3B23A8) and violet border (#C4CDFF) gives a clear, readable pill on the dark violet backgrounds. Contrast between button text and button bg is strong; button-vs-hero-bg edge is also clearly discernible due to the border. Legibility PASS.",
+    "navigation_targets": "nav-demo-btn click navigates to /contact.html#demo (confirmed). hero-demo-btn href = /contact.html#demo. Pricing product-specific CTAs still resolve to /contact.html?product=... (verified via data-testid inventory).",
+    "free_trial_modal": "Three product cards present with correct external hrefs: esignature -> https://app.signulu.com/account/register, dms -> https://www.signuluone.com/Dms.html, bulksigner -> https://bulksigner.signuluone.com/#download. No <select> inside the open modal.",
+    "pricing_tabs": "Three distinct panes present (pricing-pane-esignature / -dms / -bulksigner) with unique CTA IDs per plan.",
+    "monthly_yearly_toggle": "esign-billing-switch toggles displayed price between $59.88 (yearly) and $9.99 (monthly). Confirmed both directions.",
+    "bulksigner_estimator": "3 -> Basic / \u20b96,600. 7 -> Pro / \u20b912,600. 25 -> Business / \u20b937,500. 120 -> Enterprise / \u20b91,20,000. Exact spec match.",
+    "responsive_overflow": "No horizontal overflow at 375 / 768 / 1440 on /index.html, /pricing.html, /banking-and-financial-services.html."
+  },
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Color change is implemented cleanly at the token level (--sg-secondary-soft / -hover / -border / -ink in tokens.css) and .btn-navy consumes them, so future palette tweaks stay a one-line change.",
+    "All previous btn-outline-light demo buttons on dark bands are now btn-navy, so the secondary style is truly uniform \u2014 no hidden variants left."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "n/a", "frontend": "100%"},
+  "seed_data_creation": "none",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Static Bootstrap site served by python http.server on :3000, exposed via REACT_APP_BACKEND_URL. Secondary button style lives in /app/frontend/public/css/theme.css (.btn-navy) and tokens in /app/frontend/public/css/tokens.css. Expected computed values for .btn-navy: bg rgb(237,240,255), border rgb(196,205,255), color rgb(59,35,168). Key testids for regressions: nav-demo-btn, nav-free-trial-btn, trial-card-esignature/-dms/-bulksigner, pricing-tab-esignature/-dms/-bulksigner, esign-billing-switch, bulk-licence-input, bulk-estimate-plan/-total.",
+  "rca of the issue": "Not a bug \u2014 requested color change verified working."
+}

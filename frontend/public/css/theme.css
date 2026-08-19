@@ -66,8 +66,8 @@ a { text-decoration: none; transition: color var(--sg-t-fast) var(--sg-ease); }
 }
 .btn-outline-primary { border: 1px solid var(--sg-accent); color: var(--sg-accent); background: transparent; }
 .btn-outline-primary:hover, .btn-outline-primary:focus { background: var(--sg-accent); border-color: var(--sg-accent); color: #fff; }
-.btn-navy { background: var(--sg-surface-dark); border: 1px solid var(--sg-surface-dark); color: #fff; }
-.btn-navy:hover { background: var(--sg-surface-dark-2); border-color: var(--sg-surface-dark-2); color: #fff; box-shadow: var(--sg-shadow-md); }
+.btn-navy { background: var(--sg-secondary-soft); border: 1px solid var(--sg-secondary-border); color: var(--sg-secondary-ink); }
+.btn-navy:hover, .btn-navy:focus { background: var(--sg-secondary-soft-hover); border-color: var(--sg-accent); color: var(--sg-secondary-ink); box-shadow: var(--sg-shadow-md); }
 .btn-outline-light { border-color: var(--sg-border-dark); color: #fff; }
 .btn-outline-light:hover { background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, .4); color: #fff; }
 
