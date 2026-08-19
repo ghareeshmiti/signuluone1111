@@ -92,11 +92,11 @@ a { text-decoration: none; transition: color var(--sg-t-fast) var(--sg-ease); }
 .site-footer .footer-brand .footer-wordmark { height: 36px; width: auto; }
 .navbar-signulu .navbar-brand .brand-mark { width: 34px; height: 34px; }
 .navbar-signulu .nav-link {
-  font-family: var(--sg-font-heading); font-weight: 500; font-size: .975rem;
-  color: #333333; padding: .5rem .9rem; border-radius: var(--sg-radius-sm);
+  font-family: var(--sg-font-heading); font-weight: 700; font-size: 1.0625rem;
+  color: #1F1A46; padding: .5rem .9rem; border-radius: var(--sg-radius-sm);
   position: relative;
 }
-.navbar-signulu .nav-link:hover { color: var(--sg-secondary); }
+.navbar-signulu .nav-link:hover { color: var(--sg-accent); }
 .navbar-signulu .nav-link.active { color: var(--sg-accent); }
 .navbar-signulu .nav-link.active::before {
   content: ""; position: absolute; left: .9rem; right: .9rem; bottom: -.15rem;
