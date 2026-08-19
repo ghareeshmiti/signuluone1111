@@ -111,21 +111,21 @@ a { text-decoration: none; transition: color var(--sg-t-fast) var(--sg-ease); }
 /* ---------- Hero ---------- */
 .hero {
   position: relative; overflow: hidden;
-  background: var(--sg-surface-dark);
+  background: #2B33C9;
   color: var(--sg-on-dark);
   padding: 6.5rem 0 5.5rem;
 }
 .hero::before {
   content: ""; position: absolute; inset: 0;
-  background-image: var(--hero-image, none);
+  background-image: var(--hero-image, url('/img/hero-banner.jpg'));
   background-size: cover; background-position: center;
-  opacity: .28;
+  opacity: 1;
 }
 .hero::after {
   content: ""; position: absolute; inset: 0;
   background:
-    radial-gradient(900px 420px at 12% 8%, rgba(90, 48, 241, 0.42), transparent 62%),
-    linear-gradient(120deg, var(--sg-hero-overlay) 20%, rgba(20, 18, 40, 0.74) 100%);
+    radial-gradient(900px 420px at 12% 8%, rgba(90, 48, 241, 0.30), transparent 62%),
+    linear-gradient(120deg, rgba(20, 18, 60, 0.62) 20%, rgba(20, 18, 40, 0.44) 100%);
 }
 .hero > .container { position: relative; z-index: 2; }
 .hero h1 { color: var(--sg-on-dark); }
