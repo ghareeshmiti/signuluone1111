@@ -113,7 +113,7 @@ a { text-decoration: none; transition: color var(--sg-t-fast) var(--sg-ease); }
   position: relative; overflow: hidden;
   background: #2B33C9;
   color: var(--sg-on-dark);
-  padding: 6.5rem 0 5.5rem;
+  padding: 4rem 0 3.5rem;
 }
 .hero::before {
   content: ""; position: absolute; inset: 0;
@@ -132,7 +132,7 @@ a { text-decoration: none; transition: color var(--sg-t-fast) var(--sg-ease); }
 .hero p { color: var(--sg-on-dark-muted); }
 .hero-accent { color: var(--sg-accent-light); }
 .hero-sub { max-width: 620px; font-size: 1.125rem; }
-.hero-compact { padding: 4.5rem 0 4rem; }
+.hero-compact { padding: 3rem 0 2.75rem; }
 .hero-chip {
   display: inline-flex; align-items: center; gap: .5rem;
   background: var(--sg-accent-soft-dark); border: 1px solid rgba(127, 178, 255, .35);
@@ -140,7 +140,8 @@ a { text-decoration: none; transition: color var(--sg-t-fast) var(--sg-ease); }
   padding: .35rem .9rem; font-size: var(--sg-small); font-weight: 600;
   font-family: var(--sg-font-heading);
 }
-.hero-visual { border-radius: var(--sg-radius-lg); box-shadow: var(--sg-shadow-xl); border: 1px solid var(--sg-border-dark); width: 100%; height: auto; }
+.hero-visual { border-radius: var(--sg-radius-lg); box-shadow: var(--sg-shadow-xl); border: 1px solid var(--sg-border-dark); width: 100%; height: auto; max-height: 340px; object-fit: cover; object-position: center; }
+@media (min-width: 992px) { .hero-visual { max-height: 380px; } }
 
 /* ---------- Cards & feature grid ---------- */
 .card {
