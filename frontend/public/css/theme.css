@@ -214,7 +214,7 @@ a { text-decoration: none; transition: color var(--sg-t-fast) var(--sg-ease); }
 .cta-band p { color: var(--sg-on-dark-muted); }
 
 /* ---------- Footer ---------- */
-.site-footer { background: linear-gradient(160deg, var(--sg-surface-dark) 0%, var(--sg-surface-dark-2) 100%); color: var(--sg-on-dark-muted); padding: 4rem 0 1.5rem; }
+.site-footer { background: var(--sg-footer-bg); color: var(--sg-on-dark-muted); padding: 4rem 0 1.5rem; }
 .site-footer .footer-brand { display: inline-flex; align-items: center; gap: .6rem; font-family: var(--sg-font-heading); font-weight: 700; font-size: 1.25rem; color: #fff; }
 .site-footer h5 { font-size: var(--sg-small); font-weight: 600; letter-spacing: var(--sg-ls-wide); text-transform: uppercase; color: #fff; margin-bottom: 1.1rem; }
 .site-footer a { color: var(--sg-on-dark-muted); font-size: .95rem; }
