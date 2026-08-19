@@ -1,0 +1,535 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CGHL3V39G4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-CGHL3V39G4", {
+      linker: { domains: ["signuluone.com", "app.signulu.com"] }
+    });
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Signulu Blog - Latest insights on e-signatures, document management, digital transformation, and workflow automation.">
+  <link rel="shortcut icon" href="img/NewPenIcon.png" type="image/x-icon">
+  <link rel="icon" href="img/NewPenIcon.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <title>Blog | SignuluOne</title>
+  <style>
+      .sg-topnav .nav-link { font-weight: 700 !important; color: #333 !important; font-family: Lato, sans-serif !important; font-size: 15px !important; padding: 8px 14px !important; }
+      .sg-topnav .nav-link:hover { color: #5A30F1 !important; }
+    body { font-family: 'Lato', sans-serif; color: #333; }
+    :root { --primary: #5A30F1; }
+    .btn-primary { background-color: var(--primary); border-color: var(--primary); }
+    .btn-primary:hover { background-color: #4a26d4; border-color: #4a26d4; }
+    .btn-outline-primary { color: var(--primary); border-color: var(--primary); }
+    .btn-outline-primary:hover { background-color: var(--primary); border-color: var(--primary); }
+    .text-primary { color: var(--primary) !important; }
+
+    /* Navbar */
+    .navbar { padding: 12px 0; }
+    .navbar-brand img { height: 40px; }
+    .nav-link { font-weight: 700; font-family: 'Lato', sans-serif; color: #333 !important; padding: 8px 14px !important; }
+    .nav-link:hover { color: var(--primary) !important; }
+    .dropdown-mega { position: static !important; }
+    .dropdown-mega-menu {
+      width: 100%; left: 0 !important; right: 0 !important;
+      padding: 24px; border: none; box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+      border-top: 3px solid var(--primary);
+    }
+    .mega-menu-title {
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 1px; color: var(--primary);
+      border-bottom: 2px solid var(--primary); padding-bottom: 8px; margin-bottom: 12px;
+    }
+    .mega-menu-item { display: flex; align-items: flex-start; padding: 8px 10px; border-radius: 8px; text-decoration: none; color: #333; transition: background 0.2s; }
+    .mega-menu-item:hover { background: #f0ebff; color: var(--primary); }
+    .mega-menu-icon { width: 36px; height: 36px; border-radius: 8px; background: #f0ebff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-right: 10px; }
+    .mega-menu-icon i { color: var(--primary); font-size: 16px; }
+    .mega-menu-item-title { font-weight: 700; font-size: 13px; margin-bottom: 2px; }
+    .mega-menu-item-desc { font-size: 11px; color: #777; }
+
+    /* Hero */
+    .blog-hero { background: linear-gradient(135deg, #5A30F1 0%, #7c5af0 50%, #9b79f5 100%); padding: 70px 0 50px; color: #fff; }
+    .blog-hero h1 { font-size: 2.8rem; font-weight: 900; }
+    .blog-hero p { font-size: 1.15rem; opacity: 0.9; }
+
+    /* Category filter */
+    .category-filter .btn { border-radius: 30px; font-size: 13px; font-weight: 600; margin: 4px; }
+    .category-filter .btn.active { background-color: var(--primary); color: #fff; border-color: var(--primary); }
+
+    /* Blog card */
+    .blog-card { border: none; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 16px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; height: 100%; }
+    .blog-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(90,48,241,0.15); }
+    .blog-card img { height: 200px; object-fit: cover; width: 100%; }
+    .blog-card .card-body { padding: 20px; display: flex; flex-direction: column; }
+    .category-badge { display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; background: #f0ebff; color: var(--primary); border-radius: 20px; padding: 3px 10px; margin-bottom: 10px; }
+    .blog-card .card-title { font-size: 1rem; font-weight: 700; line-height: 1.4; flex: 1; }
+    .blog-card .card-meta { font-size: 12px; color: #888; margin-top: 10px; }
+    .blog-card .read-more { font-size: 13px; font-weight: 700; color: var(--primary); text-decoration: none; display: inline-flex; align-items: center; gap: 4px; margin-top: 14px; }
+    .blog-card .read-more:hover { text-decoration: underline; }
+
+    /* Sidebar */
+    .sidebar-card { border: none; border-radius: 12px; box-shadow: 0 2px 16px rgba(0,0,0,0.08); padding: 24px; }
+    .sidebar-card h6 { font-weight: 700; border-bottom: 2px solid var(--primary); padding-bottom: 10px; margin-bottom: 16px; }
+    .sidebar-cat-link { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; text-decoration: none; color: #555; border-bottom: 1px solid #f0f0f0; font-size: 14px; }
+    .sidebar-cat-link:hover { color: var(--primary); }
+    .sidebar-cat-link span { background: #f0ebff; color: var(--primary); font-size: 11px; font-weight: 700; border-radius: 20px; padding: 2px 8px; }
+
+    /* Footer */
+    footer { background-color: #1a1a2e; color: #ccc; }
+    footer h6 { color: #fff; font-weight: 700; margin-bottom: 16px; }
+    footer a { color: #aaa; text-decoration: none; font-size: 14px; }
+    footer a:hover { color: #fff; }
+    .footer-brand { font-size: 1.1rem; font-weight: 700; color: #fff; }
+    .footer-divider { border-color: #333; }
+    .social-link { width: 36px; height: 36px; border-radius: 50%; background: #333; display: inline-flex; align-items: center; justify-content: center; color: #ccc; text-decoration: none; transition: background 0.2s; }
+    .social-link:hover { background: var(--primary); color: #fff; }
+
+    /* Modal */
+    .product-card-modal { border: 2px solid #e9ecef; border-radius: 12px; padding: 20px; text-align: center; text-decoration: none; color: #333; transition: border-color 0.2s, transform 0.2s; display: block; }
+    .product-card-modal:hover { border-color: var(--primary); transform: translateY(-2px); color: #333; }
+    .product-card-modal .icon-circle { width: 56px; height: 56px; border-radius: 50%; background: #f0ebff; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; }
+    .product-card-modal .icon-circle i { font-size: 24px; color: var(--primary); }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top sg-topnav">
+  <div class="container">
+    <a class="navbar-brand" href="./index.html">
+      <img src="./img/new-signulu-logo.png" alt="SignuluOne">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav me-auto">
+        <!-- Products -->
+        <li class="nav-item dropdown dropdown-mega">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+          <div class="dropdown-menu dropdown-mega-menu">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="mega-menu-title">E-Signature</div>
+                <a class="mega-menu-item" href="https://signulu.com/index.php/about" target="_blank">
+                  <div class="mega-menu-icon"><i class="bi bi-pen"></i></div>
+                  <div><div class="mega-menu-item-title">Signulu e-Sign</div><div class="mega-menu-item-desc">Sign contracts digitally with AI verification</div></div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <div class="mega-menu-title">Document Management</div>
+                <a class="mega-menu-item" href="./Dms.html">
+                  <div class="mega-menu-icon"><i class="bi bi-folder2-open"></i></div>
+                  <div><div class="mega-menu-item-title">DMS</div><div class="mega-menu-item-desc">Centralized document storage & workflows</div></div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <div class="mega-menu-title">Bulk Signing</div>
+                <a class="mega-menu-item" href="https://bulksigner.signuluone.com" target="_blank">
+                  <div class="mega-menu-icon"><i class="bi bi-file-earmark-check"></i></div>
+                  <div><div class="mega-menu-item-title">BulkSigner</div><div class="mega-menu-item-desc">DSC-based bulk document signing tool</div></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- Why Signulu -->
+        <li class="nav-item dropdown dropdown-mega">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Why Signulu</a>
+          <div class="dropdown-menu dropdown-mega-menu">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="mega-menu-title">Security</div>
+                <a class="mega-menu-item" href="./why-signulu.html#esignatures">
+                  <div class="mega-menu-icon"><i class="bi bi-shield-lock"></i></div>
+                  <div><div class="mega-menu-item-title">Secure e-Signatures</div><div class="mega-menu-item-desc">AES-256 encryption & TLS 1.3</div></div>
+                </a>
+                <a class="mega-menu-item" href="./why-signulu.html#audit">
+                  <div class="mega-menu-icon"><i class="bi bi-journal-check"></i></div>
+                  <div><div class="mega-menu-item-title">Audit Trail</div><div class="mega-menu-item-desc">Full tamper-proof activity log</div></div>
+                </a>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-title">Automation</div>
+                <a class="mega-menu-item" href="./why-signulu.html#workflows">
+                  <div class="mega-menu-icon"><i class="bi bi-diagram-3"></i></div>
+                  <div><div class="mega-menu-item-title">Workflow Automation</div><div class="mega-menu-item-desc">Multi-level approval sequences</div></div>
+                </a>
+                <a class="mega-menu-item" href="./why-signulu.html#templates">
+                  <div class="mega-menu-icon"><i class="bi bi-file-earmark-text"></i></div>
+                  <div><div class="mega-menu-item-title">Templates</div><div class="mega-menu-item-desc">Reusable document templates</div></div>
+                </a>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-title">Access & Storage</div>
+                <a class="mega-menu-item" href="./why-signulu.html#multidevice">
+                  <div class="mega-menu-icon"><i class="bi bi-devices"></i></div>
+                  <div><div class="mega-menu-item-title">Multi-Device Access</div><div class="mega-menu-item-desc">Web, iOS & Android</div></div>
+                </a>
+                <a class="mega-menu-item" href="./why-signulu.html#cloud">
+                  <div class="mega-menu-icon"><i class="bi bi-cloud"></i></div>
+                  <div><div class="mega-menu-item-title">Cloud Storage</div><div class="mega-menu-item-desc">Integrated with major cloud providers</div></div>
+                </a>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-title">Compliance</div>
+                <a class="mega-menu-item" href="./why-signulu.html#rbac">
+                  <div class="mega-menu-icon"><i class="bi bi-person-lock"></i></div>
+                  <div><div class="mega-menu-item-title">RBAC</div><div class="mega-menu-item-desc">Role-based access control</div></div>
+                </a>
+                <a class="mega-menu-item" href="./why-signulu.html#otp">
+                  <div class="mega-menu-icon"><i class="bi bi-phone"></i></div>
+                  <div><div class="mega-menu-item-title">OTP Verification</div><div class="mega-menu-item-desc">SMS/Email signer authentication</div></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link active" href="./Blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+      </ul>
+      <div class="d-flex gap-2">
+        <a href="./contact.html" class="btn btn-outline-secondary">Contact Sales</a>
+        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productSelectModal">Try for Free</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="blog-hero text-center">
+  <div class="container">
+    <h1>SignuluOne Blog</h1>
+    <p class="mb-0">Insights on e-signatures, document management, and digital transformation</p>
+  </div>
+</section>
+
+<!-- Blog Content -->
+<section class="py-5" style="background:#f8f9fa;">
+  <div class="container">
+    <!-- Category Filter -->
+    <div class="category-filter text-center mb-5">
+      <button class="btn btn-outline-secondary active" onclick="filterPosts('all', this)">All Posts</button>
+      <button class="btn btn-outline-secondary" onclick="filterPosts('construction', this)">Construction</button>
+      <button class="btn btn-outline-secondary" onclick="filterPosts('fmcg', this)">FMCG</button>
+      <button class="btn btn-outline-secondary" onclick="filterPosts('healthcare', this)">Healthcare</button>
+      <button class="btn btn-outline-secondary" onclick="filterPosts('logistics', this)">Logistics</button>
+      <button class="btn btn-outline-secondary" onclick="filterPosts('procurement', this)">Procurement</button>
+    </div>
+
+    <div class="row">
+      <!-- Blog Grid -->
+      <div class="col-lg-8">
+        <div class="row g-4" id="blogGrid">
+
+          <!-- Post 1: Construction -->
+          <div class="col-md-6 blog-post-item" data-category="construction">
+            <div class="card blog-card">
+              <img src="./img/blog/blog-construction.png" alt="Construction Plan Approval" loading="lazy">
+              <div class="card-body">
+                <span class="category-badge">Construction</span>
+                <h5 class="card-title">Construction Plan Approval from Multiple Stakeholders in a Jiffy</h5>
+                <div class="card-meta"><i class="bi bi-calendar3 me-1"></i>August 25, 2021</div>
+                <a href="./blog/construction-plan-approval.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 2: FMCG -->
+          <div class="col-md-6 blog-post-item" data-category="fmcg">
+            <div class="card blog-card">
+              <img src="./img/blog/blog-esign-orders.png" alt="eSign and Approve Orders" loading="lazy">
+              <div class="card-body">
+                <span class="category-badge">FMCG</span>
+                <h5 class="card-title">eSign, and Approve Orders Electronically</h5>
+                <div class="card-meta"><i class="bi bi-calendar3 me-1"></i>August 18, 2021</div>
+                <a href="./blog/esign-approve-orders.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 3: Healthcare -->
+          <div class="col-md-6 blog-post-item" data-category="healthcare">
+            <div class="card blog-card">
+              <img src="./img/blog/blog-healthcare.png" alt="Improve Health Assistance" loading="lazy">
+              <div class="card-body">
+                <span class="category-badge">Healthcare</span>
+                <h5 class="card-title">Improve Health Assistance using Signulu</h5>
+                <div class="card-meta"><i class="bi bi-calendar3 me-1"></i>August 10, 2021</div>
+                <a href="./blog/improve-health-assistance.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 4: Logistics -->
+          <div class="col-md-6 blog-post-item" data-category="logistics">
+            <div class="card blog-card">
+              <img src="./img/blog/blog-logistics.png" alt="Store and Retrieve Documents" loading="lazy">
+              <div class="card-body">
+                <span class="category-badge">Logistics</span>
+                <h5 class="card-title">Electronically Store and Retrieve Documents on the go!</h5>
+                <div class="card-meta"><i class="bi bi-calendar3 me-1"></i>August 4, 2021</div>
+                <a href="./blog/store-retrieve-documents.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 5: Procurement -->
+          <div class="col-md-6 blog-post-item" data-category="procurement">
+            <div class="card blog-card">
+              <img src="./img/blog/blog-procurement.png" alt="Validate Procurement" loading="lazy">
+              <div class="card-body">
+                <span class="category-badge">Procurement</span>
+                <h5 class="card-title">Validate &amp; Authenticate Procurement with Signulu</h5>
+                <div class="card-meta"><i class="bi bi-calendar3 me-1"></i>June 28, 2021</div>
+                <a href="./blog/validate-procurement.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 6: General -->
+          <div class="col-md-6 blog-post-item" data-category="all">
+            <div class="card blog-card">
+              <img src="./img/blog/blog-reduce-paper.png" alt="Reduce Paper Go Electronic" loading="lazy">
+              <div class="card-body">
+                <span class="category-badge">Digital Transformation</span>
+                <h5 class="card-title">Reduce Paper, Go Electronic with Signulu</h5>
+                <div class="card-meta"><i class="bi bi-calendar3 me-1"></i>June 21, 2021</div>
+                <a href="./blog/reduce-paper-go-electronic.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 7: HR/Onboarding -->
+          <div class="col-md-6 blog-post-item" data-category="all">
+            <div class="card blog-card">
+              <img src="./img/blog/blog-onboarding.png" alt="Faster Onboarding" loading="lazy">
+              <div class="card-body">
+                <span class="category-badge">HR</span>
+                <h5 class="card-title">Faster On-Boarding with Signulu</h5>
+                <div class="card-meta"><i class="bi bi-calendar3 me-1"></i>June 14, 2021</div>
+                <a href="./blog/faster-onboarding.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 8: Healthcare -->
+          <div class="col-md-6 blog-post-item" data-category="healthcare">
+            <div class="card blog-card">
+              <img src="./img/blog/blog-patient-consent.jpg" alt="Patient Consent Form" loading="lazy">
+              <div class="card-body">
+                <span class="category-badge">Healthcare</span>
+                <h5 class="card-title">eSigned Patient Consent form Now Made Easy with Signulu</h5>
+                <div class="card-meta"><i class="bi bi-calendar3 me-1"></i>June 7, 2021</div>
+                <a href="./blog/patient-consent-form.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 9: Healthcare -->
+          <div class="col-md-6 blog-post-item" data-category="healthcare">
+            <div class="card blog-card">
+              <img src="./img/blog/blog-patient-records.jpg" alt="Digital Patient Records" loading="lazy">
+              <div class="card-body">
+                <span class="category-badge">Healthcare</span>
+                <h5 class="card-title">Digital Transformation of Patient Health Records</h5>
+                <div class="card-meta"><i class="bi bi-calendar3 me-1"></i>May 31, 2021</div>
+                <a href="./blog/digital-patient-records.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 10: General -->
+          <div class="col-md-6 blog-post-item" data-category="all">
+            <div class="card blog-card">
+              <img src="./img/blog/blog-access-anywhere.jpg" alt="Access Documents Anywhere" loading="lazy">
+              <div class="card-body">
+                <span class="category-badge">Productivity</span>
+                <h5 class="card-title">Access Document from Anywhere, Anytime on Any Device</h5>
+                <div class="card-meta"><i class="bi bi-calendar3 me-1"></i>May 24, 2021</div>
+                <a href="./blog/access-documents-anywhere.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-lg-4">
+        <div class="sidebar-card mb-4">
+          <h6>Browse by Category</h6>
+          <a href="#" class="sidebar-cat-link" onclick="filterPosts('construction', null); return false;">Construction <span>1</span></a>
+          <a href="#" class="sidebar-cat-link" onclick="filterPosts('fmcg', null); return false;">FMCG <span>1</span></a>
+          <a href="#" class="sidebar-cat-link" onclick="filterPosts('healthcare', null); return false;">Healthcare <span>3</span></a>
+          <a href="#" class="sidebar-cat-link" onclick="filterPosts('logistics', null); return false;">Logistics <span>1</span></a>
+          <a href="#" class="sidebar-cat-link" onclick="filterPosts('procurement', null); return false;">Procurement <span>1</span></a>
+          <a href="#" class="sidebar-cat-link" onclick="filterPosts('all', null); return false;">All Posts <span>10</span></a>
+        </div>
+
+        <div class="sidebar-card mb-4" style="background: linear-gradient(135deg, #5A30F1, #7c5af0); color:#fff;">
+          <h6 style="color:#fff; border-bottom-color: rgba(255,255,255,0.3);">Ready to Go Digital?</h6>
+          <p style="font-size:14px; opacity:0.9;">Start your free trial today. No credit card required.</p>
+          <a href="#" class="btn btn-light btn-sm fw-bold w-100" data-bs-toggle="modal" data-bs-target="#productSelectModal">Start Free Trial</a>
+        </div>
+
+        <div class="sidebar-card">
+          <h6>Recent Posts</h6>
+          <div class="d-flex flex-column gap-3">
+            <a href="./blog/construction-plan-approval.html" class="text-decoration-none d-flex gap-2 align-items-start">
+              <img src="./img/blog/blog-construction.png" alt="" style="width:60px;height:50px;object-fit:cover;border-radius:6px;flex-shrink:0;">
+              <div style="font-size:13px;color:#333;font-weight:600;line-height:1.3;">Construction Plan Approval from Multiple Stakeholders</div>
+            </a>
+            <a href="./blog/esign-approve-orders.html" class="text-decoration-none d-flex gap-2 align-items-start">
+              <img src="./img/blog/blog-esign-orders.png" alt="" style="width:60px;height:50px;object-fit:cover;border-radius:6px;flex-shrink:0;">
+              <div style="font-size:13px;color:#333;font-weight:600;line-height:1.3;">eSign, and Approve Orders Electronically</div>
+            </a>
+            <a href="./blog/improve-health-assistance.html" class="text-decoration-none d-flex gap-2 align-items-start">
+              <img src="./img/blog/blog-healthcare.png" alt="" style="width:60px;height:50px;object-fit:cover;border-radius:6px;flex-shrink:0;">
+              <div style="font-size:13px;color:#333;font-weight:600;line-height:1.3;">Improve Health Assistance using Signulu</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-5 text-center" style="background:#fff;">
+  <div class="container">
+    <h2 class="fw-bold mb-3">Start Your Digital Journey Today</h2>
+    <p class="text-muted mb-4">Join thousands of businesses that have already gone paperless with SignuluOne.</p>
+    <a href="#" class="btn btn-primary btn-lg px-5" data-bs-toggle="modal" data-bs-target="#productSelectModal">Try for Free</a>
+    <a href="./contact.html" class="btn btn-outline-secondary btn-lg px-5 ms-3">Contact Sales</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer style="background-color:#1a1a2e; color:#ccc; padding:60px 0 30px;">
+  <div class="container">
+    <div class="row g-4 mb-5">
+      <div class="col-lg-4">
+        <img src="./img/new-signulu-logo.png" alt="SignuluOne" height="38" class="mb-3" style="filter:brightness(0) invert(1);">
+        <p style="font-size:14px; line-height:1.7;">The complete digital document platform. Sign, manage, and automate your document workflows with enterprise-grade security.</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Products</h6>
+        <div class="d-flex flex-column gap-2">
+          <a href="./signing-solutions.html">Signulu e-Sign</a>
+          <a href="./Dms.html">DMS</a>
+          <a href="./BulkSigner.html">BulkSigner</a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Company</h6>
+        <div class="d-flex flex-column gap-2">
+          <a href="./about.html">About Us</a>
+          <a href="./Blog.html">Blog</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./pricing.html">Pricing</a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Legal</h6>
+        <div class="d-flex flex-column gap-2">
+          <a href="./Privacy Policy.html">Privacy Policy</a>
+          <a href="./Terms of Services.html">Terms of Service</a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Get Started</h6>
+        <div class="d-flex flex-column gap-2">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#productSelectModal">Free Trial</a>
+          <a href="./contact.html">Contact Sales</a>
+          <a href="./pricing.html">View Pricing</a>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-3">
+      <p class="mb-0" style="font-size:13px;">&copy; 2024 SignuluOne. All rights reserved.</p>
+      <p class="mb-0" style="font-size:13px;">Made with <i class="bi bi-heart-fill text-danger"></i> for digital transformation</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Product Selection Modal -->
+<div class="modal fade" id="productSelectModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0" style="border-radius:16px;">
+      <div class="modal-header border-0 pb-0 px-4 pt-4">
+        <div>
+          <h5 class="modal-title fw-bold fs-4 mb-1">Which product would you like to try?</h5>
+          <p class="text-muted mb-0" style="font-size:14px;">Select a product to get started with your free trial</p>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body px-4 py-4">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <a href="https://app.signulu.com/account/register" target="_blank" class="product-card-modal">
+              <div class="icon-circle" style="background:#f0ebff;"><i class="bi bi-pen" style="color:#5A30F1;"></i></div>
+              <div class="fw-bold mb-1" style="font-size:15px;">Signulu e-Sign</div>
+              <div style="font-size:12px;color:#888;">Sign contracts digitally. Legally binding &amp; secure.</div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://dms.signulu.com/auth" target="_blank" class="product-card-modal">
+              <div class="icon-circle" style="background:#e8f5e9;"><i class="bi bi-folder2-open" style="color:#2E7D32;"></i></div>
+              <div class="fw-bold mb-1" style="font-size:15px;">DMS</div>
+              <div style="font-size:12px;color:#888;">Document Management System. Digitize &amp; organize.</div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://bulksigner.signuluone.com" target="_blank" class="product-card-modal">
+              <div class="icon-circle" style="background:#fff8e1;"><i class="bi bi-file-earmark-check" style="color:#F9A825;"></i></div>
+              <div class="fw-bold mb-1" style="font-size:15px;">BulkSigner</div>
+              <div style="font-size:12px;color:#888;">DSC Bulk Signing Tool. Sign PDFs with Class 3 DSC.</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function filterPosts(category, btn) {
+    const items = document.querySelectorAll('.blog-post-item');
+    const btns = document.querySelectorAll('.category-filter .btn');
+
+    // Update active button
+    if (btn) {
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    items.forEach(item => {
+      if (category === 'all' || item.dataset.category === category) {
+        item.style.display = '';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+</script>
+</body>
+</html>

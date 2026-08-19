@@ -1,0 +1,923 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CGHL3V39G4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+
+  gtag("config", "G-CGHL3V39G4", {
+    linker: {
+      domains: ["signulu.com", "app.signulu.com", "bulksigner.signuluone.com"]
+    }
+  });
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/NewPenIcon.png" type="image/x-icon">
+    <link rel="icon" href="img/NewPenIcon.png" type="image/x-icon">
+
+    <meta name="description"
+        content="Connect with our sales team to learn more about our plans, pricing, and solutions. We'll respond within one business day.">
+    <meta name="keywords" content="contact sales, enterprise solutions, product inquiry, sales form, DocuSign, pricing">
+    <meta name="author" content="Your Company Name">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Connect with Our Sales Team">
+    <meta property="og:description"
+        content="Complete the form and our sales team will reach out within one business day.">
+    <meta property="og:image" content="https://yourdomain.com/assets/preview-image.jpg">
+    <meta property="og:url" content="https://yourdomain.com/contact-sales">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Connect with Our Sales Team">
+    <meta name="twitter:description" content="Fill out the sales form to get in touch.">
+    <meta name="twitter:image" content="https://yourdomain.com/assets/preview-image.jpg">
+
+    <title>Signulu Products</title>
+    <!-- Google Fonts: Lato -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        /* droupdownmenu css*/
+        .dropdown-mega {
+            position: static !important;
+        }
+
+        /* Smooth transition for hover */
+        .dropdown-mega-menu .list-unstyled li {
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+        }
+
+        /* Hover effect */
+        .dropdown-mega-menu .list-unstyled li:hover strong {
+            color: #5A30F1;
+        }
+
+        .dropdown-mega-menu .list-unstyled li:hover {
+            padding-left: 5px;
+        }
+
+
+        .dropdown-mega-menu {
+            width: 100%;
+            padding: 20px;
+            left: 0 !important;
+            right: 0 !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .mega-menu-section {
+            padding: 15px;
+        }
+
+        .mega-menu-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #5A30F1;
+        }
+
+        .mega-menu-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mega-menu-list li {
+            margin-bottom: 8px;
+        }
+
+        .mega-menu-list a {
+            color: #555;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .mega-menu-list a:hover {
+            color: #5A30F1;
+            padding-left: 5px;
+        }
+
+        .nav-link {
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background-color: #5A30F1;
+            border-color: #5A30F1;
+        }
+
+        /* droupdownmenu css end */
+        /* dms css in main page  */
+
+
+        /* === Navbar === */
+        .navbar-brand {
+            font-weight: 700;
+            color: #0d99e5 !important;
+        }
+
+        .nav-link {
+            color: #333 !important;
+            margin-right: 1rem;
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background-color: #3788f1;
+            border: none;
+        }
+
+        .btn-outline-primary {
+            border-color: #0d99e5;
+            color: #0d99e5;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #0d99e5;
+            color: #fff;
+        }
+
+        .cta-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.07);
+            max-width: 700px;
+            width: 100%;
+        }
+
+        /* === Hero Section === */
+        .hero-heading {
+            font-size: 2.75rem;
+            font-weight: 700;
+        }
+
+        .hero-subtext {
+            font-weight: 600;
+            color: #0d99e5;
+        }
+
+        /* === About Section === */
+        .about-section {
+            background: #ffffff;
+        }
+
+        .about-list li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .about-list li span {
+            color: #0d99e5;
+            margin-right: 10px;
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        .about-list li strong {
+            display: block;
+        }
+
+
+        /* Features Section */
+        .features-section {
+            background-color: #f1f9ff;
+        }
+
+        .features-section .icon-box {
+            width: 50px;
+            height: 50px;
+            background-color: #e6f3ff;
+            color: #0d99e5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            border-radius: 12px;
+        }
+
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            box-shadow: 0 0 20px rgba(0, 153, 229, 0.1);
+            transform: translateY(-3px);
+        }
+
+        /* How It Works Section */
+        .how-it-works {
+            background-color: #ffffff;
+        }
+
+        .vertical-line {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background-color: #0d99e5;
+            z-index: 0;
+        }
+
+        .step-circle {
+            width: 36px;
+            height: 36px;
+            background-color: #0d99e5;
+            color: white;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+        }
+
+        .how-card {
+            z-index: 1;
+            position: relative;
+        }
+
+        /* Enterprise-Grade Security */
+        .bg-light-blue {
+            background-color: #e5f4ff;
+        }
+
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+            background-color: #0089d6;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .security-feature h5 {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Digitize Your Documents */
+        .cta-container {
+            background: white;
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            max-width: 800px;
+
+        }
+
+        .cta-container h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #0d1b2a;
+            margin-bottom: 20px;
+        }
+
+        .cta-container p {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn {
+            font-size: 16px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: #0077b6;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #005f99;
+        }
+
+        .btn-outline {
+            background-color: white;
+            color: #0077b6;
+            border: 2px solid #0077b6;
+        }
+
+        .btn-outline:hover {
+            background-color: #e6f0fa;
+        }
+
+        /* Center the modal with nice shadows and round corners */
+        .modal-content {
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            border: none;
+        }
+
+        /* Modal title styling */
+        .modal-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #111;
+        }
+
+        /* Form labels and inputs */
+        .modal-body .form-label {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #333;
+        }
+
+        .modal-body .form-control {
+            border-radius: 8px;
+            padding: 10px 12px;
+            font-size: 0.95rem;
+            border: 1px solid #ccc;
+            transition: border-color 0.3s;
+        }
+
+        .modal-body .form-control:focus {
+            border-color: #007bff;
+            box-shadow: none;
+        }
+
+        /* Submit button */
+        .modal-footer .btn-primary {
+            background-color: #007bff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .modal-footer .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        /* Success alert */
+        .success-message {
+            display: none;
+            margin-top: 10px;
+        }
+
+        /* Responsive tweaks */
+        @media (max-width: 576px) {
+            .modal-content {
+                padding: 10px;
+            }
+
+            .modal-title {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+    <style>
+      /* SignuluOne standard navbar overrides */
+      .sg-topnav { background: #fff !important; box-shadow: 0 2px 12px rgba(0,0,0,.08); font-family: 'Lato', sans-serif !important; }
+      .sg-topnav .navbar-brand img { height: 40px; }
+      .sg-topnav .nav-link { font-weight: 700 !important; color: #333 !important; padding: 8px 14px !important; font-family: 'Lato', sans-serif !important; font-size: 15px !important; }
+      .sg-topnav .nav-link:hover { color: #5A30F1 !important; }
+      .sg-topnav .dropdown-mega { position: static !important; }
+      .sg-topnav .dropdown-mega-menu { width: 100% !important; left: 0 !important; right: 0 !important; padding: 24px !important; border: none !important; box-shadow: 0 8px 32px rgba(0,0,0,0.12) !important; border-top: 3px solid #5A30F1 !important; font-family: 'Lato', sans-serif !important; }
+      .sg-topnav .sg-mm-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #5A30F1; border-bottom: 2px solid #5A30F1; padding-bottom: 8px; margin-bottom: 12px; font-family: 'Lato', sans-serif; }
+      .sg-topnav .sg-mm-item { display: flex !important; align-items: flex-start; padding: 8px 10px; border-radius: 8px; text-decoration: none !important; color: #333 !important; transition: background 0.2s; font-family: 'Lato', sans-serif; }
+      .sg-topnav .sg-mm-item:hover { background: #f0ebff; color: #5A30F1 !important; }
+      .sg-topnav .sg-mm-icon { width: 36px; height: 36px; border-radius: 8px; background: #f0ebff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-right: 10px; }
+      .sg-topnav .sg-mm-icon i { color: #5A30F1; font-size: 16px; }
+      .sg-topnav .sg-mm-item-title { font-weight: 700; font-size: 13px; margin-bottom: 2px; }
+      .sg-topnav .sg-mm-item-desc { font-size: 11px; color: #777; }
+      .sg-prod-card { border: 2px solid #e9ecef; border-radius: 12px; padding: 20px; text-align: center; text-decoration: none; color: #333; transition: border-color 0.2s, transform 0.2s; display: block; }
+      .sg-prod-card:hover { border-color: #5A30F1; transform: translateY(-2px); color: #333; }
+      .sg-prod-icon { width: 56px; height: 56px; border-radius: 50%; background: #f0ebff; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; }
+      .sg-prod-icon i { font-size: 24px; color: #5A30F1; }
+    </style>
+</head>
+
+<body>
+<!-- SignuluOne Standard Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top sg-topnav" style="padding:12px 0;">
+  <div class="container">
+    <a class="navbar-brand" href="./index.html"><img src="./img/new-signulu-logo.png" alt="SignuluOne" style="height:40px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sgMainNav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="sgMainNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item dropdown dropdown-mega">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+          <div class="dropdown-menu dropdown-mega-menu">
+            <div class="row">
+              <div class="col-md-4"><div class="sg-mm-title">E-Signature</div><a class="sg-mm-item" href="https://signulu.com/index.php/about" target="_blank"><div class="sg-mm-icon"><i class="bi bi-pen"></i></div><div><div class="sg-mm-item-title">Signulu e-Sign</div><div class="sg-mm-item-desc">Sign contracts digitally</div></div></a></div>
+              <div class="col-md-4"><div class="sg-mm-title">Document Management</div><a class="sg-mm-item" href="./Dms.html"><div class="sg-mm-icon"><i class="bi bi-folder2-open"></i></div><div><div class="sg-mm-item-title">DMS</div><div class="sg-mm-item-desc">Centralized document storage</div></div></a></div>
+              <div class="col-md-4"><div class="sg-mm-title">Bulk Signing</div><a class="sg-mm-item" href="https://bulksigner.signuluone.com" target="_blank"><div class="sg-mm-icon"><i class="bi bi-file-earmark-check"></i></div><div><div class="sg-mm-item-title">BulkSigner</div><div class="sg-mm-item-desc">DSC-based bulk signing</div></div></a></div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown dropdown-mega">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Why Signulu</a>
+          <div class="dropdown-menu dropdown-mega-menu">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="sg-mm-title">Security</div>
+                <a class="sg-mm-item" href="./why-signulu.html#esignatures"><div class="sg-mm-icon"><i class="bi bi-shield-lock"></i></div><div><div class="sg-mm-item-title">Secure e-Signatures</div><div class="sg-mm-item-desc">AES-256 encryption &amp; TLS 1.3</div></div></a>
+                <a class="sg-mm-item" href="./why-signulu.html#audit"><div class="sg-mm-icon"><i class="bi bi-journal-check"></i></div><div><div class="sg-mm-item-title">Audit Trail</div><div class="sg-mm-item-desc">Full tamper-proof activity log</div></div></a>
+              </div>
+              <div class="col-md-3">
+                <div class="sg-mm-title">Automation</div>
+                <a class="sg-mm-item" href="./why-signulu.html#workflows"><div class="sg-mm-icon"><i class="bi bi-diagram-3"></i></div><div><div class="sg-mm-item-title">Workflow Automation</div><div class="sg-mm-item-desc">Multi-level approval sequences</div></div></a>
+                <a class="sg-mm-item" href="./why-signulu.html#templates"><div class="sg-mm-icon"><i class="bi bi-file-earmark-text"></i></div><div><div class="sg-mm-item-title">Templates</div><div class="sg-mm-item-desc">Reusable document templates</div></div></a>
+              </div>
+              <div class="col-md-3">
+                <div class="sg-mm-title">Access &amp; Storage</div>
+                <a class="sg-mm-item" href="./why-signulu.html#multidevice"><div class="sg-mm-icon"><i class="bi bi-devices"></i></div><div><div class="sg-mm-item-title">Multi-Device Access</div><div class="sg-mm-item-desc">Web, iOS &amp; Android</div></div></a>
+                <a class="sg-mm-item" href="./why-signulu.html#cloud"><div class="sg-mm-icon"><i class="bi bi-cloud"></i></div><div><div class="sg-mm-item-title">Cloud Storage</div><div class="sg-mm-item-desc">Integrated with major cloud providers</div></div></a>
+              </div>
+              <div class="col-md-3">
+                <div class="sg-mm-title">Compliance</div>
+                <a class="sg-mm-item" href="./why-signulu.html#rbac"><div class="sg-mm-icon"><i class="bi bi-person-lock"></i></div><div><div class="sg-mm-item-title">RBAC</div><div class="sg-mm-item-desc">Role-based access control</div></div></a>
+                <a class="sg-mm-item" href="./why-signulu.html#otp"><div class="sg-mm-icon"><i class="bi bi-phone"></i></div><div><div class="sg-mm-item-title">OTP Verification</div><div class="sg-mm-item-desc">SMS/Email signer authentication</div></div></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="./Blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+      </ul>
+      <div class="d-flex gap-2">
+        <a href="./contact.html" class="btn btn-outline-secondary" style="font-size:14px;">Contact Sales</a>
+        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productSelectModal" style="background:#5A30F1;border-color:#5A30F1;font-size:14px;">Try for Free</a>
+      </div>
+    </div>
+  </div>
+</nav>
+    <!-- dms page continue  -->
+
+    <!-- ========== Navbar ========== -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <a><img src="./img/dms logo main.png" alt="no image " style="width: 114px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#HowItWorks">How It Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Compliance">Compliance</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li> -->
+                    <li class="nav-item ms-3">
+                        <a class="btn btn-primary" href="https://dms.signulu.com/auth">Login</a>
+                        <a class="btn btn-outline-primary border px-4"
+                            href="https://app.signulu.com/account/register">Start Trial</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== Hero Section ========== -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="hero-heading mb-3">Intelligent Secure<br>Document Management<br>for Modern Enterprises
+                    </h1>
+                    <p class="hero-subtext">Digitize. Organize. Discover. Secure — All in One Platform</p>
+                    <p class="text-secondary">
+                        DMSPlatform's Intelligent Document Management System offers a streamlined, future-ready solution
+                        to intelligently digitize, read, pre-process, and classify your documents — enhancing efficiency
+                        and reducing manual effort.
+                    </p>
+                    <p class="text-secondary">
+                        Unlock the power of AI and metadata to effortlessly locate, manage, and secure your documents
+                        anytime, anywhere — with enterprise-grade protection and compliance at the core.
+                    </p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="https://calendly.com/signup-xtod/signulu-demo-1?month=2025-07"
+                            class="btn btn-primary px-4">Book a Demo</a>
+                        <a href="#Features" class="btn btn-outline-primary px-4">Explore Features</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                    <img src="./img/dms.jpg" alt="Code Preview" class="img-fluid rounded img-shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== About Our DMS Section ========== -->
+    <section class="py-5 about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" id="About">
+                    <h2 class="fw-bold mb-3">About Our DMS</h2>
+                    <p class="text-secondary">
+                        Built with enterprise-grade security and flexibility, our DMS helps businesses of all sizes
+                        centralize, control, and collaborate on documents. It supports the complete document lifecycle —
+                        from capture and storage to workflow automation and audit compliance.
+                    </p>
+                    <ul class="list-unstyled about-list mt-4">
+                        <li>
+                            <span>&#9679;</span>
+                            <div>
+                                <strong>Built for Scale</strong>
+                                <span class="text-secondary">Handle thousands of documents securely and
+                                    efficiently.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span>&#9679;</span>
+                            <div>
+                                <strong>Legally Compliant</strong>
+                                <span class="text-secondary">Meets Indian and global regulatory standards like DPDP, IT
+                                    Act, GDPR.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span>&#9679;</span>
+                            <div>
+                                <strong>Interoperable</strong>
+                                <span class="text-secondary">Integrates with CRMs, ERPs, eSign, eKYC, and eStamp
+                                    systems.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 text-center mt-4 mt-lg-0">
+                    <img src="./img/dms 2.jpg" alt="DMS About" class="img-fluid rounded img-shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section py-5">
+        <div class="container">
+            <div class="text-center mb-5" id="Features">
+                <h2 class="fw-bold">Powerful Features</h2>
+                <p class="text-secondary">Everything you need to manage your documents efficiently</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Feature Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card p-4 h-100 shadow-sm rounded bg-white">
+                        <div class="icon-box mb-3">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h5 class="fw-bold">Centralized Secure Storage</h5>
+                        <p class="text-secondary">
+                            Say goodbye to scattered files and misplaced documents. Our DMS offers a secure, centralized
+                            repository to store all your documents in one place, ensuring access and compliance.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card p-4 h-100 shadow-sm rounded bg-white">
+                        <div class="icon-box mb-3">
+                            <i class="bi bi-search"></i>
+                        </div>
+                        <h5 class="fw-bold">Advanced Search</h5>
+                        <p class="text-secondary">
+                            Locate documents in seconds with keyword, metadata, and full-text search filters. Save time
+                            and effort through intelligent indexing and fast retrieval.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card p-4 h-100 shadow-sm rounded bg-white">
+                        <div class="icon-box mb-3">
+                            <i class="bi bi-stack"></i>
+                        </div>
+                        <h5 class="fw-bold">Access Control</h5>
+                        <p class="text-secondary">
+                            Control who sees what with Role-Based Access Control (RBAC). Ensure only authorized users
+                            can access or modify sensitive documents.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card p-4 h-100 shadow-sm rounded bg-white">
+                        <div class="icon-box mb-3">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h5 class="fw-bold">Audit Trail</h5>
+                        <p class="text-secondary">
+                            Every action is tracked with timestamps and user info. Maintain a transparent audit trail
+                            for security, collaboration, and compliance.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card p-4 h-100 shadow-sm rounded bg-white">
+                        <div class="icon-box mb-3">
+                            <i class="bi bi-check2-square"></i>
+                        </div>
+                        <h5 class="fw-bold">Seamless Integration</h5>
+                        <p class="text-secondary">
+                            Integrates easily with CRM, ERP, email, cloud storage, and productivity tools — ensuring a
+                            smooth workflow.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card p-4 h-100 shadow-sm rounded bg-white">
+                        <div class="icon-box mb-3">
+                            <i class="bi bi-lightning-charge"></i>
+                        </div>
+                        <h5 class="fw-bold">Streamline Processes with Workflows</h5>
+                        <p class="text-secondary">
+                            Reduce manual effort through smart approvals, notifications, and automation — all built into
+                            our document workflows.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- How It Works Section -->
+    <section class="how-it-works py-5">
+        <div class="container">
+            <div class="text-center mb-5" id="HowItWorks">
+                <h2 class="fw-bold">How It Works</h2>
+                <p class="text-secondary">Simple steps to transform your document management</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10 position-relative">
+                    <div class="vertical-line"></div>
+
+                    <!-- Step 1 -->
+                    <div class="row mb-5 align-items-center">
+                        <div class="col-md-5">
+                            <div class="how-card shadow-sm p-4 rounded bg-white">
+                                <h5 class="fw-bold">Document Capture</h5>
+                                <p class="text-secondary mb-0">Upload files individually or in bulk from your device or
+                                    cloud storage.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <div class="step-circle">1</div>
+                        </div>
+                        <div class="col-md-5"></div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="row mb-5 align-items-center">
+                        <div class="col-md-5"></div>
+                        <div class="col-md-2 text-center">
+                            <div class="step-circle">2</div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="how-card shadow-sm p-4 rounded bg-white">
+                                <h5 class="fw-bold">Organize &amp; Classify</h5>
+                                <p class="text-secondary mb-0">Use folders, tags with Client, metadata for intelligent
+                                    organization.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="row mb-5 align-items-center">
+                        <div class="col-md-5">
+                            <div class="how-card shadow-sm p-4 rounded bg-white">
+                                <h5 class="fw-bold">Assign Workflows</h5>
+                                <p class="text-secondary mb-0">Define roles, rules, and automation for document
+                                    approvals or routing.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <div class="step-circle">3</div>
+                        </div>
+                        <div class="col-md-5"></div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="row align-items-center">
+                        <div class="col-md-5"></div>
+                        <div class="col-md-2 text-center">
+                            <div class="step-circle">4</div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="how-card shadow-sm p-4 rounded bg-white">
+                                <h5 class="fw-bold">Track &amp; Audit</h5>
+                                <p class="text-secondary mb-0">Monitor document status, access history, and maintain
+                                    audit trails.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Enterprise-Grade Security Section -->
+    <section class="enterprise-security py-5">
+        <div class="container" id="Compliance">
+            <div class="bg-light-blue rounded-4 p-5 text-center">
+                <h2 class="fw-bold mb-2">Enterprise-Grade Security</h2>
+                <p class="text-secondary mb-5">Built with security and compliance at its core</p>
+
+                <div class="row g-4 justify-content-center">
+                    <!-- Feature 1 -->
+                    <div class="col-md-4">
+                        <div class="security-feature">
+                            <div class="icon-circle mx-auto mb-3">
+                                <i class="bi bi-lock"></i>
+                            </div>
+                            <h5 class="fw-bold">Data Encryption</h5>
+                            <p class="text-secondary mb-0">
+                                AES-256 encryption at rest and TLS 1.3 in transit.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="col-md-4">
+                        <div class="security-feature">
+                            <div class="icon-circle mx-auto mb-3">
+                                <i class="bi bi-check2-circle"></i>
+                            </div>
+                            <h5 class="fw-bold">Compliance Ready</h5>
+                            <p class="text-secondary mb-0">
+                                Supports DPDP, IT Act, GDPR, HIPAA & more.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="col-md-4">
+                        <div class="security-feature">
+                            <div class="icon-circle mx-auto mb-3">
+                                <i class="bi bi-shield-lock"></i>
+                            </div>
+                            <h5 class="fw-bold">Zero Trust Access</h5>
+                            <p class="text-secondary mb-0">
+                                Enforced RBAC, MFA, and session monitoring for maximum security.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="py-5 d-flex justify-content-center" style="background: #f6fbff;">
+        <div class="cta-container text-center" id="Contact">
+            <h2 class="fw-bold mb-3">Ready to Digitize Your Documents?</h2>
+            <p class="text-secondary mb-4">
+                Start your journey with a free demo or sign up to experience secure document workflows.
+            </p>
+            <div class="cta-buttons d-flex justify-content-center gap-3">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#demoModal">Request a
+                    demo</button>
+                <button class="btn btn-outline-primary px-4 border ">Sign Up</button>
+            </div>
+        </div>
+    </section> -->
+    <footer>
+        <div class="container container-lg container-xl container-xxl">
+
+            <!-- <p class="text-center pt-5 copyrt">Copyright 2020 Signulu. All Rights Reserved</p> -->
+            <p class="text-center pt-5 copyrt">Copyright &copy;
+                <script>document.write(new Date().getFullYear())</script> Signulu. All Rights Reserved
+            </p>
+        </div>
+    </footer>
+    <!-- Book a Demo Modal -->
+    <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="demoModalLabel">Request a Demo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="demoForm">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="demoName" class="form-label">Full Name *</label>
+                            <input type="text" class="form-control" id="demoName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="demoEmail" class="form-label">Email Address *</label>
+                            <input type="email" class="form-control" id="demoEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="demoCompany" class="form-label">Company Name</label>
+                            <input type="text" class="form-control" id="demoCompany">
+                        </div>
+                        <div class="mb-3">
+                            <label for="demoMessage" class="form-label">Message</label>
+                            <textarea class="form-control" id="demoMessage" rows="3"
+                                placeholder="Tell us about your document management needs..."></textarea>
+                        </div>
+                        <div class="alert alert-success success-message" id="successMessage">Your request has been
+                            submitted!</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary w-100">Submit Request</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+<!-- Product Selection Modal -->
+<div class="modal fade" id="productSelectModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0" style="border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,0.15);">
+      <div class="modal-header border-0 pb-0 px-4 pt-4">
+        <div>
+          <h5 class="modal-title fw-bold" style="font-size:1.4rem;">Which product would you like to try?</h5>
+          <p class="text-muted mb-0" style="font-size:14px;">Select a product to begin your free trial or registration.</p>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body px-4 py-4">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <a href="https://app.signulu.com/account/register" target="_blank" class="sg-prod-card d-block text-center text-decoration-none p-4" style="border:2px solid #e9ecef;border-radius:12px;color:#333;transition:border-color 0.2s,transform 0.2s;">
+              <div style="width:60px;height:60px;border-radius:50%;background:#f0ebff;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">
+                <i class="bi bi-pen" style="font-size:26px;color:#5A30F1;"></i>
+              </div>
+              <div class="fw-bold mb-1" style="font-size:15px;">Signulu e-Sign</div>
+              <div style="font-size:12px;color:#888;">Sign contracts digitally. Legally binding &amp; secure.</div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://dms.signulu.com/auth" target="_blank" class="sg-prod-card d-block text-center text-decoration-none p-4" style="border:2px solid #e9ecef;border-radius:12px;color:#333;transition:border-color 0.2s,transform 0.2s;">
+              <div style="width:60px;height:60px;border-radius:50%;background:#e8f5e9;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">
+                <i class="bi bi-folder2-open" style="font-size:26px;color:#2E7D32;"></i>
+              </div>
+              <div class="fw-bold mb-1" style="font-size:15px;">DMS</div>
+              <div style="font-size:12px;color:#888;">Document Management System. Digitize &amp; organize.</div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://bulksigner.signuluone.com" target="_blank" class="sg-prod-card d-block text-center text-decoration-none p-4" style="border:2px solid #e9ecef;border-radius:12px;color:#333;transition:border-color 0.2s,transform 0.2s;">
+              <div style="width:60px;height:60px;border-radius:50%;background:#fff8e1;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">
+                <i class="bi bi-file-earmark-check" style="font-size:26px;color:#F9A825;"></i>
+              </div>
+              <div class="fw-bold mb-1" style="font-size:15px;">BulkSigner</div>
+              <div style="font-size:12px;color:#888;">DSC Bulk Signing Tool. Sign PDFs with Class 3 DSC.</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.querySelectorAll('.sg-prod-card').forEach(function(el){
+  el.addEventListener('mouseenter',function(){ this.style.borderColor='#5A30F1'; this.style.transform='translateY(-2px)'; });
+  el.addEventListener('mouseleave',function(){ this.style.borderColor='#e9ecef'; this.style.transform=''; });
+});
+</script>
+</body>
+
+</html>

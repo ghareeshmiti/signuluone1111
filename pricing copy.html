@@ -1,0 +1,1334 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CGHL3V39G4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+
+  gtag("config", "G-CGHL3V39G4", {
+    linker: {
+      domains: ["signulu.com", "app.signulu.com", "bulksigner.signuluone.com"]
+    }
+  });
+</script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/NewPenIcon.png" type="image/x-icon">
+     <link rel="icon" href="img/NewPenIcon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!-- <script src="moment.js"></script>
+    <script src="moment-timezone-with-data.js"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th{
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        td:first-child{
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            width: 280px;
+            max-width: 280px;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        @media (max-width: 600px) {
+            th, td {
+                font-size: 12px;
+            }
+            td:first-child{
+                width: 228px;
+                max-width: 228px;
+            }
+        }
+
+        .table-container {
+            overflow-x: auto;
+            max-width: 100%;
+        }
+        
+
+
+        .tooltip {
+            position: relative;
+            display: inline;
+            z-index: 1080;
+            display: block;
+            margin: 0;
+            font-family: var(--bs-font-sans-serif);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: left;
+            text-align: start;
+            text-decoration: none;
+            text-shadow: none;
+            text-transform: none;
+            letter-spacing: normal;
+            word-break: normal;
+            word-spacing: normal;
+            white-space: normal;
+            line-break: auto;
+            font-size: .875rem;
+            word-wrap: break-word;
+            opacity: 1;
+            /* padding-left: 5px; */
+        }
+
+    .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity:1;
+    transition: opacity 0.3s;
+    }
+
+    .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    }
+
+    .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    }
+    .for-tooltips{
+        display: flex;
+        justify-content: space-between;
+    }
+    </style>
+    <title>signulu</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+      /* SignuluOne standard navbar overrides */
+      .sg-topnav { background: #fff !important; box-shadow: 0 2px 12px rgba(0,0,0,.08); font-family: 'Lato', sans-serif !important; }
+      .sg-topnav .navbar-brand img { height: 40px; }
+      .sg-topnav .nav-link { font-weight: 700 !important; color: #333 !important; padding: 8px 14px !important; font-family: 'Lato', sans-serif !important; font-size: 15px !important; }
+      .sg-topnav .nav-link:hover { color: #5A30F1 !important; }
+      .sg-topnav .dropdown-mega { position: static !important; }
+      .sg-topnav .dropdown-mega-menu { width: 100% !important; left: 0 !important; right: 0 !important; padding: 24px !important; border: none !important; box-shadow: 0 8px 32px rgba(0,0,0,0.12) !important; border-top: 3px solid #5A30F1 !important; font-family: 'Lato', sans-serif !important; }
+      .sg-topnav .sg-mm-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #5A30F1; border-bottom: 2px solid #5A30F1; padding-bottom: 8px; margin-bottom: 12px; font-family: 'Lato', sans-serif; }
+      .sg-topnav .sg-mm-item { display: flex !important; align-items: flex-start; padding: 8px 10px; border-radius: 8px; text-decoration: none !important; color: #333 !important; transition: background 0.2s; font-family: 'Lato', sans-serif; }
+      .sg-topnav .sg-mm-item:hover { background: #f0ebff; color: #5A30F1 !important; }
+      .sg-topnav .sg-mm-icon { width: 36px; height: 36px; border-radius: 8px; background: #f0ebff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-right: 10px; }
+      .sg-topnav .sg-mm-icon i { color: #5A30F1; font-size: 16px; }
+      .sg-topnav .sg-mm-item-title { font-weight: 700; font-size: 13px; margin-bottom: 2px; }
+      .sg-topnav .sg-mm-item-desc { font-size: 11px; color: #777; }
+      .sg-prod-card { border: 2px solid #e9ecef; border-radius: 12px; padding: 20px; text-align: center; text-decoration: none; color: #333; transition: border-color 0.2s, transform 0.2s; display: block; }
+      .sg-prod-card:hover { border-color: #5A30F1; transform: translateY(-2px); color: #333; }
+      .sg-prod-icon { width: 56px; height: 56px; border-radius: 50%; background: #f0ebff; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; }
+      .sg-prod-icon i { font-size: 24px; color: #5A30F1; }
+    </style>
+</head>
+  <body>
+    
+<!-- SignuluOne Standard Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top sg-topnav" style="padding:12px 0;">
+  <div class="container">
+    <a class="navbar-brand" href="./index.html"><img src="./img/new-signulu-logo.png" alt="SignuluOne" style="height:40px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sgMainNav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="sgMainNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item dropdown dropdown-mega">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+          <div class="dropdown-menu dropdown-mega-menu">
+            <div class="row">
+              <div class="col-md-4"><div class="sg-mm-title">E-Signature</div><a class="sg-mm-item" href="https://signulu.com/index.php/about" target="_blank"><div class="sg-mm-icon"><i class="bi bi-pen"></i></div><div><div class="sg-mm-item-title">Signulu e-Sign</div><div class="sg-mm-item-desc">Sign contracts digitally</div></div></a></div>
+              <div class="col-md-4"><div class="sg-mm-title">Document Management</div><a class="sg-mm-item" href="./Dms.html"><div class="sg-mm-icon"><i class="bi bi-folder2-open"></i></div><div><div class="sg-mm-item-title">DMS</div><div class="sg-mm-item-desc">Centralized document storage</div></div></a></div>
+              <div class="col-md-4"><div class="sg-mm-title">Bulk Signing</div><a class="sg-mm-item" href="https://bulksigner.signuluone.com" target="_blank"><div class="sg-mm-icon"><i class="bi bi-file-earmark-check"></i></div><div><div class="sg-mm-item-title">BulkSigner</div><div class="sg-mm-item-desc">DSC-based bulk signing</div></div></a></div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown dropdown-mega">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Why Signulu</a>
+          <div class="dropdown-menu dropdown-mega-menu">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="sg-mm-title">Security</div>
+                <a class="sg-mm-item" href="./why-signulu.html#esignatures"><div class="sg-mm-icon"><i class="bi bi-shield-lock"></i></div><div><div class="sg-mm-item-title">Secure e-Signatures</div><div class="sg-mm-item-desc">AES-256 encryption &amp; TLS 1.3</div></div></a>
+                <a class="sg-mm-item" href="./why-signulu.html#audit"><div class="sg-mm-icon"><i class="bi bi-journal-check"></i></div><div><div class="sg-mm-item-title">Audit Trail</div><div class="sg-mm-item-desc">Full tamper-proof activity log</div></div></a>
+              </div>
+              <div class="col-md-3">
+                <div class="sg-mm-title">Automation</div>
+                <a class="sg-mm-item" href="./why-signulu.html#workflows"><div class="sg-mm-icon"><i class="bi bi-diagram-3"></i></div><div><div class="sg-mm-item-title">Workflow Automation</div><div class="sg-mm-item-desc">Multi-level approval sequences</div></div></a>
+                <a class="sg-mm-item" href="./why-signulu.html#templates"><div class="sg-mm-icon"><i class="bi bi-file-earmark-text"></i></div><div><div class="sg-mm-item-title">Templates</div><div class="sg-mm-item-desc">Reusable document templates</div></div></a>
+              </div>
+              <div class="col-md-3">
+                <div class="sg-mm-title">Access &amp; Storage</div>
+                <a class="sg-mm-item" href="./why-signulu.html#multidevice"><div class="sg-mm-icon"><i class="bi bi-devices"></i></div><div><div class="sg-mm-item-title">Multi-Device Access</div><div class="sg-mm-item-desc">Web, iOS &amp; Android</div></div></a>
+                <a class="sg-mm-item" href="./why-signulu.html#cloud"><div class="sg-mm-icon"><i class="bi bi-cloud"></i></div><div><div class="sg-mm-item-title">Cloud Storage</div><div class="sg-mm-item-desc">Integrated with major cloud providers</div></div></a>
+              </div>
+              <div class="col-md-3">
+                <div class="sg-mm-title">Compliance</div>
+                <a class="sg-mm-item" href="./why-signulu.html#rbac"><div class="sg-mm-icon"><i class="bi bi-person-lock"></i></div><div><div class="sg-mm-item-title">RBAC</div><div class="sg-mm-item-desc">Role-based access control</div></div></a>
+                <a class="sg-mm-item" href="./why-signulu.html#otp"><div class="sg-mm-icon"><i class="bi bi-phone"></i></div><div><div class="sg-mm-item-title">OTP Verification</div><div class="sg-mm-item-desc">SMS/Email signer authentication</div></div></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="./Blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+      </ul>
+      <div class="d-flex gap-2">
+        <a href="./contact.html" class="btn btn-outline-secondary" style="font-size:14px;">Contact Sales</a>
+        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productSelectModal" style="background:#5A30F1;border-color:#5A30F1;font-size:14px;">Try for Free</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <section class="pricing_box">
+        <div class="container container-lg container-xl container-xxl">
+            <div class="row">
+                <div class="col-12">
+                    <div class="heading" data-aos="fade-up" data-aos-duration="1500">
+                        <h2>Signulu <span>Pricing</span></h2>
+                        <p>Whether you want to use Signulu as an Individual professional or for a small or medium-sized organization or large enterprise, we have a plan that fits your needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing_card_box" data-aos="fade-up" data-aos-duration="1500" style="box-sizing: border-box">
+                <div class="cards-main-box">
+                    <div class="col-xl-3 col-md-6 col-sm-12 padding background_grey">
+                        <div class="card_box">
+                            <!-- <div style="border-bottom: 1px solid black;height: 210px;">
+                                <h5 style="color: #284b63;">Signulu Lite</h5>
+                            <p>For a faster eSignature experience.</p>
+                            <div>
+                                Free
+                            </div>
+                            <div class="card_btns">
+                                <a href="https://app.signulu.com/account/register" style="background-color: #9aaea5;color: ffffff;">Get started</a>
+                            </div>
+                            <br>
+                            </div> -->
+
+                            <div  class="top-cards">
+                                <h5 style="color: #284b63;">Signulu Lite</h5>
+                                <p>For a faster eSignature experience.</p>
+                                <div class="top-c-child">
+                                    <h6>Free</h6>
+                                </div>
+                                <div class="card_btns liteuser-btn">
+                                    <a href="https://app.signulu.com/account/register">Get started</a>
+                                </div>
+                            </div>
+
+                            <div class="card_list">
+                                <ul>
+                                    <li>
+                                        <span>No. of Documents</span>
+                                        <span>5 per month</span>
+                                    </li>
+                                    <li>
+                                        <span>No. of Users</span>
+                                        <span>
+                                            Single User
+                                        </span>
+                                    </li>
+                                    <li>Send Documents for eSignature</li>
+                                    <li>
+                                        <span>Signing Workflows</span>
+                                        <span>
+                                            <img src="img/tick-lite-24.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Essential Document Fields</span>
+                                        <span>
+                                            <img src="img/tick-lite-24.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Audit Trail</span>
+                                        <span>
+                                            <img src="img/tick-lite-24.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Notification and Reminders</span>
+                                        <span>
+                                            <img src="img/tick-lite-24.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>2 recipients per Envelope</span>
+                                        <span>
+                                            <img src="img/tick-lite-24.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>1 Document per envelope</span>
+                                        <span>
+                                            <img src="img/tick-lite-24.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>5 MB max size per envelope</span>
+                                        <span>
+                                            <img src="img/tick-lite-24.png" alt="">
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 padding background_org">
+                        <div class="card_box">
+                            <div class="top-cards" 
+                            >
+                                <h5>Individual User</h5>
+                                <p>For individual professionals to get the documents signed efficiently</p>
+                                <div class="card_on">
+                                    <span class="plan-duration" id="month" style="font-weight: 800;">Monthly</span>
+                                    <span>
+                                        <input type="checkbox" onclick="toggle(id)" id="switch" /><label for="switch">Toggle</label>
+                                    </span>
+                                    <span class="plan-duration" id="year">Yearly</span>
+                                </div>
+                                <div class="card_big_amount">
+                                    <h6>₹<span id="symbol" class="basic-price" style="font-size: 40px;">824</span>
+                                            
+                                    </div>
+                                    <span class="per_month">per user per month</span></h6>
+                                <div class="card_btns">
+                                    <a href="https://app.signulu.com/account/register">Get started</a>
+                                </div>
+                            </div>
+                            <div class="card_list">
+                                <ul>
+                                    <li>
+                                        <span>No. of Documents</span>
+                                        <span>10 per month</span>
+                                    </li>
+                                    <li>
+                                        <span>No. of Users</span>
+                                        <span>
+                                            Single User
+                                        </span>
+                                    </li>
+                                    <h6>All Lite user features plus:</h6>
+                                    <li>
+                                        <span>Templates</span>
+                                        <span>
+                                            <img src="img/tick2.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Signing Workflows</span>
+                                        <span>
+                                            <img src="img/tick2.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Essential Document Fields</span>
+                                        <span>
+                                            <img src="img/tick2.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Audit Trail</span>
+                                        <span>
+                                            <img src="img/tick2.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Notification and Reminders</span>
+                                        <span>
+                                            <img src="img/tick2.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Payments</span>
+                                        <span>
+                                            <img src="img/tick2.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Cloud Storage</span>
+                                        <span>
+                                            <img src="img/tick2.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Basic reports</span>
+                                        <span>
+                                            <img src="img/tick2.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>5 recipients per Envelope</span>
+                                        <span>
+                                            <img src="img/tick2.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>3 Documents per envelope</span>
+                                        <span>
+                                            <img src="img/tick2.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>30 MB max size per envelope</span>
+                                        <span>
+                                            <img src="img/tick2.png" alt="">
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 padding background_green">
+                        <div class="card_box">
+                            <div class="top-cards">
+                                <h5>SMB Plan</h5>
+                            <p>For small and medium businesses to streamline their document signing process and drive efficiency within their organizations.</p>
+                            <div class="card_on">
+                                <span class="plans-duration" id="month-1" style="font-weight: 800;">Monthly</span>
+                                <span>
+                                    <input type="checkbox" onclick="togglemonth(id)" id="switch-1" /><label for="switch-1">Toggle</label>
+                                </span>
+                                <span class="plans-duration" id="year-1">Yearly</span>
+                            </div>
+                            <div class="card_big_amount">
+                                <h6 id="symbol">₹<span class="basic-prices" style="font-size: 40px;">2,474</span>
+                            </div>
+                                <span id="per_month" class="per_month">per user per month</span></h6>
+                            <div class="card_btns">
+                                <a href="https://app.signulu.com/account/register">Get started</a>
+                            </div>
+                            </div>
+                            <div class="card_list">
+                                <ul>
+                                    <li>
+                                        <span>No. of Documents</span>
+                                        <span>Unlimited</span>
+                                    </li>
+                                    <li>
+                                        <span>No. of Users</span>
+                                        <span>
+                                            Up to 5 users
+                                        </span>
+                                    </li>
+                                    <h6>All Individual plan features plus:</h6>
+                                    <li>
+                                        <span>Advanced Document Fields</span>
+                                        <span>
+                                            <img src="img/tick3.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Multiple Language Sites.</span>
+                                        <span>
+                                            <img src="img/tick3.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Mobile App</span>
+                                        <span>
+                                            <img src="img/tick3.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Advanced reports.</span>
+                                        <span>
+                                            <img src="img/tick3.png" alt="">
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 padding background_sky">
+                        <div class="card_box">
+                            <div class="enterprise-top">
+                                <h5>Enterprise</h5>
+                            <p class="enter-heading6">For large enterprises who are looking at document processing at scale with advanced features and with integration with other enterprise applications.</p>
+                            <!-- <div class="card_on">
+                                <span class="plans-duration">Monthly</span>
+                                <span onclick="myFunction()">
+                                    <input type="checkbox" id="checkedd"  /><label for="checkedd">Toggle</label>
+                                </span>
+                                <span class="plans-duration">Yearly</span>
+                            </div> -->
+                            <!-- <div class="card_big_amount">
+                                <h6>₹<span class="basic-prices" id="myDIV" style="font-size: 40px;">100</span>
+                            </div> -->
+                            <!-- <div class="card_big_amount">
+                                <h6>₹<span id="symbol" class="basic-price" id="myDIV" style="font-size: 40px;">100</span>            
+                            </div> -->
+                                <!-- <span id="per_month" class="per_month">per user per month</span></h6> -->
+                            <div class="card_btns">
+                                <a href="./contact.html" class="cls-contactus">Contact Us</a>
+                            </div>
+                            </div>
+                            <div class="card_list">
+                                <ul>
+                                    <li>
+                                        <span>No. of Documents</span>
+                                        <span>Unlimited</span>
+                                    </li>
+                                    <li>
+                                        <span>No. of Users</span>
+                                        <span>
+                                            Custom Plan
+                                        </span>
+                                    </li>
+                                    <h6>All SMB plan features plus:</h6>
+                                    <li>
+                                        <span>API Integrations.</span>
+                                        <span>
+                                            <img src="img/icons8-enterpr-24.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>SSO</span>
+                                        <span>
+                                            <img src="img/icons8-enterpr-24.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Custom Branding</span>
+                                        <span>
+                                            <img src="img/icons8-enterpr-24.png" alt="">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Document Authoring</span>
+                                        <span>
+                                            <img src="img/icons8-enterpr-24.png" alt="">
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br /><br />
+                            <div class="card_number">
+                                <h4>Call <span>1-877-744-6858</span></h4>
+                                <h4><span>+91 9176 446858</span></h4>
+                            </div>
+                            <div class="card_or">
+                                <h6>or</h6>
+                            </div>
+                            <div class="card_para">
+                                <h6>Get in Touch</h6>                          
+                                <p>Simple, Fair and affordable digital signature services for all</p>
+                                <p>Subscribe the plan that meet your business needs and budget with competitive pricing options.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center;padding-top: 30px;padding-bottom: 30px;">
+                        <a href="#CompareAllFeatures" style="color: black;text-decoration: none;font-weight: 500;border: 1px solid grey;padding: 10px;border-radius: 4px;">Compare All Features<img src="./img/down-arrow-30.png" alt=""></a>
+                </div>
+            </div> 
+            
+            
+            <div class="row">
+                <div class="priceing_all" data-aos="fade-up" data-aos-duration="1500">
+                    <h2>Simple, Fair and affordable digital <span>signature</span> services for all</h2>
+                    <p>Subscribe the plan that meet your business needs and budget with competitive pricing options.
+                        Aenean vel lectus sit amet metus sodales ultricies. Ut placerat enim enim, sed blandit turpis lacinia ut. Nulla felis odio, suscipit ut aliquet a, blandit vehicula odio.</p>
+                </div>
+            </div>
+            <h3 style="text-align: center;padding: 33px 0px;"  id="CompareAllFeatures">Compare the plans</h3>
+            <section class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Signulu Lite</th>
+                            <th>Individual</th>
+                            <th>SMB Plan</th>
+                            <th>Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td><b>Price per user</b></td>
+                            <td>Free</td>
+                            <td>Paid Yearly/Monthly <b>$4.99/$9.99</b></td>
+                            <td>Paid Yearly/Monthly <b>$15.99/$29.99</b></td>
+                            <td>Paid Yearly/Monthly <b>$24.99/$39.99</b></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>For faster eSignature experience</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr> -->
+                        <tr>
+                            <td class="for-tooltips"><span>Signing Workflow</span>
+                                <!-- <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                      <span class="tooltiptext">Tooltip text</span>
+                                </span> -->
+                            </td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">No. of Recipients per Envelope
+                                <!-- <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                      <span class="tooltiptext">Tooltip text 1</span>
+                                </span> -->
+                            </td>
+                            <td>2</td>
+                            <td>5</td>
+                            <td>10</td>
+                            <td>Custom</td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">No. of documents per envelope
+                                <!-- <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Tooltip text 2</span>
+                              </span> -->
+                            </td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>10</td>
+                            <td>Custom</td>
+                        </tr>
+                        <tr>
+                            <td>Max size of the envelope</td>
+                            <td>5 MB</td>
+                            <td>30 MB</td>
+                            <td>150 MB</td>
+                            <td>Custom</td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Basic Fields
+                                <!-- <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Tooltip text 2</span>
+                              </span> -->
+                            </td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Advanced Fields
+                                <!-- <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Tooltip text 2</span>
+                              </span> -->
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Real Time Audit Trail
+                                <!-- <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Tooltip text 2</span>
+                              </span> -->
+                            </td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Multiple Languages
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">View the application in your choice of the Language. Currently we provide 5 language options, default being English. More languages coming soon.</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Notifications and Reminders
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Set up automatic reminders and document validity dates to ensure signatories sign the documents on time. No more manual follow-ups, allow Signulu to do that for you.</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Mobile App
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Sign Documents on- the-go using Signulu Mobile app and access documents anytime, anywhere.</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Mobile responsive
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Signers on mobile devices can sign the documents using an alternative version of the document that automatically adapts its formatting to the device’s size and orientation within the browser.</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Reports
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Access reports to get visibility on document signing activities and also you export the reports to Microsoft Excel to review performance.</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Templates
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Create templates from already signed documents/agreements to reuse them at a later point in time. This saves time, reduces risk of errors and standardize processes.</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Commenting
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Recipients can comment on the document sent for signature and send it back to the initiator for modifications/changes.</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Scheduled Sending
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Prepare the documents/contracts and set up a timer (future date) to send the document for signature.</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">In-Person Signing
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">In-person signing eliminates wet ink signatures and allows eSignatures</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Custom Branding
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Embed your company’s logo on eSignatures and other artifacts to give a personalized experience.</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">User Permissions
+                                <!-- <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Tooltip text 2</span>
+                              </span> -->
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Team Reports
+                                <!-- <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Tooltip text 2</span>
+                              </span> -->
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Shared Templates
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Share reusable templates across the organization for everybody else’s use.</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Shared Documents and Folders
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Organize your documents by creating folders for easy access and retrievability.</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Delegated Signing
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Not in Office or on Vacation? Don’t worry, just delegate document signing to your co-worker while you are away.</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Bulk Send
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Want to send single/unique document to multiple people, just import the list of recipients send it in one click</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Payments
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Want to receive payment from your client along with the eSignature, just add the payment filed in the document and set the amount to be received.</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Integrations
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Signulu can be integrated with any third party enterprise applications through REST APIs so that the user gets a seamless experience and doesn’t have to straddle with multiple applications.</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Cloud Storage
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Store executed documents on any third-party cloud storage service providers to access them anywhere and anytime.</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Local Storage
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Signulu provides storage capacity to store documents within the application. The size of the storage is defined based on the subscription plan.</span>
+                              </span>
+                            </td>
+                            <td>Up to 1 GB</td>
+                            <td>Up to 2 GB</td>
+                            <td>Up to 5 GB per user</td>
+                            <td>Custom Plan</td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Custom Storage
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Want to store documents separately in any storage servers (SFTPs), Signulu provides connectors to push the document to remote storage servers.</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Multi-Factor Authentication
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Secure your document signing process by setting up 2FA.</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Notary
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Notarize your documents remotely using Notary feature in Signulu.</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Send for Review
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Recipients can comment on the document sent for signature and send it back to the initiator for modifications/changes.</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Document Authoring
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">You can author your document within Signulu by using our Document Authoring module and send it for signature.</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">Biometrics
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Validate signer identity before signing the document by using biometrics tools. Prevent any fraudulent activities in the contract execution process</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td>Custom Plan</td>
+                        </tr>
+                        <tr>
+                            <td class="for-tooltips">SSO
+                                <span class="tooltip"><img src="./img/info-i-20.png" alt="">
+                                    <span class="tooltiptext">Manage access to users using SSO feature.</span>
+                              </span>
+                            </td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/wrong-24-b.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                            <td><img src="./img/tick-black-24.png" alt=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </section>
+
+    <!-- <section class="trial-box" data-aos="fade-up" data-aos-duration="2500" >
+        <div class="container container-lg container-xl container-xxl">
+          <div class="row py-4 px-4 background align-items-center justify-content-between m-0">
+            <div class="col-xl-8 col-md-12 text-mail">
+                <h3>Start Your Free Trial Today</h3>
+                <p>Try signulu eSignature for 14 days. No credit card required.</p>
+            </div>
+            <div class="col-xl-4 col-md-12 btn-part d-flex justify-content-end">
+            <a href="https://app.signulu.com/account/register" class="free-btn">Start Free Trial</a>
+            </div>
+          </div>
+        </div>
+    </section> -->
+
+    <section class="trial-box" data-aos="fade-up" data-aos-duration="2500" >
+        <div class="container container-lg container-xl container-xxl">
+          <div class="row background align-items-center justify-content-between m-0 trySignulu-inp-box" >
+            <div class="col-xl-6 col-md-12 text-mail">
+                <h3>Get up to 5 documents signed for free, every month</h3>
+                <p>Try Signulu eSignature for 14 days. No credit card required.</p>
+                <div class="your-email-id-box">
+                  <input type="email" placeholder="Your email id" class="email-inp-field" name="" id="">
+                  <a href="#" class="start-free-trail-with-email">Start Trail</a>
+                </div>
+                <div style="display: flex;align-items: center;">
+                    <input
+                      style="width:20px;height:20px;background-color: #FFFFFF;border:blue;"
+                      id="remeberme"
+                      type="checkbox"
+                       checked={true}
+                      
+                    />
+                    <p class="subscrib">Subscribe to our Newsletters</p>
+                  </div>
+                <p class="no-card">*No credit card required</p>
+            </div>
+            <div class="col-xl-6 col-md-12 btn-part img-frame">
+            <img src="./img/Frame.png" class="frame-img" alt="">
+            </div>
+          </div>
+        </div>
+       </section>
+
+
+       <footer>
+        <div class="container container-lg container-xl container-xxl">
+           <div class="row pb-5">
+             <div class="col-lg-5 col-md-4 col-sm-12 footer_logo"><img src="img/new-signulu-logo.png" class="footer-logo" alt=""/>
+              <p class="footer-text">An ingenious electronic signature platform that provides next level reliability, consistency, scalability and performance.</p>
+            </div>
+             <!-- <div class="col-lg-3 col-md-6 col-sm-12 about_text"> <h3>About Signulu</h3></div> -->
+             <div class="col-lg-5 col-md-4 col-sm-12 ftr-menu">
+              <ul>
+                <li><a href="./about.html">About</a></li>
+                <!-- <li><a href="#">Partner Network</a></li> -->
+                <!-- <li><a href="#">Signulu Events </a></li> -->
+                <li><a href="./pricing.html">Pricing </a></li>
+                <li><a href="./Terms of Services.html">Term Of Service </a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./Privacy Policy.html">Privacy Policy</a></li>
+              </ul>
+             </div>
+             <div class="col-lg-2 col-md-4 col-sm-12 social-sec">
+               <h3>Follow us</h3>
+               <ul>
+                <li><a href="https://www.facebook.com/signulu/"> <img src="./img/facebook.png" alt=""> 
+                  <!-- <i class="fa-brands fa-facebook-f"></i> -->
+                </a></li>
+                <li><a href="https://twitter.com/signulu">
+                  <img src="./img/twitter.png" alt="">
+                  <!-- <i class="fa-brands fa-twitter"></i> -->
+                </a></li>
+                <li><a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F14636333%2Fadmin%2F">
+                  <img src="./img/Linkedin.png" alt="">
+                  <!-- <i class="fa-brands fa-linkedin-in"></i>  -->
+                </a></li>
+                <li><a href="https://www.youtube.com/channel/UCpYSuQ3xctOH7thHTHMmqQA?view_as=subscriber">
+                  <img src="./img/youtube.png" alt="">
+                  <!-- <i class="fa-brands fa-youtube"></i> -->
+                 </a></li>
+                <li><a href="https://www.instagram.com/signulu/">
+                  <img src="./img/insta.png" alt="">
+                  <!-- <i class="fa-brands fa-instagram"></i>  -->
+                </a></li>
+              </ul>
+             </div>
+           </div>
+           <!-- <p class="text-center pt-5 copyrt">Copyright 2020 Signulu. All Rights Reserved</p> -->
+           <p class="text-center pt-5 copyrt">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Signulu. All Rights Reserved</p>
+        </div>
+     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 50) {
+                $('body').addClass("sticky ");
+                } else {
+            $('body').removeClass("sticky ");
+                }
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $(".nav-link").click(function() {
+                $(".nav_dropDown").slideToggle(600);
+            });
+        });
+    </script>
+
+
+    <script>
+       AOS.init({
+        once: true,
+       disable: function() {
+        var maxWidth = 800;
+        return window.innerWidth < maxWidth;
+      }
+});
+    </script>
+
+    <script>
+        $(document).ready(function() {
+
+          $('.counter').each(function () {
+          $(this).prop('Counter',0).animate({
+          Counter: $(this).text()
+          }, {
+          duration: 4000,
+          easing: 'swing',
+          step: function (now) {
+              $(this).text(Math.ceil(now));
+          }
+          });
+          }); 
+
+        });  
+    </script>
+
+    <script>
+        (function(){
+      var words = [
+          'Efficient',
+          ' Secure',
+          ' Trustworthy'
+          
+          ], i = 0;
+      setInterval(function(){
+          $('#changingword').fadeOut(function(){
+              $(this).html(words[i=(i+1)%words.length]).fadeIn();
+          });
+      }, 3000);
+        
+  })();
+    </script>
+
+    <script>
+          $(window).on("load", dataWord);
+           function dataWord () {
+
+$("[data-words]").attr("data-words", function(i, d){
+  var $self  = $(this),
+      $words = d.split("|"),
+      tot    = $words.length,
+      c      = 0; 
+
+  // CREATE SPANS INSIDE SPAN
+  for(var i=0; i<tot; i++) $self.append($('<span/>',{text:$words[i]}));
+
+  // COLLECT WORDS AND HIDE
+  $words = $self.find("span").hide();
+
+  // ANIMATE AND LOOP
+  (function loop(){
+    $self.animate({ width: $words.eq( c ).width() });
+    $words.stop().fadeOut().eq(c).fadeIn().delay(2000).show(0, loop);
+    c = ++c % tot;
+  }());
+  
+});
+
+}
+    </script>
+   
+    <script>
+                let price;
+                fetch('https://dev.signulu.com/index1.php/api/users/unauth/packages')
+                .then(res=>{
+                    return res.json()
+                })
+                .then((data)=>{
+                    console.log(data)
+                    // price=data;
+
+                //individual user
+                    userAnnualPrice=data.Entity[1].AnnualPrice;
+                    userMonthly=data.Entity[1].MonthlyPrice;
+                
+                //company
+                    companyAnnualPrice=data.Entity[2].AnnualPrice;
+                    companyMonthly=data.Entity[2].MonthlyPrice;
+                    
+                    // console.log(companyMonthly)
+                })
+
+        //individual user
+            const plansSwitch = document.querySelector('#switch');
+            const basicPrice = document.querySelector('.basic-price');
+            const planDuration = document.querySelectorAll('.plan-duration');
+            const perMonth=document.querySelector('.per_month')
+            
+            plansSwitch.addEventListener('change', ()=>{
+                if(plansSwitch.checked){
+                    basicPrice.innerHTML = `${userAnnualPrice*12}`
+                    // basicPrice.innerHTML = "3,960";  
+                    perMonth.innerHTML="per user per annum"
+                    planDuration.forEach(p =>{          
+                    })
+                } else {
+                    basicPrice.innerHTML = `${userMonthly}`;
+                    perMonth.innerHTML="per user per month"
+                    planDuration.forEach(p =>{                  
+                })
+            }
+            })
+
+            //company
+        const planSwitch = document.querySelector('#switch-1');
+        const basicPrices = document.querySelector('.basic-prices');
+        const plansDuration = document.querySelectorAll('.plans-duration');
+        const perMonth1=document.querySelector('#per_month')
+
+        planSwitch.addEventListener('change', ()=>{
+            if(planSwitch.checked){
+                basicPrices.innerHTML = `${companyAnnualPrice*12}`
+                // basicPrices.innerHTML = "35,700";
+                perMonth1.innerHTML="per user per annum"
+                plansDuration.forEach(bp =>{                    
+                })
+            } else {
+                basicPrices.innerHTML = `${companyMonthly}`;
+                perMonth1.innerHTML="per user per month"
+                plansDuration.forEach(bp =>{                    
+            })
+        }
+        })
+
+        //Enterprise
+            const planSwitches = document.querySelector('#checkedd');
+            function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.innerHTML === "100"&&planSwitches.checked) {
+                x.innerHTML = "1,200";
+            } else {
+                x.innerHTML = "100";
+            }
+            }
+//const getCountryData = function(country){
+ //fetch(`https://dev.signulu.com/index1.php/api/users/unauth/packagesgt /${country}`)
+    //.then(response=>response.json())
+    //.then(data=>renderCountry(data[0]));
+    //console.log(data)
+
+
+                    
+                // .catch((error)=> console.log(error));
+            </script>
+            
+        <!-- <script>
+            const userTimeZone=moment().tz();
+
+            fetch('https://dev.signulu.com/index1.php/api/users/unauth/packages').then((res)=>{
+                    return res.json()
+                })
+                .then((data)=>{
+                    const exchangeRate=data.rates[userTimeZone];
+                    const amountInLocalCurrency=amount*exchangeRate;
+
+
+                    const currencySymbol=data.symbols[userTimeZone];
+                    const formattedAmount= new Intl.NumberFormat(userTimeZone,{style:'currency', currency:currencySymbol}).format(amountInLocalCurrency);
+                    console.log(`${formattedAmount}`);
+                })
+                .catch(error=>console.error(error));
+        </script> -->
+
+        
+        <script>
+            function toggle(){
+                const t=document.getElementById("switch");
+                if(t.checked){
+                    const element = document.getElementById("year");
+                    element.style.fontWeight="800";
+                    const month = document.getElementById("month");
+                    month.style.fontWeight="";
+                }
+                else{
+                    const element = document.getElementById("year");
+                    element.style.fontWeight="";
+                    const month = document.getElementById("month");
+                    month.style.fontWeight="800";
+                }
+            }
+            function togglemonth(){
+                const t=document.getElementById("switch-1");
+                if(t.checked){
+                    const element = document.getElementById("year-1");
+                    element.style.fontWeight="800";
+                    const month = document.getElementById("month-1");
+                    month.style.fontWeight="";
+                }
+                else{
+                    const element = document.getElementById("year-1");
+                    element.style.fontWeight="";
+                    const month = document.getElementById("month-1");
+                    month.style.fontWeight="800";
+                }
+            }
+        </script>
+
+    <style>
+    [data-words]{
+        vertical-align: top;
+        position: static;
+    }
+
+    </style>
+  <!-- SignuluOne Product Modal -->
+<div class="modal fade" id="productSelectModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold">Which product would you like to try?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body pt-3 pb-4">
+        <div class="row g-3">
+          <div class="col-md-4"><a href="https://app.signulu.com/account/register" class="sg-prod-card"><div class="sg-prod-icon"><i class="bi bi-pen"></i></div><div class="fw-bold mb-1">Signulu e-Sign</div><div style="font-size:12px;color:#888;">Sign contracts digitally. Legally binding &amp; secure.</div></a></div>
+          <div class="col-md-4"><a href="https://dms.signulu.com/auth" class="sg-prod-card"><div class="sg-prod-icon"><i class="bi bi-folder2-open"></i></div><div class="fw-bold mb-1">DMS</div><div style="font-size:12px;color:#888;">Document Management System. Digitize &amp; organize.</div></a></div>
+          <div class="col-md-4"><a href="https://bulksigner.signuluone.com" target="_blank" class="sg-prod-card"><div class="sg-prod-icon"><i class="bi bi-file-earmark-check"></i></div><div class="fw-bold mb-1">BulkSigner</div><div style="font-size:12px;color:#888;">DSC Bulk Signing Tool. Sign PDFs with Class 3 DSC.</div></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

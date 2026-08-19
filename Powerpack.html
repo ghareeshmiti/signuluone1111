@@ -1,0 +1,511 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CGHL3V39G4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+
+  gtag("config", "G-CGHL3V39G4", {
+    linker: {
+      domains: ["signulu.com", "app.signulu.com", "bulksigner.signuluone.com"]
+    }
+  });
+</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Sign and Verify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #2a5bd7;
+            --secondary-color: #4CAF50;
+            --accent-color: #FF6B6B;
+        }
+
+        body {
+            background: linear-gradient(to bottom right, #f8f9fa, #e9f9f2);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('img/gg1.jpg');
+            background-size: cover;
+            background-position: center;
+            /* padding: 2rem 0; */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .for-span {
+            font-size: 3.5rem;
+            color: #020202;
+        }
+
+        .hero-heading {
+            font-size: 5.5rem;
+            font-weight: 700;
+            color: #000000;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-subheading {
+            font-size: 1.5rem;
+            color: #000000;
+            margin-bottom: 2rem;
+        }
+
+        .feature-card {
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 413px;
+            transition: transform 0.3s ease;
+            border: none;
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: white;
+            font-size: 31px;
+            overflow: hidden;
+            /* Prevent overflow from image */
+        }
+
+        .feature-icon img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+        }
+
+        .btn-outline-primary {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .benefits-section {
+            padding: 5rem 0;
+            background-color: #fff;
+        }
+
+        .benefit-item {
+            padding: 2rem;
+            border-radius: 1rem;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .benefit-item:hover {
+            background-color: #f8f9fa;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .pricing-section {
+            background-color: #f8f9fa;
+            padding: 5rem 0;
+        }
+
+        .pricing-card {
+            border: none;
+            border-radius: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing-header {
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 1rem 1rem 0 0 !important;
+        }
+
+        .testimonial-card {
+            border-radius: 1rem;
+            border: 1px solid #e9ecef;
+        }
+
+        .testimonial-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-color), #3a7bd5);
+            color: white;
+            padding: 5rem 0;
+            border-radius: 2rem;
+        }
+
+        @media (max-width: 767px) {
+            .hero-heading {
+                font-size: 4rem;
+                text-align: center;
+            }
+.navbar-sub-brand{
+    margin-left: 100;
+}
+            .hero-subheading {
+                font-size: 1.2rem;
+                text-align: center;
+            }
+
+            .text-center-mobile {
+                text-align: center;
+            }
+
+            .btn {
+                display: block;
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            .btn+.btn {
+                margin-left: 0;
+            }
+        }
+    </style>
+    <style>
+      /* SignuluOne standard navbar overrides */
+      .sg-topnav { background: #fff !important; box-shadow: 0 2px 12px rgba(0,0,0,.08); font-family: 'Lato', sans-serif !important; }
+      .sg-topnav .navbar-brand img { height: 40px; }
+      .sg-topnav .nav-link { font-weight: 700 !important; color: #333 !important; padding: 8px 14px !important; font-family: 'Lato', sans-serif !important; font-size: 15px !important; }
+      .sg-topnav .nav-link:hover { color: #5A30F1 !important; }
+      .sg-topnav .dropdown-mega { position: static !important; }
+      .sg-topnav .dropdown-mega-menu { width: 100% !important; left: 0 !important; right: 0 !important; padding: 24px !important; border: none !important; box-shadow: 0 8px 32px rgba(0,0,0,0.12) !important; border-top: 3px solid #5A30F1 !important; font-family: 'Lato', sans-serif !important; }
+      .sg-topnav .sg-mm-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #5A30F1; border-bottom: 2px solid #5A30F1; padding-bottom: 8px; margin-bottom: 12px; font-family: 'Lato', sans-serif; }
+      .sg-topnav .sg-mm-item { display: flex !important; align-items: flex-start; padding: 8px 10px; border-radius: 8px; text-decoration: none !important; color: #333 !important; transition: background 0.2s; font-family: 'Lato', sans-serif; }
+      .sg-topnav .sg-mm-item:hover { background: #f0ebff; color: #5A30F1 !important; }
+      .sg-topnav .sg-mm-icon { width: 36px; height: 36px; border-radius: 8px; background: #f0ebff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-right: 10px; }
+      .sg-topnav .sg-mm-icon i { color: #5A30F1; font-size: 16px; }
+      .sg-topnav .sg-mm-item-title { font-weight: 700; font-size: 13px; margin-bottom: 2px; }
+      .sg-topnav .sg-mm-item-desc { font-size: 11px; color: #777; }
+      .sg-prod-card { border: 2px solid #e9ecef; border-radius: 12px; padding: 20px; text-align: center; text-decoration: none; color: #333; transition: border-color 0.2s, transform 0.2s; display: block; }
+      .sg-prod-card:hover { border-color: #5A30F1; transform: translateY(-2px); color: #333; }
+      .sg-prod-icon { width: 56px; height: 56px; border-radius: 50%; background: #f0ebff; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; }
+      .sg-prod-icon i { font-size: 24px; color: #5A30F1; }
+    </style>
+</head>
+
+<body>
+<!-- SignuluOne Standard Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top sg-topnav" style="padding:12px 0;">
+  <div class="container">
+    <a class="navbar-brand" href="./index.html"><img src="./img/new-signulu-logo.png" alt="SignuluOne" style="height:40px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sgMainNav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="sgMainNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item dropdown dropdown-mega">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+          <div class="dropdown-menu dropdown-mega-menu">
+            <div class="row">
+              <div class="col-md-4"><div class="sg-mm-title">E-Signature</div><a class="sg-mm-item" href="https://signulu.com/index.php/about" target="_blank"><div class="sg-mm-icon"><i class="bi bi-pen"></i></div><div><div class="sg-mm-item-title">Signulu e-Sign</div><div class="sg-mm-item-desc">Sign contracts digitally</div></div></a></div>
+              <div class="col-md-4"><div class="sg-mm-title">Document Management</div><a class="sg-mm-item" href="./Dms.html"><div class="sg-mm-icon"><i class="bi bi-folder2-open"></i></div><div><div class="sg-mm-item-title">DMS</div><div class="sg-mm-item-desc">Centralized document storage</div></div></a></div>
+              <div class="col-md-4"><div class="sg-mm-title">Bulk Signing</div><a class="sg-mm-item" href="https://bulksigner.signuluone.com" target="_blank"><div class="sg-mm-icon"><i class="bi bi-file-earmark-check"></i></div><div><div class="sg-mm-item-title">BulkSigner</div><div class="sg-mm-item-desc">DSC-based bulk signing</div></div></a></div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown dropdown-mega">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Why Signulu</a>
+          <div class="dropdown-menu dropdown-mega-menu">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="sg-mm-title">Security</div>
+                <a class="sg-mm-item" href="./why-signulu.html#esignatures"><div class="sg-mm-icon"><i class="bi bi-shield-lock"></i></div><div><div class="sg-mm-item-title">Secure e-Signatures</div><div class="sg-mm-item-desc">AES-256 encryption &amp; TLS 1.3</div></div></a>
+                <a class="sg-mm-item" href="./why-signulu.html#audit"><div class="sg-mm-icon"><i class="bi bi-journal-check"></i></div><div><div class="sg-mm-item-title">Audit Trail</div><div class="sg-mm-item-desc">Full tamper-proof activity log</div></div></a>
+              </div>
+              <div class="col-md-3">
+                <div class="sg-mm-title">Automation</div>
+                <a class="sg-mm-item" href="./why-signulu.html#workflows"><div class="sg-mm-icon"><i class="bi bi-diagram-3"></i></div><div><div class="sg-mm-item-title">Workflow Automation</div><div class="sg-mm-item-desc">Multi-level approval sequences</div></div></a>
+                <a class="sg-mm-item" href="./why-signulu.html#templates"><div class="sg-mm-icon"><i class="bi bi-file-earmark-text"></i></div><div><div class="sg-mm-item-title">Templates</div><div class="sg-mm-item-desc">Reusable document templates</div></div></a>
+              </div>
+              <div class="col-md-3">
+                <div class="sg-mm-title">Access &amp; Storage</div>
+                <a class="sg-mm-item" href="./why-signulu.html#multidevice"><div class="sg-mm-icon"><i class="bi bi-devices"></i></div><div><div class="sg-mm-item-title">Multi-Device Access</div><div class="sg-mm-item-desc">Web, iOS &amp; Android</div></div></a>
+                <a class="sg-mm-item" href="./why-signulu.html#cloud"><div class="sg-mm-icon"><i class="bi bi-cloud"></i></div><div><div class="sg-mm-item-title">Cloud Storage</div><div class="sg-mm-item-desc">Integrated with major cloud providers</div></div></a>
+              </div>
+              <div class="col-md-3">
+                <div class="sg-mm-title">Compliance</div>
+                <a class="sg-mm-item" href="./why-signulu.html#rbac"><div class="sg-mm-icon"><i class="bi bi-person-lock"></i></div><div><div class="sg-mm-item-title">RBAC</div><div class="sg-mm-item-desc">Role-based access control</div></div></a>
+                <a class="sg-mm-item" href="./why-signulu.html#otp"><div class="sg-mm-icon"><i class="bi bi-phone"></i></div><div><div class="sg-mm-item-title">OTP Verification</div><div class="sg-mm-item-desc">SMS/Email signer authentication</div></div></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="./Blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+      </ul>
+      <div class="d-flex gap-2">
+        <a href="./contact.html" class="btn btn-outline-secondary" style="font-size:14px;">Contact Sales</a>
+        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productSelectModal" style="background:#5A30F1;border-color:#5A30F1;font-size:14px;">Try for Free</a>
+      </div>
+    </div>
+  </div>
+</nav>
+    <!-- Hero Section -->
+    <div class="hero-section" style="background-image: url('img/gg1.jpg');">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="container-fluid">
+                <a class="navbar-sub-brand" href="#">
+                    <img src="img/power pack black .png"  alt="BGV Logo" style="width: 120px; margin-left: 100px;">
+                </a>
+
+                <!-- Toggler for mobile view -->
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+
+                <!-- Menu items on the right -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Why-Choose-SecureSign">Why Choose</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#How-It-Works">How It Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Calculator</a>
+                        </li>
+                    </ul>
+                    <ul></ul>
+                    <ul></ul>
+                    <ul></ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- Left Content -->
+                <div class="col-lg-8 text-center-mobile">
+                    <h1 class="hero-heading">Only Pay <span class="for-span">for </span>
+                    </h1>
+                    <h1 class="hero-heading">What You Use.</h1>
+                    <p class="hero-subheading">Signulu POWERPACK is a innovative product which enables users a
+                        comprehensive solution that enables them to eSign the documents & use BGV Services with
+                        Pay-as-You-Use Pricing.</p>
+                    <p class="hero-subheading">
+                        Say goodbye to costly subscriptions and lock-ins. Start verifying and signing documents
+                        instantly with our flexible, usage-based model – perfect for startups, SMEs, and growing
+                        enterprises.</p>
+                </div>
+
+                <!-- Right Features Box -->
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <div class="bg-white p-4 feature-card">
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="feature-icon me-3">
+                                <i class="bi bi-vector-pen" style="color: #9023e4;"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1 fw-bold">Digital Signature</h5>
+                                <small class="text-muted">Aadhaar-based verification with legally valid
+                                    eSignatures</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="feature-icon me-3">
+                                <i class="bi bi-shield-check" style="color: #e42323;"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1 fw-bold">Background Verification</h5>
+                                <small class="text-muted">Comprehensive checks including employment, education, and
+                                    criminal records</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <div class="feature-icon me-3">
+                                <i class="bi bi-credit-card-fill" style="color: #2360e4;"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1 fw-bold">Pay-as-You-Go</h5>
+                                <small class="text-muted">No monthly commitments, only pay for what you use</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section" id="Why-Choose-SecureSign">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Why Choose SecureSign?</h2>
+                <p class="text-muted">Trusted by over 5,000 businesses across India</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="benefit-item">
+                        <div class="feature-icon mb-3" style="background-color: #2a5bd7;">
+                            <i class="bi bi-lightning-charge-fill"></i>
+                        </div>
+                        <h4>Lightning Fast</h4>
+                        <p>Complete digital signatures in under 30 seconds with our Aadhaar-based eSign solution.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="benefit-item">
+                        <div class="feature-icon mb-3" style="background-color: #4CAF50;">
+                            <i class="bi bi-shield-lock-fill"></i>
+                        </div>
+                        <h4>Bank-Level Security</h4>
+                        <p>256-bit encryption and ISO 27001 certified infrastructure to protect your documents.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="benefit-item">
+                        <div class="feature-icon mb-3" style="background-color: #6f42c1;">
+                            <i class="bi bi-cash-coin"></i>
+                        </div>
+                        <h4>Cost Effective</h4>
+                        <p>Save up to 80% compared to traditional verification methods with our pay-per-use model.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="benefit-item">
+                        <div class="feature-icon mb-3" style="background-color: #fd7e14;">
+                            <i class="bi bi-phone-fill"></i>
+                        </div>
+                        <h4>Mobile Friendly</h4>
+                        <p>Sign and verify documents from anywhere using any device - no special hardware needed.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="benefit-item">
+                        <div class="feature-icon mb-3" style="background-color: #dc3545;">
+                            <i class="bi bi-file-earmark-check-fill"></i>
+                        </div>
+                        <h4>Legally Valid</h4>
+                        <p>Compliant with IT Act 2000 and meets all eSignature legal requirements in India.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="benefit-item">
+                        <div class="feature-icon mb-3" style="background-color: #17a2b8;">
+                            <i class="bi bi-headset"></i>
+                        </div>
+                        <h4>24/7 Support</h4>
+                        <p>Dedicated support team available round the clock to assist with any queries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-5 bg-light">
+        <div class="container" id ="How-It-Works">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">How It Works</h2>
+                <p class="text-muted">Get started in just 3 simple steps</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <div class="bg-white p-4 rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                        style="width: 120px; height: 120px; border: 3px solid var(--primary-color);">
+                        <i class="bi bi-upload display-4 text-primary"></i>
+                    </div>
+                    <h4>Upload Document</h4>
+                    <p>Upload your document in PDF, DOCX, or other common formats.</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="bg-white p-4 rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                        style="width: 120px; height: 120px; border: 3px solid var(--primary-color);">
+                        <i class="bi bi-people-fill display-4 text-primary"></i>
+                    </div>
+                    <h4>Add Signers</h4>
+                    <p>Enter recipient details who need to sign or verify the document.</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="bg-white p-4 rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                        style="width: 120px; height: 120px; border: 3px solid var(--primary-color);">
+                        <i class="bi bi-pen-fill display-4 text-primary"></i>
+                    </div>
+                    <h4>Sign & Track</h4>
+                    <p>Recipients sign digitally and you can track the progress in real-time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  <footer>
+    <div class="container container-lg container-xl container-xxl">
+
+      <!-- <p class="text-center pt-5 copyrt">Copyright 2020 Signulu. All Rights Reserved</p> -->
+      <p class="text-center pt-5 copyrt">Copyright &copy;
+        <script>document.write(new Date().getFullYear())</script> Signulu. All Rights Reserved
+      </p>
+    </div>
+  </footer>
+    <!-- Bootstrap JS (Optional for interactivity) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- SignuluOne Product Modal -->
+<div class="modal fade" id="productSelectModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold">Which product would you like to try?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body pt-3 pb-4">
+        <div class="row g-3">
+          <div class="col-md-4"><a href="https://app.signulu.com/account/register" class="sg-prod-card"><div class="sg-prod-icon"><i class="bi bi-pen"></i></div><div class="fw-bold mb-1">Signulu e-Sign</div><div style="font-size:12px;color:#888;">Sign contracts digitally. Legally binding &amp; secure.</div></a></div>
+          <div class="col-md-4"><a href="https://dms.signulu.com/auth" class="sg-prod-card"><div class="sg-prod-icon"><i class="bi bi-folder2-open"></i></div><div class="fw-bold mb-1">DMS</div><div style="font-size:12px;color:#888;">Document Management System. Digitize &amp; organize.</div></a></div>
+          <div class="col-md-4"><a href="https://bulksigner.signuluone.com" target="_blank" class="sg-prod-card"><div class="sg-prod-icon"><i class="bi bi-file-earmark-check"></i></div><div class="fw-bold mb-1">BulkSigner</div><div style="font-size:12px;color:#888;">DSC Bulk Signing Tool. Sign PDFs with Class 3 DSC.</div></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

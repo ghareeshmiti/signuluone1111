@@ -1,0 +1,458 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CGHL3V39G4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+
+  gtag("config", "G-CGHL3V39G4", {
+    linker: {
+      domains: ["signulu.com", "app.signulu.com", "bulksigner.signuluone.com"]
+    }
+  });
+</script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/NewPenIcon.png" type="image/x-icon">
+     <link rel="icon" href="img/NewPenIcon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>signulu</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+      /* SignuluOne standard navbar overrides */
+      .sg-topnav { background: #fff !important; box-shadow: 0 2px 12px rgba(0,0,0,.08); font-family: 'Lato', sans-serif !important; }
+      .sg-topnav .navbar-brand img { height: 40px; }
+      .sg-topnav .nav-link { font-weight: 700 !important; color: #333 !important; padding: 8px 14px !important; font-family: 'Lato', sans-serif !important; font-size: 15px !important; }
+      .sg-topnav .nav-link:hover { color: #5A30F1 !important; }
+      .sg-topnav .dropdown-mega { position: static !important; }
+      .sg-topnav .dropdown-mega-menu { width: 100% !important; left: 0 !important; right: 0 !important; padding: 24px !important; border: none !important; box-shadow: 0 8px 32px rgba(0,0,0,0.12) !important; border-top: 3px solid #5A30F1 !important; font-family: 'Lato', sans-serif !important; }
+      .sg-topnav .sg-mm-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #5A30F1; border-bottom: 2px solid #5A30F1; padding-bottom: 8px; margin-bottom: 12px; font-family: 'Lato', sans-serif; }
+      .sg-topnav .sg-mm-item { display: flex !important; align-items: flex-start; padding: 8px 10px; border-radius: 8px; text-decoration: none !important; color: #333 !important; transition: background 0.2s; font-family: 'Lato', sans-serif; }
+      .sg-topnav .sg-mm-item:hover { background: #f0ebff; color: #5A30F1 !important; }
+      .sg-topnav .sg-mm-icon { width: 36px; height: 36px; border-radius: 8px; background: #f0ebff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-right: 10px; }
+      .sg-topnav .sg-mm-icon i { color: #5A30F1; font-size: 16px; }
+      .sg-topnav .sg-mm-item-title { font-weight: 700; font-size: 13px; margin-bottom: 2px; }
+      .sg-topnav .sg-mm-item-desc { font-size: 11px; color: #777; }
+      .sg-prod-card { border: 2px solid #e9ecef; border-radius: 12px; padding: 20px; text-align: center; text-decoration: none; color: #333; transition: border-color 0.2s, transform 0.2s; display: block; }
+      .sg-prod-card:hover { border-color: #5A30F1; transform: translateY(-2px); color: #333; }
+      .sg-prod-icon { width: 56px; height: 56px; border-radius: 50%; background: #f0ebff; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; }
+      .sg-prod-icon i { font-size: 24px; color: #5A30F1; }
+    </style>
+</head>
+  <body>
+    
+<!-- SignuluOne Standard Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top sg-topnav" style="padding:12px 0;">
+  <div class="container">
+    <a class="navbar-brand" href="./index.html"><img src="./img/new-signulu-logo.png" alt="SignuluOne" style="height:40px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sgMainNav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="sgMainNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item dropdown dropdown-mega">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+          <div class="dropdown-menu dropdown-mega-menu">
+            <div class="row">
+              <div class="col-md-4"><div class="sg-mm-title">E-Signature</div><a class="sg-mm-item" href="https://signulu.com/index.php/about" target="_blank"><div class="sg-mm-icon"><i class="bi bi-pen"></i></div><div><div class="sg-mm-item-title">Signulu e-Sign</div><div class="sg-mm-item-desc">Sign contracts digitally</div></div></a></div>
+              <div class="col-md-4"><div class="sg-mm-title">Document Management</div><a class="sg-mm-item" href="./Dms.html"><div class="sg-mm-icon"><i class="bi bi-folder2-open"></i></div><div><div class="sg-mm-item-title">DMS</div><div class="sg-mm-item-desc">Centralized document storage</div></div></a></div>
+              <div class="col-md-4"><div class="sg-mm-title">Bulk Signing</div><a class="sg-mm-item" href="https://bulksigner.signuluone.com" target="_blank"><div class="sg-mm-icon"><i class="bi bi-file-earmark-check"></i></div><div><div class="sg-mm-item-title">BulkSigner</div><div class="sg-mm-item-desc">DSC-based bulk signing</div></div></a></div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown dropdown-mega">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Why Signulu</a>
+          <div class="dropdown-menu dropdown-mega-menu">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="sg-mm-title">Security</div>
+                <a class="sg-mm-item" href="./why-signulu.html#esignatures"><div class="sg-mm-icon"><i class="bi bi-shield-lock"></i></div><div><div class="sg-mm-item-title">Secure e-Signatures</div><div class="sg-mm-item-desc">AES-256 encryption &amp; TLS 1.3</div></div></a>
+                <a class="sg-mm-item" href="./why-signulu.html#audit"><div class="sg-mm-icon"><i class="bi bi-journal-check"></i></div><div><div class="sg-mm-item-title">Audit Trail</div><div class="sg-mm-item-desc">Full tamper-proof activity log</div></div></a>
+              </div>
+              <div class="col-md-3">
+                <div class="sg-mm-title">Automation</div>
+                <a class="sg-mm-item" href="./why-signulu.html#workflows"><div class="sg-mm-icon"><i class="bi bi-diagram-3"></i></div><div><div class="sg-mm-item-title">Workflow Automation</div><div class="sg-mm-item-desc">Multi-level approval sequences</div></div></a>
+                <a class="sg-mm-item" href="./why-signulu.html#templates"><div class="sg-mm-icon"><i class="bi bi-file-earmark-text"></i></div><div><div class="sg-mm-item-title">Templates</div><div class="sg-mm-item-desc">Reusable document templates</div></div></a>
+              </div>
+              <div class="col-md-3">
+                <div class="sg-mm-title">Access &amp; Storage</div>
+                <a class="sg-mm-item" href="./why-signulu.html#multidevice"><div class="sg-mm-icon"><i class="bi bi-devices"></i></div><div><div class="sg-mm-item-title">Multi-Device Access</div><div class="sg-mm-item-desc">Web, iOS &amp; Android</div></div></a>
+                <a class="sg-mm-item" href="./why-signulu.html#cloud"><div class="sg-mm-icon"><i class="bi bi-cloud"></i></div><div><div class="sg-mm-item-title">Cloud Storage</div><div class="sg-mm-item-desc">Integrated with major cloud providers</div></div></a>
+              </div>
+              <div class="col-md-3">
+                <div class="sg-mm-title">Compliance</div>
+                <a class="sg-mm-item" href="./why-signulu.html#rbac"><div class="sg-mm-icon"><i class="bi bi-person-lock"></i></div><div><div class="sg-mm-item-title">RBAC</div><div class="sg-mm-item-desc">Role-based access control</div></div></a>
+                <a class="sg-mm-item" href="./why-signulu.html#otp"><div class="sg-mm-icon"><i class="bi bi-phone"></i></div><div><div class="sg-mm-item-title">OTP Verification</div><div class="sg-mm-item-desc">SMS/Email signer authentication</div></div></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="./Blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+      </ul>
+      <div class="d-flex gap-2">
+        <a href="./contact.html" class="btn btn-outline-secondary" style="font-size:14px;">Contact Sales</a>
+        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productSelectModal" style="background:#5A30F1;border-color:#5A30F1;font-size:14px;">Try for Free</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+        <section class="pricing_box">
+            <div class="container container-lg container-xl container-xxl">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="heading" data-aos="fade-up" data-aos-duration="1500">
+                            <h2>Signulu <span>Contact</span></h2>
+                            <p>You can contact us using any of the below mode, and we will be happy to assist you or answer your queries.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4 mb-5" data-aos="fade-up" data-aos-duration="1500">
+                    <!-- USA -->
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 text-center py-4" style="border-right: 1px solid #e0e0e0;">
+                        <div style="width:90px;height:60px;border-radius:12px;overflow:hidden;margin:0 auto 16px;box-shadow:0 2px 8px rgba(0,0,0,0.15);">
+                            <img src="https://flagcdn.com/w160/us.png" alt="USA Flag" style="width:100%;height:100%;object-fit:cover;">
+                        </div>
+                        <h5 style="font-weight:800;font-size:1.1rem;letter-spacing:1px;margin-bottom:12px;">USA</h5>
+                        <a href="mailto:usa@signulu.com" style="display:block;color:#333;text-decoration:underline;margin-bottom:6px;font-size:14px;">usa@signulu.com</a>
+                        <a href="tel:+16098530237" style="display:block;color:#333;text-decoration:underline;margin-bottom:12px;font-size:14px;">+1-6098530237</a>
+                        <p style="font-size:13px;color:#555;line-height:1.6;margin:0;">101 Morgan Lane, Suite # 188,<br>Plainsboro NJ 08536.</p>
+                    </div>
+                    <!-- INDIA -->
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 text-center py-4" style="border-right: 1px solid #e0e0e0;">
+                        <div style="width:90px;height:60px;border-radius:12px;overflow:hidden;margin:0 auto 16px;box-shadow:0 2px 8px rgba(0,0,0,0.15);">
+                            <img src="https://flagcdn.com/w160/in.png" alt="India Flag" style="width:100%;height:100%;object-fit:cover;">
+                        </div>
+                        <h5 style="font-weight:800;font-size:1.1rem;letter-spacing:1px;margin-bottom:12px;">INDIA</h5>
+                        <a href="mailto:india@signulu.com" style="display:block;color:#333;text-decoration:underline;margin-bottom:6px;font-size:14px;">india@signulu.com</a>
+                        <a href="tel:+919176446858" style="display:block;color:#333;text-decoration:underline;margin-bottom:12px;font-size:14px;">+91 9176 446858</a>
+                        <p style="font-size:13px;color:#555;line-height:1.6;margin:0;">MILLENNIUM Tower,<br>5th Floor, Plot# 10/1, Sector &ndash; III,<br>HUDA Techno Enclave, Madhapur,<br>Hyderabad, Telangana &ndash; 500081.</p>
+                    </div>
+                    <!-- SOUTH AFRICA -->
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 text-center py-4">
+                        <div style="width:90px;height:60px;border-radius:12px;overflow:hidden;margin:0 auto 16px;box-shadow:0 2px 8px rgba(0,0,0,0.15);">
+                            <img src="https://flagcdn.com/w160/za.png" alt="South Africa Flag" style="width:100%;height:100%;object-fit:cover;">
+                        </div>
+                        <h5 style="font-weight:800;font-size:1.1rem;letter-spacing:1px;margin-bottom:12px;">SOUTH AFRICA</h5>
+                        <a href="mailto:africa@signulu.com" style="display:block;color:#333;text-decoration:underline;margin-bottom:6px;font-size:14px;">africa@signulu.com</a>
+                        <a href="tel:0105006054" style="display:block;color:#333;text-decoration:underline;margin-bottom:2px;font-size:14px;">010 500 6054</a>
+                        <a href="tel:0634870372" style="display:block;color:#333;text-decoration:underline;margin-bottom:12px;font-size:14px;">063 487 0372</a>
+                        <p style="font-size:13px;color:#555;line-height:1.6;margin:0;">The District, 8 Kikuyu Road,<br>Sunninghill, Sandton,<br>Johannesburg &ndash; 2157.</p>
+                    </div>
+                </div>
+                <div class="row contact_input">
+                    <div class="headline" data-aos="fade-up" data-aos-duration="1500">
+                        <h2>Have a <span>Question?</span></h2>
+                        <p>Please enter your information below <span>and a Signulu associate will</span> contact you.</p>
+                    </div>
+                    <div class="row input_div" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="col-xl-4 col-md-6 col-sm-12 padd_battom">
+                            <input type="text" placeholder="Name of Organization">
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12 padd_battom">
+                            <input type="text" placeholder="First Name">
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12 padd_battom">
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12 padd_battom">
+                            <input type="text" placeholder="Email Address">
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12 padd_battom">
+                            <input type="text" placeholder="Phone">
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12 padd_battom">
+                            <select name="" id="" >
+                                <option value="">Sales Enquiry</option>
+                                <option value="">Support</option>
+                                <option value="">Partnerships</option>
+                                <option value="">Others</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <textarea placeholder="Enter your message"></textarea>
+                        </div>
+                        <div class="col-12 btn_padd">
+                            <button type="submit"  onclick="location.href='https://app.signulu.com' ">Send message</button>
+                        </div>
+                        <div class="col-12 paragraphy">
+                            <p>Or feel free to contact us at our Helpline: <span>1-877-2306028 (744-6858)</span> for more information.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact_map" data-aos="fade-up" data-aos-duration="1500">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="contact_map_div">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.5176009771158!2d-74.58543110000001!3d40.3308625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3ddfa4674964d%3A0x8ea3dfe4a888216!2s101%20Morgan%20Ln%2C%20Plainsboro%20Township%2C%20NJ%2008536%2C%20USA!5e0!3m2!1sen!2sin!4v1687524138103!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="trial-box" data-aos="fade-up" data-aos-duration="2500" style="margin-top: 100px;">
+            <div class="container container-lg container-xl container-xxl">
+            <div class="row py-4 px-4 background align-items-center justify-content-between m-0">
+                <div class="col-xl-8 col-md-12 text-mail">
+                    <h3>Start Your Free Trial Today</h3>
+                    <p>Try signulu eSignature for 14 days. No credit card required.</p>
+                </div>
+                <div class="col-xl-4 col-md-12 btn-part d-flex justify-content-end">
+                <a href="https://app.signulu.com/account/register" class="free-btn">Start Free Trial</a>
+                </div>
+            </div>
+            </div>
+        </section> -->
+
+        <section class="trial-box mar-contact" data-aos="fade-up" data-aos-duration="2500"  >
+            <div class="container container-lg container-xl container-xxl">
+              <div class="row background align-items-center justify-content-between m-0 trySignulu-inp-box" >
+                <div class="col-xl-6 col-md-12 text-mail">
+                    <h3>Get up to 5 documents signed for free, every month</h3>
+                    <p>Try Signulu eSignature for 14 days. No credit card required.</p>
+                    <div class="your-email-id-box">
+                      <input type="email" placeholder="Your email id" class="email-inp-field" name="" id="">
+                      <a href="#" class="start-free-trail-with-email">Start Trail</a>
+                    </div>
+                    <div style="display: flex;align-items: center;">
+                      <input
+                        style="width:20px;height:20px;background-color: #FFFFFF;border:blue;"
+                        id="remeberme"
+                        type="checkbox"
+                         checked={true}
+                        
+                      />
+                      <p class="subscrib">Subscribe to our Newsletters</p>
+                    </div>
+                    <p class="no-card">*No credit card required</p>
+                </div>
+                <div class="col-xl-6 col-md-12 btn-part img-frame">
+                <img src="./img/Frame.png" class="frame-img" alt="">
+                </div>
+              </div>
+            </div>
+           </section>
+
+
+           <footer>
+            <div class="container container-lg container-xl container-xxl">
+               <div class="row pb-5">
+                 <div class="col-lg-5 col-md-4 col-sm-12 footer_logo"><img src="img/new-signulu-logo.png" class="footer-logo" alt=""/>
+                  <p class="footer-text">An ingenious electronic signature platform that provides next level reliability, consistency, scalability and performance.</p>
+                </div>
+                 <!-- <div class="col-lg-3 col-md-6 col-sm-12 about_text"> <h3>About Signulu</h3></div> -->
+                 <div class="col-lg-5 col-md-4 col-sm-12 ftr-menu">
+                  <ul>
+                    <li><a href="./about.html">About</a></li>
+                    <!-- <li><a href="#">Partner Network</a></li> -->
+                    <!-- <li><a href="#">Signulu Events </a></li> -->
+                    <li><a href="./pricing.html">Pricing </a></li>
+                    <li><a href="./Terms of Services.html">Term Of Service </a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./Privacy Policy.html">Privacy Policy</a></li>
+                  </ul>
+                 </div>
+                 <div class="col-lg-2 col-md-4 col-sm-12 social-sec">
+                   <h3>Follow us</h3>
+                   <ul>
+                    <li><a href="https://www.facebook.com/signulu/"> <img src="./img/facebook.png" alt=""> 
+                      <!-- <i class="fa-brands fa-facebook-f"></i> -->
+                    </a></li>
+                    <li><a href="https://twitter.com/signulu">
+                      <img src="./img/twitter.png" alt="">
+                      <!-- <i class="fa-brands fa-twitter"></i> -->
+                    </a></li>
+                    <li><a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F14636333%2Fadmin%2F">
+                      <img src="./img/Linkedin.png" alt="">
+                      <!-- <i class="fa-brands fa-linkedin-in"></i>  -->
+                    </a></li>
+                    <li><a href="https://www.youtube.com/channel/UCpYSuQ3xctOH7thHTHMmqQA?view_as=subscriber">
+                      <img src="./img/youtube.png" alt="">
+                      <!-- <i class="fa-brands fa-youtube"></i> -->
+                     </a></li>
+                    <li><a href="https://www.instagram.com/signulu/">
+                      <img src="./img/insta.png" alt="">
+                      <!-- <i class="fa-brands fa-instagram"></i>  -->
+                    </a></li>
+                  </ul>
+                 </div>
+               </div>
+               <!-- <p class="text-center pt-5 copyrt">Copyright 2020 Signulu. All Rights Reserved</p> -->
+               <p class="text-center pt-5 copyrt">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Signulu. All Rights Reserved</p>
+            </div>
+         </footer>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 50) {
+                $('body').addClass("sticky ");
+                } else {
+            $('body').removeClass("sticky ");
+                }
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $(".nav-link").click(function() {
+                $(".nav_dropDown").slideToggle(600);
+            });
+        });
+    </script>
+
+
+    <script>
+       AOS.init({
+        once: true,
+       disable: function() {
+        var maxWidth = 800;
+        return window.innerWidth < maxWidth;
+      }
+});
+    </script>
+
+    <script>
+        $(document).ready(function() {
+
+          $('.counter').each(function () {
+          $(this).prop('Counter',0).animate({
+          Counter: $(this).text()
+          }, {
+          duration: 4000,
+          easing: 'swing',
+          step: function (now) {
+              $(this).text(Math.ceil(now));
+          }
+          });
+          }); 
+
+        });  
+    </script>
+
+    <script>
+        (function(){
+      var words = [
+          'Efficient',
+          ' Secure',
+          ' Trustworthy'
+          
+          ], i = 0;
+      setInterval(function(){
+          $('#changingword').fadeOut(function(){
+              $(this).html(words[i=(i+1)%words.length]).fadeIn();
+          });
+      }, 3000);
+        
+  })();
+    </script>
+
+    <script>
+          $(window).on("load", dataWord);
+           function dataWord () {
+
+$("[data-words]").attr("data-words", function(i, d){
+  var $self  = $(this),
+      $words = d.split("|"),
+      tot    = $words.length,
+      c      = 0; 
+
+  // CREATE SPANS INSIDE SPAN
+  for(var i=0; i<tot; i++) $self.append($('<span/>',{text:$words[i]}));
+
+  // COLLECT WORDS AND HIDE
+  $words = $self.find("span").hide();
+
+  // ANIMATE AND LOOP
+  (function loop(){
+    $self.animate({ width: $words.eq( c ).width() });
+    $words.stop().fadeOut().eq(c).fadeIn().delay(2000).show(0, loop);
+    c = ++c % tot;
+  }());
+  
+});
+
+}
+    </script>
+
+    <style>
+    [data-words]{
+        vertical-align: top;
+        position: static;
+    }
+
+    </style>
+  
+<!-- Product Selection Modal -->
+<div class="modal fade" id="productSelectModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0" style="border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,0.15);">
+      <div class="modal-header border-0 pb-0 px-4 pt-4">
+        <div>
+          <h5 class="modal-title fw-bold" style="font-size:1.4rem;">Which product would you like to try?</h5>
+          <p class="text-muted mb-0" style="font-size:14px;">Select a product to begin your free trial or registration.</p>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body px-4 py-4">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <a href="https://app.signulu.com/account/register" target="_blank" class="sg-prod-card d-block text-center text-decoration-none p-4" style="border:2px solid #e9ecef;border-radius:12px;color:#333;transition:border-color 0.2s,transform 0.2s;">
+              <div style="width:60px;height:60px;border-radius:50%;background:#f0ebff;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">
+                <i class="bi bi-pen" style="font-size:26px;color:#5A30F1;"></i>
+              </div>
+              <div class="fw-bold mb-1" style="font-size:15px;">Signulu e-Sign</div>
+              <div style="font-size:12px;color:#888;">Sign contracts digitally. Legally binding &amp; secure.</div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://dms.signulu.com/auth" target="_blank" class="sg-prod-card d-block text-center text-decoration-none p-4" style="border:2px solid #e9ecef;border-radius:12px;color:#333;transition:border-color 0.2s,transform 0.2s;">
+              <div style="width:60px;height:60px;border-radius:50%;background:#e8f5e9;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">
+                <i class="bi bi-folder2-open" style="font-size:26px;color:#2E7D32;"></i>
+              </div>
+              <div class="fw-bold mb-1" style="font-size:15px;">DMS</div>
+              <div style="font-size:12px;color:#888;">Document Management System. Digitize &amp; organize.</div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://bulksigner.signuluone.com" target="_blank" class="sg-prod-card d-block text-center text-decoration-none p-4" style="border:2px solid #e9ecef;border-radius:12px;color:#333;transition:border-color 0.2s,transform 0.2s;">
+              <div style="width:60px;height:60px;border-radius:50%;background:#fff8e1;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">
+                <i class="bi bi-file-earmark-check" style="font-size:26px;color:#F9A825;"></i>
+              </div>
+              <div class="fw-bold mb-1" style="font-size:15px;">BulkSigner</div>
+              <div style="font-size:12px;color:#888;">DSC Bulk Signing Tool. Sign PDFs with Class 3 DSC.</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.querySelectorAll('.sg-prod-card').forEach(function(el){
+  el.addEventListener('mouseenter',function(){ this.style.borderColor='#5A30F1'; this.style.transform='translateY(-2px)'; });
+  el.addEventListener('mouseleave',function(){ this.style.borderColor='#e9ecef'; this.style.transform=''; });
+});
+</script>
+</body>
+</html>
