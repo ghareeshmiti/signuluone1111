@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact &amp; Demo Request | Signulu</title>
+  <meta name="description" content="Talk to the Signulu team or book a 20-minute demo. Sales, support and partnership enquiries answered within one business day.">
+  <link rel="canonical" href="https://signulu.com/contact.html">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="/css/tokens.css" rel="stylesheet">
+  <link href="/css/theme.css" rel="stylesheet">
+</head>
+<body data-page="contact">
+  <header class="site-header" data-include="/partials/header.html"></header>
+
+  <main id="main">
+    <section class="hero hero-compact" data-testid="contact-hero">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h1 class="mb-3">Let's get your documents moving</h1>
+        <p class="hero-sub mb-0">Tell us what you sign and how often. We will reply within one business day.</p>
+      </div>
+    </section>
+
+    <section class="section" id="demo" data-testid="contact-form-section">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <h2 class="mb-4">Request a demo</h2>
+            <form data-testid="contact-form" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label" for="firstName">First name</label>
+                  <input class="form-control" type="text" id="firstName" name="firstName" required data-testid="contact-first-name-input">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="lastName">Last name</label>
+                  <input class="form-control" type="text" id="lastName" name="lastName" required data-testid="contact-last-name-input">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="email">Work email</label>
+                  <input class="form-control" type="email" id="email" name="email" required data-testid="contact-email-input">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="company">Company</label>
+                  <input class="form-control" type="text" id="company" name="company" data-testid="contact-company-input">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="industry">Industry</label>
+                  <select class="form-select" id="industry" name="industry" data-testid="contact-industry-select">
+                    <option value="">Select an industry</option>
+                    <option>Banking &amp; Financial Services</option>
+                    <option>Real Estate</option>
+                    <option>Professional Services</option>
+                    <option>Insurance</option>
+                    <option>Healthcare</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="volume">Documents per month</label>
+                  <select class="form-select" id="volume" name="volume" data-testid="contact-volume-select">
+                    <option value="">Select a range</option>
+                    <option>Under 50</option>
+                    <option>50 &ndash; 500</option>
+                    <option>500 &ndash; 5,000</option>
+                    <option>5,000+</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="message">What would you like to see?</label>
+                  <textarea class="form-control" id="message" name="message" rows="4" data-testid="contact-message-input"></textarea>
+                </div>
+                <div class="col-12 d-flex flex-wrap align-items-center gap-3">
+                  <button class="btn btn-gold btn-lg" type="submit" data-testid="contact-submit-btn">Request my demo</button>
+                  <span class="blog-meta mb-0">By submitting you agree to our <a href="/privacy-policy.html" data-testid="contact-privacy-link">Privacy Policy</a>.</span>
+                </div>
+              </div>
+              <div class="alert alert-success mt-4 d-none" role="status" data-testid="contact-success-alert">
+                Thanks — your request is noted. A Signulu specialist will be in touch within one business day.
+              </div>
+            </form>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="card h-100"><div class="card-body">
+              <h2 class="h5 card-title mb-4">Other ways to reach us</h2>
+              <div class="d-flex gap-3 mb-4">
+                <span class="icon-badge mb-0"><i class="bi bi-envelope" aria-hidden="true"></i></span>
+                <span><strong class="d-block">Sales</strong><a href="mailto:sales@signulu.com" data-testid="contact-sales-email-link">sales@signulu.com</a></span>
+              </div>
+              <div class="d-flex gap-3 mb-4">
+                <span class="icon-badge mb-0"><i class="bi bi-life-preserver" aria-hidden="true"></i></span>
+                <span><strong class="d-block">Support</strong><a href="mailto:support@signulu.com" data-testid="contact-support-email-link">support@signulu.com</a></span>
+              </div>
+              <div class="d-flex gap-3 mb-4">
+                <span class="icon-badge mb-0"><i class="bi bi-calendar-check" aria-hidden="true"></i></span>
+                <span><strong class="d-block">Book directly</strong><a href="https://calendly.com/signup-xtod/signulu-demo-1" data-testid="contact-calendly-link">Pick a slot on the calendar</a></span>
+              </div>
+              <hr class="my-4">
+              <h3 class="h6">What happens next</h3>
+              <ul class="check-list mb-0">
+                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> A 20-minute call, no slide deck</li>
+                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> We configure one of your documents live</li>
+                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> You get a written pricing summary</li>
+              </ul>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-include="/partials/footer.html"></footer>
+  <div data-modal="/partials/product-modal.html"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/include.js"></script>
+  <script>
+    document.querySelector('[data-testid="contact-form"]').addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (!this.checkValidity()) { this.classList.add('was-validated'); return; }
+      document.querySelector('[data-testid="contact-success-alert"]').classList.remove('d-none');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<a class="visually-hidden-focusable btn btn-gold m-2" href="#main">Skip to main content</a>
+<nav class="navbar navbar-expand-lg navbar-signulu" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand" href="/index.html" data-testid="brand-logo-link">
+      <svg class="brand-mark" viewBox="0 0 40 40" role="img" aria-label="Signulu">
+        <rect width="40" height="40" rx="10" fill="#0A2540"></rect>
+        <path d="M11 26c3.6 1.6 7-.4 8.6-4.2 1.3-3.1 2.6-6.3 4.4-6.3 1.6 0 2 1.7 1.3 3.4-.7 1.7-2.3 3-4.6 3.6" stroke="#FFD15D" stroke-width="2.6" stroke-linecap="round" fill="none"></path>
+        <circle cx="29" cy="27" r="2" fill="#FFD15D"></circle>
+      </svg>
+      <span>Signulu</span>
+    </a>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#sgNav"
+            aria-controls="sgNav" aria-expanded="false" aria-label="Toggle navigation" data-testid="nav-toggler">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="sgNav">
+      <ul class="navbar-nav mx-lg-auto mb-3 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" data-nav="home" href="/index.html" data-testid="nav-home-link">Home</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-nav="products" href="/products.html" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false" data-testid="nav-products-link">Products</a>
+          <div class="dropdown-menu mega-menu mega-menu-wide">
+            <div class="row g-2">
+              <div class="col-lg-6">
+                <div class="mega-menu-heading">eSignature platform</div>
+                <a class="mega-link" href="/products.html#esignature" data-testid="mega-esignature-link">
+                  <i class="bi bi-vector-pen" aria-hidden="true"></i>
+                  <span><span class="mega-title">eSignature</span><span class="mega-desc">Legally binding signatures in minutes</span></span>
+                </a>
+                <a class="mega-link" href="/products.html#templates" data-testid="mega-templates-link">
+                  <i class="bi bi-files" aria-hidden="true"></i>
+                  <span><span class="mega-title">Templates</span><span class="mega-desc">Reusable documents and fields</span></span>
+                </a>
+                <a class="mega-link" href="/products.html#workflows" data-testid="mega-workflows-link">
+                  <i class="bi bi-diagram-3" aria-hidden="true"></i>
+                  <span><span class="mega-title">Workflows</span><span class="mega-desc">Sequential and parallel approvals</span></span>
+                </a>
+              </div>
+              <div class="col-lg-6">
+                <div class="mega-menu-heading">Trust &amp; developers</div>
+                <a class="mega-link" href="/products.html#audit" data-testid="mega-audit-link">
+                  <i class="bi bi-shield-check" aria-hidden="true"></i>
+                  <span><span class="mega-title">Audit trail</span><span class="mega-desc">Tamper-evident certificate per document</span></span>
+                </a>
+                <a class="mega-link" href="/products.html#api" data-testid="mega-api-link">
+                  <i class="bi bi-code-slash" aria-hidden="true"></i>
+                  <span><span class="mega-title">API &amp; integrations</span><span class="mega-desc">REST API, webhooks, cloud storage</span></span>
+                </a>
+                <a class="mega-link" href="/products.html#mobile" data-testid="mega-mobile-link">
+                  <i class="bi bi-phone" aria-hidden="true"></i>
+                  <span><span class="mega-title">Mobile apps</span><span class="mega-desc">Sign and send on iOS and Android</span></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-nav="industries" href="/industries.html" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false" data-testid="nav-industries-link">Industries</a>
+          <div class="dropdown-menu mega-menu">
+            <div class="mega-menu-heading">By industry</div>
+            <a class="mega-link" href="/banking-and-financial-services.html" data-testid="mega-banking-link">
+              <i class="bi bi-bank" aria-hidden="true"></i>
+              <span><span class="mega-title">Banking &amp; Financial Services</span><span class="mega-desc">KYC, loans, account opening</span></span>
+            </a>
+            <a class="mega-link" href="/real-estate.html" data-testid="mega-real-estate-link">
+              <i class="bi bi-house-door" aria-hidden="true"></i>
+              <span><span class="mega-title">Real Estate</span><span class="mega-desc">Leases, offers, disclosures</span></span>
+            </a>
+            <a class="mega-link" href="/professional-services.html" data-testid="mega-professional-link">
+              <i class="bi bi-briefcase" aria-hidden="true"></i>
+              <span><span class="mega-title">Professional Services</span><span class="mega-desc">Engagement letters, SOWs, NDAs</span></span>
+            </a>
+            <a class="mega-link" href="/industries.html" data-testid="mega-all-industries-link">
+              <i class="bi bi-grid" aria-hidden="true"></i>
+              <span><span class="mega-title">All industries</span><span class="mega-desc">See every use case</span></span>
+            </a>
+          </div>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" data-nav="pricing" href="/pricing.html" data-testid="nav-pricing-link">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" data-nav="blog" href="/blog.html" data-testid="nav-blog-link">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" data-nav="contact" href="/contact.html" data-testid="nav-contact-link">Contact</a></li>
+      </ul>
+
+      <div class="d-flex flex-column flex-lg-row gap-2">
+        <a class="btn btn-outline-primary" href="https://app.signulu.com/account/login" data-testid="nav-login-btn">Log in</a>
+        <a class="btn btn-gold" href="/contact.html#demo" data-testid="nav-demo-btn">Request a demo</a>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,154 @@
+{
+  "brand_name": "Signulu",
+  "theme_mode": "light",
+  "design_archetype": "B2B SaaS / Professional Services (Trust, Clarity, Authority)",
+  "colors": {
+    "primary": "#0A2540",
+    "accent_gold": "#FFD15D",
+    "secondary": "#1E3A8A",
+    "surface_dark": "#061626",
+    "surface_light": "#F8FAFC",
+    "surface_white": "#FFFFFF",
+    "text_main": "#1E293B",
+    "text_muted": "#64748B",
+    "success": "#10B981",
+    "warning": "#FFD15D",
+    "info": "#3B82F6",
+    "border": "#E2E8F0"
+  },
+  "typography": {
+    "fonts": {
+      "heading": "'Outfit', sans-serif",
+      "body": "'Manrope', sans-serif"
+    },
+    "scales": {
+      "h1": { "size": "clamp(2.5rem, 5vw, 3.5rem)", "weight": "700", "line_height": "1.1", "letter_spacing": "-0.02em" },
+      "h2": { "size": "clamp(2rem, 4vw, 2.5rem)", "weight": "700", "line_height": "1.2", "letter_spacing": "-0.01em" },
+      "h3": { "size": "clamp(1.5rem, 3vw, 2rem)", "weight": "600", "line_height": "1.3", "letter_spacing": "normal" },
+      "h4": { "size": "1.25rem", "weight": "600", "line_height": "1.4", "letter_spacing": "normal" },
+      "body": { "size": "1rem", "weight": "400", "line_height": "1.6", "letter_spacing": "normal" },
+      "small": { "size": "0.875rem", "weight": "400", "line_height": "1.5", "letter_spacing": "normal" }
+    }
+  },
+  "spacing_and_layout": {
+    "container_max_width": "1280px",
+    "section_padding_y": "5rem",
+    "section_padding_y_mobile": "3rem",
+    "border_radius": {
+      "sm": "4px",
+      "md": "8px",
+      "lg": "12px",
+      "pill": "50rem"
+    },
+    "shadows": {
+      "sm": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+      "md": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+      "lg": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": {
+        "background": "var(--accent-gold)",
+        "color": "var(--primary-color)",
+        "border_radius": "8px",
+        "font_weight": "600",
+        "hover": {
+          "transform": "translateY(-1px)",
+          "shadow": "var(--shadow-md)"
+        }
+      },
+      "secondary": {
+        "background": "transparent",
+        "color": "var(--primary-color)",
+        "border": "1px solid var(--border-color)",
+        "border_radius": "8px",
+        "font_weight": "600",
+        "hover": {
+          "background": "var(--surface-light)"
+        }
+      }
+    },
+    "cards": {
+      "background": "var(--surface-white)",
+      "border": "1px solid var(--border-color)",
+      "border_radius": "12px",
+      "shadow": "var(--shadow-sm)",
+      "hover_shadow": "var(--shadow-md)",
+      "padding": "2rem"
+    },
+    "nav_mega_menu": {
+      "background": "rgba(255, 255, 255, 0.95)",
+      "backdrop_blur": "12px",
+      "border_bottom": "1px solid var(--border-color)",
+      "shadow": "var(--shadow-sm)"
+    },
+    "hero": {
+      "background": "var(--surface-dark)",
+      "text_color": "#FFFFFF",
+      "overlay_opacity": "0.8"
+    },
+    "footer": {
+      "background": "var(--surface-dark)",
+      "text_color": "var(--text-muted)",
+      "link_hover_color": "var(--accent-gold)",
+      "padding_y": "4rem"
+    },
+    "legal_pages": {
+      "max_width": "800px",
+      "margin": "0 auto",
+      "typography": "rich, legible with extra bottom margin for paragraphs"
+    }
+  },
+  "image_urls": [
+    {
+      "url": "https://images.unsplash.com/photo-1521791055366-0d553872125f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBzaWduaW5nJTIwZG9jdW1lbnR8ZW58MHx8fHwxNzg3MTIwOTYxfDA&ixlib=rb-4.1.0&q=85",
+      "category": "hero_or_feature",
+      "description": "Person writing on white paper / Professional signing"
+    },
+    {
+      "url": "https://images.pexels.com/photos/8815843/pexels-photo-8815843.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "category": "hero_or_feature",
+      "description": "Close-up of a business professional signing documents"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1783115259399-3a5a3e0e4592?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHw0fHxiMmIlMjBzb2Z0d2FyZSUyMGRhc2hib2FyZHxlbnwwfHx8fDE3ODcxMjA5NjV8MA&ixlib=rb-4.1.0&q=85",
+      "category": "product_dashboard",
+      "description": "Hands typing on laptop / Data spreadsheet / Dashboard"
+    },
+    {
+      "url": "https://images.pexels.com/photos/106344/pexels-photo-106344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "category": "product_dashboard",
+      "description": "Tablet displaying analytics charts on wooden office desk"
+    },
+    {
+      "url": "https://images.pexels.com/photos/1313534/pexels-photo-1313534.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "category": "industry_real_estate_or_banking",
+      "description": "Contemporary building facade with reflective glass windows"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1644088379091-d574269d422f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMG1vZGVybiUyMG5ldHdvcmslMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc4NzEyMDk3NHww&ixlib=rb-4.1.0&q=85",
+      "category": "hero_background_texture",
+      "description": "Blue background with lines and dots for tech abstraction"
+    }
+  ],
+  "instructions_to_main_agent": [
+    "Phase 1: Create 'css/tokens.css' storing all exact values in vanilla CSS variables (:root). Override Bootstrap 5's native variables (--bs-primary, --bs-body-font-family, etc.) where appropriate to leverage native utility classes like 'text-primary' and 'bg-primary' automatically.",
+    "Phase 1.1: Map the gold accent (#FFD15D) to Bootstrap's --bs-warning or create a specific --bs-accent class if required, but the prompt asks for gold text to be an accent and text-primary for headings. Configure --bs-primary to the deep navy (#0A2540).",
+    "Phase 1.2: Create 'css/theme.css' to define component-specific classes (e.g., .btn-gold, .hero-section, .mega-menu) using the tokens.",
+    "Phase 2: Extract reusable HTML pieces into 'partials/header.html', 'partials/footer.html', and 'partials/product-modal.html'.",
+    "Phase 2.1: Implement 'js/include.js' using vanilla JS fetch() to dynamically inject the partials into elements like <div id='header-placeholder'></div>. Handle the active state of navigation links dynamically.",
+    "Phase 3: Recreate the core pages (index.html, products.html, pricing.html, blog.html, etc.) referencing 'tokens.css', 'theme.css', and 'include.js'.",
+    "Ensure the hero section on index.html is dark with the gold accent prominently featured, as specified.",
+    "Ensure the B2B SaaS eSignature feel: high trust, clean spacing, clear typography.",
+    "Do NOT use any build tools (Webpack, Vite, npm scripts). Pure static HTML, CSS, JS.",
+    "Ensure every interactive element (buttons, form inputs, nav links) has a descriptive 'data-testid' attribute (e.g., data-testid=\"nav-pricing-link\")."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Avoid generic 'AI slop' outputs. Provide clean, professional code.",
+    "DO NOT use a completely transparent background for headers; use solid or high-opacity backdrop-blur to ensure readability.",
+    "Do NOT center align paragraphs universally. Keep left-alignment for body text.",
+    "Emphasize accessibility and proper contrast, especially with the gold accent on dark backgrounds.",
+    "Maintain strict spacing consistency. Follow the 5rem vertical rhythm defined in spacing layout."
+  ]
+}

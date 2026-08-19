@@ -1,0 +1,62 @@
+{
+  "summary": "Frontend-only consistency sweep of Signulu static site (12 pages) via Playwright. All pages load 200, header/footer partials inject cleanly, every required data-testid is present on every page, and computed styles are IDENTICAL across all 12 pages (navbar 76px, body=Manrope, h1=Outfit 56px, footer bg rgb(6,22,38), .section padding 80px). Active nav highlighting is correct on every page (including data-page='industries' on the three industry pages). Mega menus open on desktop, product modal opens and closes from both /index.html (hero-tour-btn) and /products.html (products-modal-btn). Contact form correctly blocks empty submits and shows contact-success-alert on valid submit. Pricing FAQ toggles and comparison table renders. All 5 legacy space-name URLs redirect to their kebab-case equivalents. Every internal link (11 pages) returns 200 and every declared in-page anchor (#esignature, #templates, #workflows, #audit, #api, #mobile on /products.html and #demo on /contact.html) resolves. SEO: unique title, meta description and favicon on all 12 pages; canonical present on 11/12 (missing only on 404). One real bug found: horizontal overflow on /index.html and /contact.html at 375px and 768px (12px overflow caused by .row.g-5 negative gutter margins exceeding .container padding).",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [
+      {"component": "Hero row / .row.g-5", "issue": "12px horizontal overflow on /index.html and /contact.html at 375px (docW=387 vs 375) and 768px (780 vs 768). Root cause: .row with g-5 (--bs-gutter-x:3rem => -24px negative side margin) is placed directly inside .container but the container's horizontal padding is only 12px, so the row extends 12px past viewport. /pricing.html has no overflow because its hero row is inside a section that adds extra padding. Fix centrally in theme.css (e.g. bump .container padding-inline to var(--bs-gutter-x)/2, or remove g-5 from full-bleed hero rows, or add overflow-x:clip on body/main).", "selector": ".hero .row.g-5, section .row.g-5", "priority": "MEDIUM"}
+    ],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "/404.html", "issues": ["Missing <link rel='canonical'> (all other 11 pages have one). Acceptable for a 404 page but flagged because the review asked every page to have canonical."]},
+      {"screen": "/404.html", "issues": ["No .section wrapper is used (padding null); rest of the site uses .section 80/80 padding. Layout is bespoke — visually still consistent but structurally different from the other 11 pages."]}
+    ]
+  },
+  "per_page_consistency_table": {
+    "columns": ["path","navH(px)","bodyFont","h1Font","h1Size(px)","footerBg","sectionPad(top/bot)","dataPage","activeNav","overflow@375","overflow@768"],
+    "rows": [
+      ["/index.html",76,"Manrope","Outfit",56,"rgb(6,22,38)","80/80","home","home","YES(+12)","YES(+12)"],
+      ["/products.html",76,"Manrope","Outfit",56,"rgb(6,22,38)","80/80","products","products","no","no"],
+      ["/industries.html",76,"Manrope","Outfit",56,"rgb(6,22,38)","80/80","industries","industries","no","no"],
+      ["/pricing.html",76,"Manrope","Outfit",56,"rgb(6,22,38)","80/80","pricing","pricing","no","no"],
+      ["/blog.html",76,"Manrope","Outfit",56,"rgb(6,22,38)","80/80","blog","blog","no","no"],
+      ["/contact.html",76,"Manrope","Outfit",56,"rgb(6,22,38)","80/80","contact","contact","YES(+12)","YES(+12)"],
+      ["/privacy-policy.html",76,"Manrope","Outfit",56,"rgb(6,22,38)","80/80","privacy","(none by design)","no","no"],
+      ["/terms-of-service.html",76,"Manrope","Outfit",56,"rgb(6,22,38)","80/80","terms","(none by design)","no","no"],
+      ["/banking-and-financial-services.html",76,"Manrope","Outfit",56,"rgb(6,22,38)","80/80","industries","industries","no","no"],
+      ["/real-estate.html",76,"Manrope","Outfit",56,"rgb(6,22,38)","80/80","industries","industries","no","no"],
+      ["/professional-services.html",76,"Manrope","Outfit",56,"rgb(6,22,38)","80/80","industries","industries","no","no"],
+      ["/404.html",76,"Manrope","Outfit",56,"rgb(6,22,38)","(no .section)","404","(none)","no","no"]
+    ]
+  },
+  "coverage_checklist": {
+    "partial_injection_all_12_pages": "PASS",
+    "structural_consistency_computed_styles": "PASS (all 12 identical)",
+    "active_nav_highlight_pricing_blog_industries_x3": "PASS",
+    "mega_menus_products_and_industries": "PASS",
+    "product_modal_open_close_index_and_products": "PASS",
+    "broken_link_scan_internal_and_anchors": "PASS (all 11 internal pages 200, all 7 anchors resolve)",
+    "legacy_space_name_redirects_x5": "PASS (all redirect to kebab-case)",
+    "contact_form_empty_blocked_valid_shows_alert": "PASS",
+    "pricing_FAQ_accordion_and_comparison_table": "PASS",
+    "responsive_375_768_1440_hamburger_toggle": "PARTIAL (mobile hamburger works; but 12px horizontal overflow on index & contact at 375/768)",
+    "SEO_title_desc_canonical_favicon_all_pages": "PASS (canonical missing only on /404.html)"
+  },
+  "test_report_links": [],
+  "action_items": [
+    "Fix 12px horizontal overflow on /index.html and /contact.html at 375px & 768px: the .row.g-5 negative gutter (-24px) exceeds .container padding. Centrally fix in /app/frontend/public/css/theme.css or tokens.css — options: (a) add `overflow-x: clip;` to `body` or `main`, (b) reduce hero row gutter (`g-4` instead of `g-5` under lg), or (c) force `.container { padding-inline: 1.5rem; }` so it matches the row's negative margin.",
+    "OPTIONAL: add <link rel='canonical'> to /404.html for parity with the other 11 pages (or explicitly document that 404 has none by design)."
+  ],
+  "critical_code_review_comments": [
+    "js/include.js caches fetches by URL — good. `markActiveNav` correctly matches both data-nav==body[data-page] and filename fallback.",
+    "Legacy stubs use both meta http-equiv refresh AND JS location.replace — good defensive redundancy.",
+    "product-modal.html is injected via [data-modal] on every page that includes it; bootstrap.bundle is loaded synchronously and the modal is created lazily by Bootstrap on first trigger, so ordering is fine.",
+    "Row negative-margin overflow is a common Bootstrap pitfall — recommend adding `body { overflow-x: clip; }` in theme.css as a cheap global guard."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A", "frontend": "~95% (11 of 12 review items PASS, 1 responsive item PARTIAL)"},
+  "seed_data_creation": "none",
+  "retest_needed": true,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "All 12 pages structurally identical per computed styles. Only outstanding issue is 12px horizontal overflow on /index.html and /contact.html at <=768px caused by .row.g-5 gutters. After a fix in theme.css, re-run the responsive check block only (375x844 and 768x1024) on /index.html and /contact.html. Everything else (partials, testids, modals, mega-menus, contact form, FAQ, legacy redirects, SEO) already passes.",
+  "rca of the issue": "Bootstrap's .row with `g-5` uses `--bs-gutter-x: 3rem` and applies `margin-inline: calc(var(--bs-gutter-x) * -.5)` (i.e. -24px). Bootstrap's .container at <576px normally has `padding-inline: var(--bs-gutter-x)/2` (24px) which cancels the negative margin — but on this site the container's padding is coming out to 12px (probably a token override in tokens.css), so 24px - 12px = 12px overflow on either side. Reproduction: open /index.html at viewport width 375, measure `document.documentElement.scrollWidth` = 387. Mitigation: (1) restore container padding to 24px, or (2) add `body{overflow-x:clip}` in theme.css, or (3) use `g-4` on the hero row."
+}
