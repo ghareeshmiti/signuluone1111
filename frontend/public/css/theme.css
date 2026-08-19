@@ -87,7 +87,9 @@ a { text-decoration: none; transition: color var(--sg-t-fast) var(--sg-ease); }
   box-shadow: var(--sg-shadow-sm);
   min-height: 76px;
 }
-.navbar-signulu .navbar-brand { display: inline-flex; align-items: center; gap: .6rem; font-family: var(--sg-font-heading); font-weight: 700; font-size: 1.35rem; color: var(--sg-heading); letter-spacing: -0.01em; }
+.navbar-signulu .navbar-brand { display: inline-flex; align-items: center; gap: .35rem; font-family: var(--sg-font-heading); font-weight: 700; font-size: 1.35rem; color: var(--sg-heading); letter-spacing: -0.01em; }
+.navbar-signulu .navbar-brand .brand-wordmark { height: 34px; width: auto; }
+.navbar-signulu .navbar-brand .brand-suffix { color: var(--sg-accent); font-weight: 700; font-size: 1.5rem; line-height: 1; letter-spacing: -0.02em; }
 .navbar-signulu .navbar-brand .brand-mark { width: 34px; height: 34px; }
 .navbar-signulu .nav-link {
   font-family: var(--sg-font-heading); font-weight: 500; font-size: .975rem;
